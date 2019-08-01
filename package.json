@@ -1,0 +1,16 @@
+{
+  "name": "my-site",
+  "version": "1.0.0",
+  "description": "My website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gins",
+    "and",
+    "tonic"
+  ],
+  "author": "Tom Corbin",
+  "license": "ISC"
+}
