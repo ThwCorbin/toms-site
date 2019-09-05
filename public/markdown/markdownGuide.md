@@ -1,5 +1,5 @@
 # **Markdown Guide**
-This guide is based on the [CommonMark](https://commonmark.org/help/) help page. We escaped characters in Markdown using one backslash (e.g. "\\#", "\\*", "\\_", etc.).
+This guide is based on the [CommonMark](https://commonmark.org/help/) help page and spec. We escaped characters in Markdown using one backslash (e.g. "\\#", "\\*", "\\_", etc.).
 
 # Headings
 Markdown:  
@@ -36,7 +36,7 @@ Note: Strikethrough and underline are not CommonMark options.
 
 
 # Blockquote
-A single paragraph blockquote uses "<" in this Markdown:
+A single paragraph blockquote uses ">" in this Markdown:
 
 \> I bellowed the melody, but no one cared nor commented on the spectacle. How rude.
 
@@ -121,7 +121,7 @@ Result:
 # Lists
 Use either "* ", "- ", or "+ " for unordered list items, and either "1. " or "1) " for ordered list items.  
 * Note the space after characters.
-* Changing between bullet characters, number style characters, or bullets and numbers, start a new list.  
+* Changing between bullet characters, number style characters, or bullets and numbers, starts a new list.  
 
 Markdown for unordered list:  
 \- List item \
