@@ -195,16 +195,6 @@ Nested blockquotes require four idented spaces before the "> ". Code blocks requ
 # Tables
 Use pipes to build columns and dashes to create the header row. The default column allignment is left; use colons in the header row to change column allignment to center ":---:" or right "---:". We can add spaces inside "cells" (Markdown ignores the spaces) to make the table easier to read in Markdown.
 
-Markdown:  
-
-\| Location | Dogs | Cats | Fishmonkeyrobots | \
-\|----------|:----:|:----:|-----------------:| \
-\| Home     |     1|     1| 0                | \
-\|     Luna |     0|     0| 0                | \
-\| Mars     |     0|     0| 78,453,300,042   | \
-\|    Total |     1|     1| 78,453,300,042   |
-
-Displays:  
 | Location | Dogs | Cats | Fishmonkeyrobots |
 |----------|:----:|:----:|-----------------:|
 | Home     |     1|     1| 0                |
@@ -212,3 +202,11 @@ Displays:
 | Mars     |     0|     0| 78,453,300,042   |
 |    Total |     1|     1| 78,453,300,042   |
 
+Table Markdown:  
+
+\| Location | Dogs | Cats | Fishmonkeyrobots | \
+\|----------|:----:|:----:|-----------------:| \
+\| Home     |     1|     1| 0                | \
+\|     Luna |     0|     0| 0                | \
+\| Mars     |     0|     0| 78,453,300,042   | \
+\|    Total |     1|     1| 78,453,300,042   |
