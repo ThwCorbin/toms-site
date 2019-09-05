@@ -2,12 +2,21 @@
 This guide is based on the [CommonMark](https://commonmark.org/help/) help page. We escaped characters in Markdown using one backslash (e.g. "\\#", "\\*", "\\_", etc.).
 
 # Headings
-# h1 with "\#"
-## h2 with "\##"
-### h3 with "\###"
-#### h4 with "\####"
-##### h5 with "\#####"
-###### h6 with "\######"
+Markdown:  
+\# This is an h1\
+\## This is an h2\
+\### This is an h3\
+\#### This is an h4\
+\##### This is an h5\
+\###### This is an h6
+
+Result:
+# This is an h1 
+## This is an h2
+### This is an h3
+#### This is an h4
+##### This is an h5
+###### This is an h6
 
 
 # Paragraphs
