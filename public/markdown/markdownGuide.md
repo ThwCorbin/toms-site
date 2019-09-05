@@ -1,5 +1,5 @@
 # **Markdown Guide**
-This guide is based on the [CommonMark](https://commonmark.org/help/) help page and spec. We escaped characters in Markdown using one backslash (e.g. "\\#", "\\*", "\\_", etc.).
+This guide is based on the [CommonMark](https://commonmark.org/help/) help page and spec along with Markdown flotsam found on the web, such as [these tips](https://css-tricks.com/little-stuff-markdown-always-forget-google/). We escape characters in Markdown using one backslash (e.g. "\\#", "\\*", "\\_", etc.).
 
 # Headings
 Markdown:  
@@ -11,7 +11,7 @@ Markdown:
 \###### This is an h6
 
 Result:
-# This is an h1 
+# This is an h1
 ## This is an h2
 ### This is an h3
 #### This is an h4
@@ -25,14 +25,21 @@ or two blank spaces "  "
 at the break point.
 
 
-# Emphasis
-*Italic* with \*Italic* or \_Italic_
+# Emphasis and Strong Emphasis
+\*Italic* or \_Italic_ displays *Italic*
 
-**Bold** with \**Bold** or \__Bold__ 
+\**Bold** or \__Bold__ displays **Bold**
 
-___Bold and Italic___ with \_\_\_Bold and Italic___ 
+\_\_\_Bold and Italic___ displays ___Bold and Italic___
 
-Note: Strikethrough and underline are not CommonMark options.
+\*\*\*Bold and Italic** text combined with Italic text*  
+displays ***Bold and Italic** text combined with Italic text*
+
+
+# Other text options
+\~~Strikethrough~~ displays ~~Strikethrough~~
+
+Note: underline is __controversial__ among Markdown mavens.
 
 
 # Blockquote
@@ -117,6 +124,11 @@ Markdown:
 Result:  
 ![HappyDaddy](/public/images/daddyO_sqr_min.jpg) "Happy daddy with son"
 
+Nested image with link Markup:  
+\[\!\[Tom's website]\(/public/images/daddyO_sqr_avatar.jpg)](http://thwcorbin.com) "Tom's website"
+
+Nested image with link result:  
+[![Tom's Site](/public/images/daddyO_sqr_avatar.jpg)](http://thwcorbin.com) "Tom's website"
 
 # Lists
 Use either "* ", "- ", or "+ " for unordered list items, and either "1. " or "1) " for ordered list items.  
@@ -162,12 +174,12 @@ Nested list items require four indented spaces:
     - nested list item
 * list item
 
-Nested blockquotes require four idented spaces before the "> ". Code blocks require either eight indented spaces or using the fence method after four spaces:
-* list item with nested blockquotes
+Nested blockquotes require four idented spaces before the "> ". Code blocks require either eight indented spaces or four spaces followed by three backticks or tildes (fence method). I prefer the latter option.
+* list item with nested blockquotes (four spaces followed by "> ")
     > Do you have spam?
 
     > Do I have spam?
-* list item with nested code blocks
+* list item with nested code blocks displaying both options
 
         $ console.log("spam")
         $ console.log("more, please")
@@ -178,4 +190,15 @@ Nested blockquotes require four idented spaces before the "> ". Code blocks requ
     ~~~
 
 * list item whose only purpose is being third in a list
+
+
+# Tables
+Use pipes to build columns and dashes to create the header row. The default column allignment is left; use colons in the header row to change allignment to center ":---:" or right "---:". Markdown ignores the spaces in "cells," though the table is easier to read in Markdown with them.
+
+| Location | Dogs | Cats | Fishmonkeyrobots |
+|----------|:----:|:----:|-----------------:|
+| Home     |     1|     1| 0                |
+|     Luna |     0|     0| 0                |
+| Mars     |     0|     0| 78,453,300,042   |
+|    Total |     1|     1| 78,453,300,042   |
 
