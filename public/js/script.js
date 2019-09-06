@@ -1,10 +1,15 @@
-const Nunjucks = require("nunjucks");
+// import { render } from "nunjucks";
+let nunjucks = require("nunjucks");
 
-// Nunchucks.configure({autoescape: true});
+nunjucks.configure("views", {autoescape: true});
 
-// module.exports
-console.log(Nunjucks.render(
-  "./public/index.njk", {
-    drink: "Old Fashioned"
+// let env = nunjucks.configure("views");
+
+nunjucks.render(
+  "index.njk", {
+    page_title: "Tom's Site",
+    pub: "The Wicket Maiden",
+    drink: "Old Fashioned",
+    hours: "12:00 til 11:00"
   }
-));
+);
