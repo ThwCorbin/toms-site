@@ -1,7 +1,10 @@
-console.log("Hiya, Earth people!");
+const Nunjucks = require("nunjucks");
 
-function dogEatDog() {
-  console.log("Eat the dog food instead");
-}
+// Nunchucks.configure({autoescape: true});
 
-dogEatDog();
+// module.exports
+console.log(Nunjucks.render(
+  "./public/index.njk", {
+    drink: "Old Fashioned"
+  }
+));
