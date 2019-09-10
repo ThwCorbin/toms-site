@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "My website",
   "main": "index.html",
+  "engines": {
+    "node": ">=8.10.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,7 +17,12 @@
   "author": "Tom Corbin",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^0.9.0"
+    "@11ty/eleventy": "^0.9.0",
+    "eslint": "^6.3.0",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "prettier": "^1.18.2"
   },
   "dependencies": {
     "nunjucks": "^3.2.0"
