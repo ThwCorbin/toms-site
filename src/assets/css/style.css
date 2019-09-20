@@ -18,3 +18,30 @@
 body {
   background-color: var(--greenLight);
 }
+
+h1 {
+  color: var(--purple);
+}
+
+h2 {
+  color: var(--violet);
+}
+
+img {
+  max-width: 100px;
+  border: 0.1em solid var(--blue);
+  border-radius: 50px;
+  }
+
+.imgDaddyDance,
+.imgFreddieCat {
+  max-width: 50px;
+}
+
+ul {
+  list-style: none;
+}
+
+i {
+  color: var(--blue);
+}

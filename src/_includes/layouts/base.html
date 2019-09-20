@@ -5,12 +5,12 @@
 		<title>
 			{% block page_title %} {% endblock %}
 		</title>
-		<link rel="stylesheet" type="text/css" href="/css/style.css" />
-		<script defer type="text/javascript" src="/js/script.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script defer type="text/javascript" src="js/script.js"></script>
 	</head>
 	<body>
-		{% block header %} {% endblock %}
+		{% include "partials/_header.njk" %}
 		{% block content %} {% endblock %}
-		{% block footer %} {% endblock %}
+		{% include "partials/_footer.njk" %}
 	</body>
 </html>
