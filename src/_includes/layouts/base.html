@@ -3,15 +3,18 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>
-			{% block page_title %} {% endblock %}
+			Tom's Two-up Two-down | {% block page_title %} {% endblock %}
 		</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
-		<script defer type="text/javascript" src="js/script.js"></script>
+		<link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+		<script defer type="text/javascript" src="/assets/js/script.js"></script>
 	</head>
 	<body>
+		<div id="layout">
 		{% include "partials/_header.njk" %}
 		{% include "partials/_asideMe.njk" %}
 		{% block main %} {% endblock %}
+		{% include "partials/_asideExtra.njk" %}
 		{% include "partials/_footer.njk" %}
+		</div>
 	</body>
 </html>

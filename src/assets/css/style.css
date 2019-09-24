@@ -12,44 +12,122 @@
 	--pinkLight: #fdceea;
 	--purple: #853399;
 	--violet: #d135f8;
-	--white: #ffffff;
 }
 
+/* Reset */
+* {
+	padding: 0;
+	margin: 0;
+}
+
+/* Elements */
 body {
-  background-color: var(--blueGreenLight);
+	background-color: #fff;
 }
 
 h1 {
-  color: var(--green);
+	color: var(--green);
 }
 
 h2 {
-  color: var(--violet);
+	color: var(--violet);
 }
 
 h3 {
-  color: var(--blueGreen);
+	color: var(--blueGreen);
 }
 
 p {
-  color: var(--blueBlack);
+	color: var(--blueBlack);
 }
 
 img {
-	max-width: 100px;
 	border: 0.1em solid var(--blue);
-	border-radius: 50px;
-}
-
-.imgDaddyDance,
-.imgFreddieCat {
-	max-width: 50px;
+	border-radius: 50%;
 }
 
 ul {
 	list-style: none;
 }
 
-i {
+li {
 	color: var(--blue);
+}
+
+/* Layout */
+#layout {
+	display: grid;
+	grid-template-rows: 100px 400px 100px;
+	grid-template-columns: 200px 1fr 200px;
+	grid-template-areas:
+		'header header header'
+		'asideMe main asideExtra'
+		'footer footer footer';
+}
+
+/* Header */
+header {
+	grid-row: 1 / 2;
+	grid-column: 2 / 3;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+}
+
+.headerTitle {
+	text-justify: center;
+}
+
+/* .headerNav {
+} */
+
+.headerLinks {
+	display: flex;
+	justify-content: space-around;
+}
+
+/* Asides */
+.asideMe {
+	grid-area: asideMe;
+}
+
+.imgDaddyO {
+	max-width: 150px;
+	max-height: 150px;
+}
+
+.asideExtra {
+	grid-area: asideExtra;
+}
+
+main {
+	grid-area: main;
+}
+
+/* Footer */
+footer {
+	grid-row: 3 / 4;
+	grid-column: 2 / 3;
+	display: flex;
+}
+
+.imgDaddyDance {
+	width: 75px;
+	height: 75px;
+	margin-right: auto;
+}
+
+.footerNav {
+	display: flex;
+	flex-direction: column;
+}
+
+.footerLinks {
+	display: flex;
+	justify-content: space-around;
+}
+
+.footerContacts {
+	display: flex;
+	justify-content: space-around;
 }
