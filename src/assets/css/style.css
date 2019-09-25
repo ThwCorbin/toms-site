@@ -1,19 +1,20 @@
 /* CSS Variables ****************************************************** */
 :root {
 	--blue: #1fadee;
-	--blueDark: #1b4183;
 	--blueBright: #1063e9;
+	--blueDark: #1b4183;
 	--blueBlack: #091c3b;
-	--greenLight: #b0f0e2;
+	--greenLight: #f6faf9;
 	--greenBright: #00ff55;
 	--green: #06b130;
 	--greenDark: #0b725c;
 	--orange: #e4c126;
-	--pinkLight: #fdceea;
+	--pinkLight: #eb7cbe;
 	--pink: #f80d83;
 	--violet: #d135f8;
 	--purple: #853399;
-	--grey: #afabab;
+	--grey: #a1a4aa;
+	--greyDark: #363941;
 }
 
 /* Reset */
@@ -23,25 +24,40 @@
 }
 
 /* Elements */
+html {
+	font-size: 16px;
+	font-family: helvetica, sans-serif;
+}
+
 body {
 	background-color: #fff;
 }
 
 h1 {
 	color: var(--greenDark);
+	font-size: 1.35em;
+	padding: 0 0.25em;
 }
 
 h2 {
 	color: var(--green);
+	font-size: 1.25em;
+	padding: 0 0.25em;
 	margin-bottom: 0.25em;
 }
 
 h3 {
 	color: var(--pink);
+	font-size: 1em;
+	padding: 0 0.25em;
 }
 
 p {
+	max-width: 500px;
 	color: var(--blueDark);
+	font-size: 1em;
+	background: var(--greenLight);
+	padding: 0.25em 0.5em;
 	margin-bottom: 1em;
 }
 
@@ -56,22 +72,52 @@ ul {
 
 li {
 	color: var(--blueBright);
+	font-size: 0.85em;
+	font-weight: bold;
+	padding: 0.25em;
 }
-
-/* lvfha */
-/* a, button, input, select, textarea, label, summary {
-		touch-action: manipulation;
-	} */
 
 a {
 	text-decoration: none;
 	color: var(--blue);
+	font-size: 0.85em;
 }
-/* 
-a:link {
-	color: var(--blue);
-} */
 
+/* @media */
+@media screen and (min-width: 40em) {
+	h1 {
+		font-size: 1.75em;
+	}
+
+	h2 {
+		font-size: 1.5em;
+	}
+
+	h3,
+	p {
+		font-size: 1.25em;
+	}
+
+	li {
+		font-size: 1.25em;
+	}
+}
+
+@media screen and (min-width: 60em) {
+	h1 {
+		font-size: 2.25em;
+	}
+
+	h2 {
+		font-size: 1.75em;
+	}
+
+	h3 {
+		font-size: 1.5em;
+	}
+}
+
+/* lvfha */
 a:focus,
 a:hover {
 	color: var(--green);
@@ -85,13 +131,20 @@ a:active {
 
 /* Layout */
 #layout {
-	display: grid;
-	grid-template-rows: 100px 400px 100px;
-	grid-template-columns: 200px 1fr 200px;
-	grid-template-areas:
-		'header header header'
-		'asideMe main asideExtra'
-		'footer footer footer';
+	display: flex;
+	flex-direction: column;
+}
+
+@media screen and (min-width: 40em) {
+	#layout {
+		display: grid;
+		grid-template-rows: 100px 400px 100px;
+		grid-template-columns: 1fr 2fr 1fr;
+		grid-template-areas:
+			'header header header'
+			'asideMe main asideExtra'
+			'footer footer footer';
+	}
 }
 
 /* Header */
@@ -107,10 +160,6 @@ header {
 .headerLinks {
 	display: flex;
 	align-items: baseline;
-}
-
-.headerLinks li {
-	padding: 0 1em 0 0;
 }
 
 /* Asides */
@@ -158,21 +207,19 @@ footer {
 .footerNav {
 	display: flex;
 	flex-direction: column;
+	margin: 0 auto 0 1em;
 }
 
 .footerLinks {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: baseline;
-}
-
-.footerLinks li {
-	padding: 0 1em 0 0;
 }
 
 .footerContacts {
 	display: flex;
 	justify-content: space-around;
+	align-items: baseline;
 }
 
 .footerContacts li a {
@@ -186,6 +233,27 @@ footer {
 }
 
 .footerContacts li a:active {
+	color: var(--pink);
+	text-decoration: underline;
+}
+
+.footerAdverts {
+	display: flex;
+	justify-content: space-around;
+	align-items: baseline;
+}
+
+.advert a {
+	color: var(--greenDark);
+}
+
+.advert a:focus,
+.advert a:hover {
+	color: var(--green);
+	text-decoration: underline;
+}
+
+.advert a:active {
 	color: var(--pink);
 	text-decoration: underline;
 }

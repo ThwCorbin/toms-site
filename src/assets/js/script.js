@@ -4,3 +4,7 @@
 //* Highlight: They are not all accounted for, the lost Seeing Stones.
 //// Strike - Friendship with Saruman is not lightly thrown aside!
 //todo: Leap off the Tower of Orthanc onto a giant eagle
+
+const apple = (a, b) => console.log(a + b);
+
+apple(2, 13);
