@@ -1,17 +1,19 @@
 /* CSS Variables ****************************************************** */
 :root {
 	--blue: #1fadee;
-	--blueBlack: #030f25;
-	--blueGreen: #0ea181;
-	--blueGreenLight: #b0f0e2;
+	--blueDark: #1b4183;
+	--blueBright: #1063e9;
+	--blueBlack: #091c3b;
+	--greenLight: #b0f0e2;
+	--greenBright: #00ff55;
 	--green: #06b130;
-	--greenLight: #00ff55;
-	--grey: #afabab;
+	--greenDark: #0b725c;
 	--orange: #e4c126;
-	--pink: #f80d83;
 	--pinkLight: #fdceea;
-	--purple: #853399;
+	--pink: #f80d83;
 	--violet: #d135f8;
+	--purple: #853399;
+	--grey: #afabab;
 }
 
 /* Reset */
@@ -26,19 +28,21 @@ body {
 }
 
 h1 {
-	color: var(--green);
+	color: var(--greenDark);
 }
 
 h2 {
-	color: var(--violet);
+	color: var(--green);
+	margin-bottom: 0.25em;
 }
 
 h3 {
-	color: var(--blueGreen);
+	color: var(--pink);
 }
 
 p {
-	color: var(--blueBlack);
+	color: var(--blueDark);
+	margin-bottom: 1em;
 }
 
 img {
@@ -51,7 +55,32 @@ ul {
 }
 
 li {
+	color: var(--blueBright);
+}
+
+/* lvfha */
+/* a, button, input, select, textarea, label, summary {
+		touch-action: manipulation;
+	} */
+
+a {
+	text-decoration: none;
 	color: var(--blue);
+}
+/* 
+a:link {
+	color: var(--blue);
+} */
+
+a:focus,
+a:hover {
+	color: var(--green);
+	text-decoration: underline;
+}
+
+a:active {
+	color: var(--pink);
+	text-decoration: underline;
 }
 
 /* Layout */
@@ -72,28 +101,34 @@ header {
 	display: flex;
 	flex-direction: column;
 	align-self: center;
+	max-width: 800px;
 }
-
-.headerTitle {
-	text-justify: center;
-}
-
-/* .headerNav {
-} */
 
 .headerLinks {
 	display: flex;
-	justify-content: space-around;
+	align-items: baseline;
+}
+
+.headerLinks li {
+	padding: 0 1em 0 0;
 }
 
 /* Asides */
 .asideMe {
 	grid-area: asideMe;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .imgDaddyO {
 	max-width: 150px;
 	max-height: 150px;
+}
+
+.myName {
+	color: var(--greenDark);
+	margin-bottom: 0.1em;
 }
 
 .asideExtra {
@@ -102,6 +137,7 @@ header {
 
 main {
 	grid-area: main;
+	max-width: 800px;
 }
 
 /* Footer */
@@ -109,11 +145,13 @@ footer {
 	grid-row: 3 / 4;
 	grid-column: 2 / 3;
 	display: flex;
+	align-items: center;
+	max-width: 800px;
 }
 
 .imgDaddyDance {
-	width: 75px;
-	height: 75px;
+	max-width: 75px;
+	max-width: 75px;
 	margin-right: auto;
 }
 
@@ -124,10 +162,30 @@ footer {
 
 .footerLinks {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+.footerLinks li {
+	padding: 0 1em 0 0;
 }
 
 .footerContacts {
 	display: flex;
 	justify-content: space-around;
+}
+
+.footerContacts li a {
+	color: var(--blueBright);
+}
+
+.footerContacts li a:focus,
+.footerContacts li a:hover {
+	color: var(--green);
+	text-decoration: underline;
+}
+
+.footerContacts li a:active {
+	color: var(--pink);
+	text-decoration: underline;
 }
