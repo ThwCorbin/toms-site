@@ -1,5 +1,7 @@
-\# How to Learn  
-\### 25 Sep 2019
+---
+tags: post
+title: How to Learn
+---
 
 Stop fretting about the right way to do it  
 Start creating and failing  

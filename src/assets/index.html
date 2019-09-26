@@ -1,17 +1,17 @@
-{% extends "layouts/base.html" %}
-{% block page_title %} Front Room {% endblock %} 
-{% block main %}
+{% extends "layouts/base.html" %} {% block page_title %} Front Room {% endblock
+%} {% block main %}
 <main>
+	<h2>Fancy a cuppa?</h2>
 
-  <h2>Fancy a cuppa?</h2>
+	<p>
+		My front room is your front room. I furnish this space with my latest
+		thoughts. Tell me yours in the kitchen.
+	</p>
 
-  <p> My front room is your front room. I furnish this space with my latest thoughts. Tell me yours in the kitchen.</p>
-
-  <ul>
-    <li>Post 1</li>
-    <li>Post 1</li>
-    <li>Post 1</li>
-  </ul>
-
+	<ul>
+		{%- for post in collections.post -%}
+		<li>{{ post.data.title }}</li>
+		{%- endfor -%}
+	</ul>
 </main>
 {% endblock %}
