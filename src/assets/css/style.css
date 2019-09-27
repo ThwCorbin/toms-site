@@ -53,7 +53,7 @@ h3 {
 }
 
 p {
-	max-width: 500px;
+	max-width: 600px;
 	color: var(--blueDark);
 	font-size: 1em;
 	background: var(--greenLight);
@@ -138,7 +138,7 @@ a:active {
 @media screen and (min-width: 40em) {
 	#layout {
 		display: grid;
-		grid-template-rows: 100px 400px 100px;
+		grid-template-rows: 100px 1fr 100px;
 		grid-template-columns: 1fr 2fr 1fr;
 		grid-template-areas:
 			'header header header'
@@ -155,11 +155,14 @@ header {
 	flex-direction: column;
 	align-self: center;
 	max-width: 800px;
+	margin-bottom: 1em;
 }
 
 .headerLinks {
 	display: flex;
+	justify-content: flex-start;
 	align-items: baseline;
+	padding-left: 0.5em;
 }
 
 /* Asides */
@@ -184,6 +187,7 @@ header {
 	grid-area: asideExtra;
 }
 
+/* Main */
 main {
 	grid-area: main;
 	max-width: 800px;
@@ -196,6 +200,7 @@ footer {
 	display: flex;
 	align-items: center;
 	max-width: 800px;
+	margin-top: 1em;
 }
 
 .imgDaddyDance {
