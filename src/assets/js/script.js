@@ -5,13 +5,13 @@
 //// Strike - Friendship with Saruman is not lightly thrown aside!
 //todo: Leap off the Tower of Orthanc onto a giant eagle
 
-const frontRoom = document.querySelector(".frontRoom");
-const kitchen = document.querySelector(".kitchen");
-const firstFloor = document.querySelector(".firstFloor");
-const gardenShed = document.querySelector(".gardenShed");
-const attic = document.querySelector(".attic");
-const linkAll = document.querySelectorAll(".link");
+let anchorCollection = document.getElementsByTagName('a');
 
-frontRoom.addEventListener("click", val => {
-  console.log(val);
-});
+//# Underline current page in nav bars
+(() => {
+	for (let i = 0; i < anchorCollection.length; i++) {
+		anchorCollection[i].attributes.href.value == window.location.pathname
+			? anchorCollection[i].setAttribute('id', 'currentPage')
+			: anchorCollection[i].removeAttribute('id');
+	}
+})();
