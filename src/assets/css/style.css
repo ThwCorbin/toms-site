@@ -13,7 +13,7 @@
 	--pink: #f80d83;
 	--violet: #d135f8;
 	--purple: #853399;
-	--grey: #a1a4aa;
+	--grey: #868b94;
 	--greyDark: #363941;
 }
 
@@ -50,6 +50,14 @@ h3 {
 	color: var(--pink);
 	font-size: 1em;
 	padding: 0 0.25em;
+	margin-bottom: 0.25em;
+}
+
+h4 {
+	color: var(--grey);
+	font-size: 0.75em;
+	padding: 0 0.25em;
+	margin-bottom: 0.25em;
 }
 
 p {
@@ -90,7 +98,7 @@ a {
 	}
 
 	h2 {
-		font-size: 1.5em;
+		font-size: 1.35em;
 	}
 
 	h3,
@@ -100,6 +108,10 @@ a {
 
 	li {
 		font-size: 1.25em;
+	}
+
+	h4 {
+		font-size: 1em;
 	}
 }
 
@@ -114,6 +126,10 @@ a {
 
 	h3 {
 		font-size: 1.5em;
+	}
+
+	h4 {
+		font-size: 1.25em;
 	}
 }
 
@@ -169,8 +185,33 @@ header {
 .asideMe {
 	grid-area: asideMe;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	justify-content: space-around;
 	align-items: center;
+	margin-bottom: 0.5em;
+}
+
+.aboutMe {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.myName,
+.myJob,
+.myLocation {
+	text-align: center;
+}
+
+@media screen and (min-width: 40em) {
+	.asideMe {
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+
+	.aboutMe {
+		align-items: center;
+	}
 }
 
 .imgDaddyO {
