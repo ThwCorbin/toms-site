@@ -305,6 +305,6 @@ footer {
 }
 
 #currentPage {
-	text-decoration: underline;
-	text-decoration-color: var(--pink);
+	text-decoration: underline solid var(--pink);
+	/* text-decoration-thickness: 2px; */
 }
