@@ -216,7 +216,7 @@ header {
 
 .imgDaddyO {
 	max-width: 150px;
-	max-height: 150px;
+	max-height: auto;
 }
 
 .myName {
@@ -246,7 +246,7 @@ footer {
 
 .imgDaddyDance {
 	max-width: 75px;
-	max-width: 75px;
+	max-height: auto;
 	margin-right: auto;
 }
 
