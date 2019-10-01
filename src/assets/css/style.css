@@ -15,6 +15,7 @@
 	--purple: #853399;
 	--grey: #868b94;
 	--greyDark: #363941;
+	--white: #fff;
 }
 
 /* Reset */
@@ -31,12 +32,12 @@ html {
 }
 
 body {
-	background-color: #fff;
+	background-color: var(--white);
 }
 
 h1 {
 	color: var(--greenDark);
-	font-size: 1.35em;
+	font-size: 1.5em;
 	padding: 0 0.25em;
 }
 
@@ -81,7 +82,7 @@ ul {
 
 li {
 	color: var(--blueBright);
-	font-size: 0.85em;
+	font-size: 1em;
 	font-weight: bold;
 	padding: 0 0.25em;
 }
@@ -89,7 +90,6 @@ li {
 a {
 	text-decoration: none;
 	color: var(--blue);
-	font-size: 0.85em;
 }
 
 /* @media */
@@ -99,15 +99,10 @@ a {
 	}
 
 	h2 {
-		font-size: 1.35em;
+		font-size: 1.5em;
 	}
 
-	h3,
-	p {
-		font-size: 1.25em;
-	}
-
-	li {
+	h3 {
 		font-size: 1.25em;
 	}
 
