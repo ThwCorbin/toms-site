@@ -6,39 +6,49 @@
 //todo: Leap off the Tower of Orthanc onto a giant eagle
 
 let anchorCollection = document.getElementsByTagName('a');
+// let testButton = document.querySelector('.testButton');
+// let outPage = document.querySelector('.outputPage');
+let outAnchors = document.querySelector('.outputAnchors');
+
+let postAnchors = (anchorVar) => {
+	let textAnchor = document.createTextNode(anchorVar);
+	let liAnchor = document.createElement('li');
+	liAnchor.appendChild(textAnchor);
+	outAnchors.appendChild(liAnchor);
+};
 
 //# Underline current page in nav bars
 (() => {
 	for (let i = 0; i < anchorCollection.length; i++) {
+		let anchorVar = anchorCollection[i].attributes.href.value.toLowerCase();
 		anchorCollection[i].attributes.href.value.toLowerCase() ==
 		window.location.pathname.toLowerCase()
-			? anchorCollection[i].setAttribute('id', 'currentPage')
+			? (anchorCollection[i].setAttribute('id', 'currentPage'),
+			  console.log(anchorCollection[i]),
+			  console.log(anchorVar),
+			  postAnchors(anchorVar))
 			: anchorCollection[i].removeAttribute('id');
 	}
 })();
 
-let testButton = document.querySelector('.testButton');
-let outPage = document.querySelector('.outputPage');
-let outAnchors = document.querySelector('.outputAnchors');
+// let testAnchors = () => {
+// 	let textPage = document.createTextNode(
+// 		window.location.pathname.toLowerCase()
+// 	);
+// 	let liPage = document.createElement('li');
+// 	liPage.appendChild(textPage);
+// 	outPage.appendChild(liPage);
 
-let testAnchors = () => {
-	let textPage = document.createTextNode(
-		window.location.pathname.toLowerCase()
-	);
-	let liPage = document.createElement('li');
-	liPage.appendChild(textPage);
-	outPage.appendChild(liPage);
+// 	for (let i = 0; i < anchorCollection.length; i++) {
+// 		let textAnchor = document.createTextNode(
+// 			anchorCollection[i].attributes.href.value.toLowerCase()
+// 		);
+// 		let liAnchor = document.createElement('li');
+// 		liAnchor.appendChild(textAnchor);
+// 		outAnchors.appendChild(liAnchor);
+// 	}
 
-	for (let i = 0; i < anchorCollection.length; i++) {
-		let textAnchor = document.createTextNode(
-			anchorCollection[i].attributes.href.value.toLowerCase()
-		);
-		let liAnchor = document.createElement('li');
-		liAnchor.appendChild(textAnchor);
-		outAnchors.appendChild(liAnchor);
-	}
+// 	console.log(window.location.pathname);
+// };
 
-	console.log(window.location.pathname);
-};
-
-testButton.addEventListener('click', testAnchors);
+// testButton.addEventListener('click', testAnchors);
