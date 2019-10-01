@@ -216,7 +216,7 @@ header {
 
 .imgDaddyO {
 	max-width: 150px;
-	max-height: auto;
+	max-height: 150px;
 }
 
 .myName {
@@ -231,36 +231,44 @@ header {
 /* Main */
 main {
 	grid-area: main;
-	max-width: 800px;
+	/* max-width: 800px; */
+	padding: 1em;
 }
 
 /* Footer */
 footer {
-	grid-row: 3 / 4;
-	grid-column: 2 / 3;
 	display: flex;
+	justify-content: center;
 	align-items: center;
-	max-width: 800px;
-	margin-top: 1em;
+	/* margin-top: 1em; */
 }
 
 .imgDaddyDance {
 	display: none;
 }
 
-@media screen and (min-width: 40em) {
-	.imgDaddyDance {
-		display: block;
-		max-width: 75px;
-		max-height: auto;
-		margin-right: auto;
-	}
-}
-
 .footerNav {
 	display: flex;
 	flex-direction: column;
-	margin: 0 auto 0 1em;
+}
+
+@media screen and (min-width: 40em) {
+	footer {
+		grid-row: 3 / 4;
+		grid-column: 2 / 3;
+		max-width: 800px;
+	}
+
+	.imgDaddyDance {
+		display: block;
+		max-width: 75px;
+		max-height: 75px;
+		margin-right: auto;
+	}
+
+	.footerNav {
+		margin: 0 auto 0 1em;
+	}
 }
 
 .footerLinks {
