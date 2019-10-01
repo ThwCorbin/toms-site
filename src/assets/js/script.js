@@ -10,7 +10,8 @@ let anchorCollection = document.getElementsByTagName('a');
 //# Underline current page in nav bars
 (() => {
 	for (let i = 0; i < anchorCollection.length; i++) {
-		anchorCollection[i].attributes.href.value == window.location.pathname
+		anchorCollection[i].attributes.href.value.toLowerCase() ==
+		window.location.pathname
 			? anchorCollection[i].setAttribute('id', 'currentPage')
 			: anchorCollection[i].removeAttribute('id');
 	}
