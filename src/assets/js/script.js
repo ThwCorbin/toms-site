@@ -6,8 +6,6 @@
 //todo: Leap off the Tower of Orthanc onto a giant eagle
 
 let anchorCollection = document.getElementsByTagName('a');
-// let testButton = document.querySelector('.testButton');
-// let outPage = document.querySelector('.outputPage');
 let outAnchors = document.querySelector('.outputAnchors');
 
 let postAnchors = (anchorVar) => {
@@ -30,25 +28,3 @@ let postAnchors = (anchorVar) => {
 			: anchorCollection[i].removeAttribute('id');
 	}
 })();
-
-// let testAnchors = () => {
-// 	let textPage = document.createTextNode(
-// 		window.location.pathname.toLowerCase()
-// 	);
-// 	let liPage = document.createElement('li');
-// 	liPage.appendChild(textPage);
-// 	outPage.appendChild(liPage);
-
-// 	for (let i = 0; i < anchorCollection.length; i++) {
-// 		let textAnchor = document.createTextNode(
-// 			anchorCollection[i].attributes.href.value.toLowerCase()
-// 		);
-// 		let liAnchor = document.createElement('li');
-// 		liAnchor.appendChild(textAnchor);
-// 		outAnchors.appendChild(liAnchor);
-// 	}
-
-// 	console.log(window.location.pathname);
-// };
-
-// testButton.addEventListener('click', testAnchors);
