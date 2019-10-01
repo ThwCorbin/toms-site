@@ -245,9 +245,16 @@ footer {
 }
 
 .imgDaddyDance {
-	max-width: 75px;
-	max-height: auto;
-	margin-right: auto;
+	display: none;
+}
+
+@media screen and (min-width: 40em) {
+	.imgDaddyDance {
+		display: block;
+		max-width: 75px;
+		max-height: auto;
+		margin-right: auto;
+	}
 }
 
 .footerNav {
