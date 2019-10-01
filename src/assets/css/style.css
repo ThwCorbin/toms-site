@@ -21,6 +21,7 @@
 * {
 	padding: 0;
 	margin: 0;
+	line-height: 1.5;
 }
 
 /* Elements */
@@ -82,7 +83,7 @@ li {
 	color: var(--blueBright);
 	font-size: 0.85em;
 	font-weight: bold;
-	padding: 0.25em;
+	padding: 0 0.25em;
 }
 
 a {
