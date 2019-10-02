@@ -8,6 +8,7 @@
 let anchorCollection = document.getElementsByTagName('a');
 let outAnchors = document.querySelector('.outputAnchors');
 
+//# Testing why "Underline current page in nav bars" not working on iOS (possible others)
 let postAnchors = (anchorVar) => {
 	let textAnchor = document.createTextNode(anchorVar);
 	let liAnchor = document.createElement('li');
@@ -18,7 +19,8 @@ let postAnchors = (anchorVar) => {
 //# Underline current page in nav bars
 (() => {
 	for (let i = 0; i < anchorCollection.length; i++) {
-		let anchorVar = anchorCollection[i].attributes.href.value.toLowerCase();
+		let anchorVar = anchorCollection[i];
+		// let anchorVar = anchorCollection[i].attributes.href.value.toLowerCase();
 		anchorCollection[i].attributes.href.value.toLowerCase() ==
 		window.location.pathname.toLowerCase()
 			? (anchorCollection[i].setAttribute('id', 'currentPage'),
