@@ -7,10 +7,11 @@
 
 let anchorCollection = document.getElementsByTagName('a');
 let outAnchors = document.querySelector('.outputAnchors');
+let hTitle = document.querySelector('.headerTitle');
 
 //# Testing why "Underline current page in nav bars" not working on iOS (possible others)
 let postAnchors = (anchorVar) => {
-	let textAnchor = document.createTextNode(anchorVar);
+	let textAnchor = document.createTextNode(anchorVar.id);
 	let liAnchor = document.createElement('li');
 	liAnchor.appendChild(textAnchor);
 	outAnchors.appendChild(liAnchor);
@@ -20,10 +21,10 @@ let postAnchors = (anchorVar) => {
 (() => {
 	for (let i = 0; i < anchorCollection.length; i++) {
 		let anchorVar = anchorCollection[i];
-		// let anchorVar = anchorCollection[i].attributes.href.value.toLowerCase();
 		anchorCollection[i].attributes.href.value.toLowerCase() ==
 		window.location.pathname.toLowerCase()
-			? (anchorCollection[i].setAttribute('id', 'currentPage'),
+			? (anchorCollection[i].parentElement.setAttribute('id', 'currentPage'),
+			  (hTitle.style.background = 'red'),
 			  console.log(anchorCollection[i]),
 			  console.log(anchorVar),
 			  postAnchors(anchorVar))
