@@ -1,17 +1,17 @@
 /* CSS Variables ****************************************************** */
 :root {
 	--blue: #1fadee;
+	--blueWhite: #f5fafc;
 	--blueBright: #1063e9;
 	--blueDark: #1b4183;
 	--blueBlack: #091c3b;
-	--greenLight: #f6faf9;
-	--greenBright: #00ff55;
 	--green: #06b130;
+	--greenWhite: #f6faf9;
+	--greenBright: #00ff55;
 	--greenDark: #0b725c;
-	--orange: #e4c126;
-	--pinkLight: #eb7cbe;
-	--pinkLightTransparent: hsl(324, 74%, 70%, 0.1);
 	--pink: #f80d83;
+	--pinkWhite: #f8ecf2;
+	--pinkLight: #eb7cbe;
 	--violet: #d135f8;
 	--purple: #853399;
 	--grey: #868b94;
@@ -64,7 +64,7 @@ p {
 	max-width: 600px;
 	color: var(--blueDark);
 	font-size: 1em;
-	background: var(--greenLight);
+	background: var(--greenWhite);
 	padding: 0.25em 0.5em;
 	margin-bottom: 1em;
 }
@@ -315,7 +315,7 @@ footer {
 }
 
 #currentPage {
-	background-color: var(--pinkLightTransparent);
+	background-color: var(--pinkWhite);
 	text-decoration: underline solid var(--pink);
 	/* text-decoration-thickness: 2px; */
 }
