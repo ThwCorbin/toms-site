@@ -10,6 +10,7 @@
 	--greenDark: #0b725c;
 	--orange: #e4c126;
 	--pinkLight: #eb7cbe;
+	--pinkLightTransparent: hsl(324, 74%, 70%, 0.1);
 	--pink: #f80d83;
 	--violet: #d135f8;
 	--purple: #853399;
@@ -311,6 +312,7 @@ footer {
 }
 
 #currentPage {
+	background-color: var(--pinkLightTransparent);
 	text-decoration: underline solid var(--pink);
 	/* text-decoration-thickness: 2px; */
 }
