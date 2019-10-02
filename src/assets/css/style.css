@@ -85,11 +85,6 @@ li {
 	padding: 0 0.25em;
 }
 
-a {
-	text-decoration: none;
-	color: var(--blue);
-}
-
 /* @media */
 @media screen and (min-width: 40em) {
 	h1 {
@@ -128,6 +123,12 @@ a {
 }
 
 /* lvfha */
+a:link,
+a:visited {
+	color: var(--blue);
+	text-decoration: none;
+}
+
 a:focus,
 a:hover {
 	color: var(--green);
@@ -275,7 +276,8 @@ footer {
 	align-items: baseline;
 }
 
-.footerContacts li a {
+.footerContacts li a:link,
+.footerContacts li a:visited {
 	color: var(--blueBright);
 }
 
@@ -296,7 +298,8 @@ footer {
 	align-items: baseline;
 }
 
-.advert a {
+.advert a:link,
+.advert a:visited {
 	color: var(--greenDark);
 }
 
