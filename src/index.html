@@ -12,11 +12,13 @@
 		{%- for post in collections.post | reverse -%}
 		<h3 class="postTitle">{{ post.data.title }}</h3>
 		<p class="postContent">{{ post.templateContent }}</p>
-		<h4 class="postURL">{{ post.url }}</h4>
-		<h4 class="postTags"> {{ post.data.tags }}</h4>
-		<h4 class="postDate">{{ post.date }}</h4>
-		<h4 class="postModified">{{ post.data.date }}</h4>
-		<h4 class="postSlug">{{ post.fileSlug }}</h4>
+		<ul class="postData">
+			<li class="postTags"> {{ post.data.tags }}</li>
+			<li class="postDate">{{ post.date }}</li>
+			<li class="postModified">{{ post.data.date }}</li>
+			<li class="postURL">{{ post.url }}</h4>
+			<li class="postSlug">{{ post.fileSlug }}</li>
+		</ul>
 		{%- endfor -%}
 	</div>
 
