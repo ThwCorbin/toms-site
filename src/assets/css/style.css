@@ -15,7 +15,7 @@
 	--violet: #d135f8;
 	--purple: #853399;
 	--grey: #868b94;
-	--greyDark: #363941;
+	--greyDark: #565963;
 	--white: #fff;
 }
 
@@ -43,13 +43,13 @@ h1 {
 }
 
 h2 {
-	color: var(--green);
+	color: var(--pink);
 	font-size: 1.25em;
 	padding: 0 0.25em;
 }
 
 h3 {
-	color: var(--pink);
+	color: var(--greyDark);
 	font-size: 1em;
 	padding: 0 0.25em;
 }
@@ -61,7 +61,7 @@ h4 {
 }
 
 p {
-	max-width: 600px;
+	max-width: 650px;
 	color: var(--blueDark);
 	font-size: 1em;
 	background: var(--greenWhite);
@@ -95,7 +95,8 @@ li {
 		font-size: 1.5em;
 	}
 
-	h3 {
+	h3,
+	p {
 		font-size: 1.25em;
 	}
 
@@ -113,11 +114,13 @@ li {
 		font-size: 1.75em;
 	}
 
-	h3 {
+	h3,
+	p {
 		font-size: 1.5em;
 	}
 
-	h4 {
+	h4,
+	li {
 		font-size: 1.25em;
 	}
 }

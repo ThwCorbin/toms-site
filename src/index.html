@@ -8,10 +8,17 @@
 		thoughts. Tell me your thoughts via my contact links below.
 	</p>
 
-	<ul>
-		{%- for post in collections.post -%}
-		<li>{{ post.data.title }}</li>
+	<div class='posts'>
+		{%- for post in collections.post | reverse -%}
+		<h3 class="postTitle">{{ post.data.title }}</h3>
+		<p class="postContent">{{ post.templateContent }}</p>
+		<h4 class="postURL">{{ post.url }}</h4>
+		<h4 class="postTags"> {{ post.data.tags }}</h4>
+		<h4 class="postDate">{{ post.date }}</h4>
+		<h4 class="postModified">{{ post.data.date }}</h4>
+		<h4 class="postSlug">{{ post.fileSlug }}</h4>
 		{%- endfor -%}
-	</ul>
+	</div>
+
 </main>
 {% endblock %}
