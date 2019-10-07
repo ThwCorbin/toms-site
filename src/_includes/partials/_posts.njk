@@ -1,0 +1,14 @@
+	<div class='posts'>
+		{%- for post in collections.post | reverse -%}
+    <article class="postArticle">
+		  <h3 class="postTitle"><a href={{ post.url }}>{{ post.data.title }}</a></h3>
+		  {{ post.templateContent }}
+		  <ul class="postData">
+			  {# <li class="postTags"><em>{{ post.data.tags }}</em></li> #}
+			  <li class="postDate">{{ post.date }}</li>
+			  {# <li class="postModified">{{ post.data.date }}</li> #}
+			  {# <li class="postSlug">{{ post.fileSlug }}</li> #}
+		  </ul>
+    </article>
+		{%- endfor -%}
+	</div>

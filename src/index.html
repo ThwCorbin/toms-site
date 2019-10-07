@@ -1,4 +1,4 @@
-{% extends "layouts/base.html" %} {% block page_title %} Front Room {% endblock
+{% extends "layouts/base.njk" %} {% block page_title %} Front Room {% endblock
 %} {% block main %}
 <main>
 	<h2>Fancy a cuppa?</h2>
@@ -8,7 +8,9 @@
 		thoughts. Tell me your thoughts via my contact links below.
 	</p>
 
-	<div class='posts'>
+	{% include "partials/_posts.njk" %}
+
+	{# <div class='posts'>
 		{%- for post in collections.post | reverse -%}
 		<h3 class="postTitle">{{ post.data.title }}</h3>
 		<p class="postContent">{{ post.templateContent }}</p>
@@ -20,7 +22,7 @@
 			<li class="postSlug">{{ post.fileSlug }}</li>
 		</ul>
 		{%- endfor -%}
-	</div>
+	</div> #}
 
 </main>
 {% endblock %}
