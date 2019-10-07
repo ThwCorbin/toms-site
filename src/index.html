@@ -1,28 +1,15 @@
-{% extends "layouts/base.njk" %} {% block page_title %} Front Room {% endblock
-%} {% block main %}
+{% extends "layouts/base.njk" %}
+{% block page_title %} Front Room {% endblock%}
+{% block main %}
 <main>
 	<h2>Fancy a cuppa?</h2>
 
 	<p>
 		My front room is your front room. I furnish this space with my latest
-		thoughts. Tell me your thoughts via my contact links below.
+		thoughts. Tell me yours via my contact details below.
 	</p>
 
 	{% include "partials/_posts.njk" %}
 
-	{# <div class='posts'>
-		{%- for post in collections.post | reverse -%}
-		<h3 class="postTitle">{{ post.data.title }}</h3>
-		<p class="postContent">{{ post.templateContent }}</p>
-		<ul class="postData">
-			<li class="postTags"> {{ post.data.tags }}</li>
-			<li class="postDate">{{ post.date }}</li>
-			<li class="postModified">{{ post.data.date }}</li>
-			<li class="postURL">{{ post.url }}</h4>
-			<li class="postSlug">{{ post.fileSlug }}</li>
-		</ul>
-		{%- endfor -%}
-	</div> #}
-
-</main>
+	</main>
 {% endblock %}

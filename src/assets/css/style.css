@@ -246,6 +246,12 @@ main {
 	color: var(--grey);
 }
 
+.moreContent {
+	color: var(--grey);
+	font-size: 0.75em;
+	background-color: none;
+}
+
 /* Footer */
 footer {
 	display: flex;
@@ -334,7 +340,5 @@ footer {
 
 #currentPage {
 	background-color: var(--pinkWhite);
-	/* text-decoration: underline solid var(--pink); */
-	/* text-decoration-thickness: 2px; */
 	border-bottom: 0.2em solid var(--pink);
 }
