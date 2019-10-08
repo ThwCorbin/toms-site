@@ -185,6 +185,10 @@ header {
 }
 
 /* Asides */
+aside {
+	margin-bottom: 0.5em;
+}
+
 .asideMe {
 	grid-area: asideMe;
 	display: flex;
@@ -205,20 +209,9 @@ header {
 	text-align: center;
 }
 
-@media screen and (min-width: 40em) {
-	.asideMe {
-		flex-direction: column;
-		justify-content: flex-start;
-	}
-
-	.aboutMe {
-		align-items: center;
-	}
-}
-
 .imgDaddyO {
-	max-width: 10em;
-	max-height: 10em;
+	max-width: 5em;
+	max-height: 5em;
 }
 
 .myName {
@@ -229,11 +222,31 @@ header {
 	grid-area: asideExtra;
 }
 
+@media screen and (min-width: 40em) {
+	.asideMe {
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+
+	.aboutMe {
+		align-items: center;
+	}
+
+	.imgDaddyO {
+		max-width: 10em;
+		max-height: 10em;
+	}
+}
+
 /* Main */
 main {
 	grid-area: main;
 	max-width: 50em;
 	padding: 0 1em;
+}
+
+.postMain {
+	margin: 1em 0;
 }
 
 .postData {
