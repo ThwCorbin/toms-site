@@ -2,16 +2,18 @@
 {% block page_title %}{{ title }}{% endblock %}
 {% block main %}
 <main class="postMain">
+
+	<h2 class="pageTeaser">Here's your cuppa</h2>
+
 	<article class="postArticleLong">
-		<h3 class="postTitle">{{ title }}</h3>
+		<h3 class="postTitle"><a href={{ page.filePathStem }}>{{ title }}</a></h3>
 
 		{{ content | safe }}
 
 		<ul class="postPageData">
 			<li><a href='/'>Back</a></li>
-			<li><a href={{ page.filePathStem }}>Permalink</a></li>
 			{# How do I make the date work better? #}
-			<li title={{ page.date }}>Date</li>
+			<li><time datetime={{page.date.toString()}}>Date</time></li>
 		</ul>
 
 	</article>

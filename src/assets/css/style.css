@@ -249,6 +249,28 @@ main {
 	margin: 1em 0;
 }
 
+.postTitle a:link,
+.postTitle a:visited {
+	color: var(--greyDark);
+}
+
+.postTitle a:focus,
+.postTitle a:hover {
+	color: var(--grey);
+}
+
+.postTitle a:active {
+	color: var(--pink);
+}
+
+.postPageData {
+	display: flex;
+}
+
+.pageTeaser {
+	margin-bottom: 0.5em;
+}
+
 .postData {
 	display: flex;
 	max-width: 40em;
@@ -263,11 +285,6 @@ main {
 	color: var(--grey);
 	font-size: 0.75em;
 	background-color: none;
-}
-
-/* Post */
-.postPageData {
-	display: flex;
 }
 
 /* Footer */
