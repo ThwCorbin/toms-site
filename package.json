@@ -1,42 +1,51 @@
 {
-	"name": "my-site",
-	"version": "1.0.0",
-	"description": "My website",
-	"main": "index.html",
-	"engines": {
-		"node": ">=8.10.0"
-	},
-	"type": "module",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"keywords": [
-		"Two-up",
-		"Two-down",
-		"JavaScript",
-		"HTML",
-		"CSS"
-	],
-	"author": "Tom Corbin",
-	"license": "ISC",
-	"devDependencies": {
-		"@11ty/eleventy": "^0.9.0",
-		"@11ty/eleventy-plugin-syntaxhighlight": "^2.0.3",
-		"@babel/cli": "^7.6.2",
-		"@babel/core": "^7.6.2",
-		"@babel/node": "^7.6.2",
-		"@babel/preset-env": "^7.6.2",
-		"@babel/register": "^7.6.2",
-		"babel-eslint": "^10.0.3",
-		"eslint": "^6.5.1",
-		"eslint-config-prettier": "^6.4.0",
-		"eslint-plugin-import": "^2.18.2",
-		"eslint-plugin-node": "^10.0.0",
-		"eslint-plugin-prettier": "^3.1.1",
-		"prettier": "1.18.2"
-	},
-	"dependencies": {
-		"date-fns": "^2.4.1",
-		"nunjucks": "^3.2.0"
-	}
+  "name": "my-site",
+  "version": "1.0.0",
+  "description": "My website",
+  "main": "index.html",
+  "engines": {
+    "node": ">=8.10.0"
+  },
+  "type": "module",
+  "scripts": {
+    "serve": "npx @11ty/eleventy --serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Two-up",
+    "Two-down",
+    "Tom Corbin",
+    "web developer",
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "front-end",
+    "front end",
+    "11ty",
+    "eleventy",
+    "nunjucks",
+    "netlify"
+  ],
+  "author": "Tom Corbin",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.9.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.3",
+    "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.6.2",
+    "@babel/node": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "@babel/register": "^7.6.2",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.5.1",
+    "eslint-config-prettier": "^6.4.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "prettier": "1.18.2"
+  },
+  "dependencies": {
+    "date-fns": "^2.4.1",
+    "nunjucks": "^3.2.0"
+  }
 }
