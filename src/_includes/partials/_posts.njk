@@ -1,15 +1,22 @@
 	<div class='posts'>
-		{%- for post in collections.post | reverse -%}
+		{% for post in collections.post | reverse %}
     <article class="postArticle">
 		  <h3 class="postTitle">{{ post.data.title }}</h3>
-		  {{ post.templateContent }}
-			<a class="moreContent" href={{ post.url }}>More...</a>
+			
+			{# How do I add a subset of content here? #}
+			<p class="postContent">{{ post.templateContent }}
+				{# How do I toggle between "More.." and "Permanlink"? #}
+				<a class="moreContent" href={{ post.url }}>More...</a>
+			</p>
+
 		  <ul class="postData">
-			  {# <li class="postTags"><em>{{ post.data.tags }}</em></li> #}
-			  <li class="postDate">{{ post.date }}</li>
-			  {# <li class="postModified">{{ post.data.date }}</li> #}
-			  {# <li class="postSlug">{{ post.fileSlug }}</li> #}
-		  </ul>
-    </article>
+				{% for tag in post.data.tags %}
+				<li class="postTag"><em>#{{ tag }}</em></li>
+				{% endfor %}
+				<li class="postDate">{{ page.date }}</li>
+				<li class="postSlug">{{ post.fileSlug }}</li>
+			</ul>
+
+		</article>
 		{%- endfor -%}
 	</div>

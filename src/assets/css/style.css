@@ -252,6 +252,11 @@ main {
 	background-color: none;
 }
 
+/* Post */
+.postPageData {
+	display: flex;
+}
+
 /* Footer */
 footer {
 	display: flex;

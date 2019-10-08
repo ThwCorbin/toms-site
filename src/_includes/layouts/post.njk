@@ -1,0 +1,17 @@
+{% extends "layouts/base.njk" %}
+{% block page_title %}{{ title }}{% endblock %}
+{% block main %}
+<main class="post-main">
+<h3 class="postTitle">{{ title }}</h3>
+{{ content | safe }}
+<ul class="postPageData">
+	<li><a href='/'>Back</a></li>
+	<li><a href={{ page.filePathStem }}>Permalink</a></li>
+	{# How do I make the date work better? #}
+	<li title={{ page.date }}>Date</li>
+</ul>
+	{# <li>{{ page.url }}</li> #}
+	{# <li>{{ page.fileSlug }}</li> #}
+	{# <li>{{ page.inputPath }}</li> #}
+</main>
+{% endblock %}
