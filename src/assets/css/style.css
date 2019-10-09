@@ -208,7 +208,7 @@ aside {
   border-radius: 50%;
 }
 
-.imgTwoUpDoor {
+.imgTwoUpDoorAside {
   display: none;
 }
 
@@ -237,11 +237,12 @@ aside {
     max-height: 10em;
   }
 
-  .imgTwoUpDoor {
+  .imgTwoUpDoorAside {
     display: block;
     max-width: 10em;
     max-height: 10em;
     border: none;
+    margin-top: 3em;
   }
 
   .aboutMe {
@@ -306,13 +307,29 @@ footer {
   /* margin-top: 1em; */
 }
 
-.imgTwoUpDoorSmall {
+.imgTwoUpDoorFooter {
   display: none;
+}
+
+@media screen and (min-width: 22em) {
+  .imgTwoUpDoorFooter {
+    display: block;
+    max-width: 5em;
+    max-height: 5em;
+    border: none;
+    margin-right: auto;
+  }
 }
 
 .footerNav {
   display: flex;
   flex-direction: column;
+}
+
+@media screen and (min-width: 2em) {
+  /* .imgTwoUpDoorFooter {
+    display: none;
+  } */
 }
 
 @media screen and (min-width: 40em) {
@@ -322,12 +339,8 @@ footer {
     max-width: 50em;
   }
 
-  .imgTwoUpDoorSmall {
-    display: block;
-    max-width: 5em;
-    max-height: 5em;
-    border: none;
-    margin-right: auto;
+  .imgTwoUpDoorFooter {
+    display: none;
   }
 
   .footerNav {
