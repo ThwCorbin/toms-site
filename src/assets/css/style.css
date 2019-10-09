@@ -339,6 +339,10 @@ main {
 }
 
 /* Footer */
+footer {
+  margin-bottom: 1em;
+}
+
 .imgTwoUpDoorFooter {
   display: none;
 }
@@ -360,7 +364,6 @@ main {
     max-width: 5em;
     max-height: 5em;
     border: none;
-    /* margin: 0 auto 0 0; */
   }
 }
 
