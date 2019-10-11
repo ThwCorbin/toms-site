@@ -1,17 +1,13 @@
-{% extends "layouts/base.njk" %}
-{% block page_title %} Front Room {% endblock%}
+{% extends "layouts/base.njk" %} {% block page_title %} Front Room {% endblock%}
 {% block main %}
 <main class="mainFrontRoom">
+  <h2 class="pageTeaser">Fancy a cuppa?</h2>
 
-	<h2 class="pageTeaser">Fancy a cuppa?</h2>
+  <p>
+    My front room is your front room. I furnish this space with my latest
+    thoughts. Tell me yours via my contact details below.
+  </p>
 
-	<p>
-		My front room is your front room. I furnish this space with my latest
-		thoughts. Tell me yours via my contact details below.
-	</p>
-
-	{% include "partials/_posts.njk" %}
-
-	</main>
+  {% include "partials/_posts.njk" %}
+</main>
 {% endblock %}
- 

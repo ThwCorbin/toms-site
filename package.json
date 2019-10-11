@@ -8,7 +8,7 @@
   },
   "type": "module",
   "scripts": {
-    "serve": "npx @11ty/eleventy --serve",
+    "start": "npx @11ty/eleventy --serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

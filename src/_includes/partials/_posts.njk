@@ -1,23 +1,25 @@
-	<div class='postsFrontRoom'>
+<div class="postsFrontRoom">
+  {% for post in collections.post | reverse %}
+  <article class="postShort">
+    <h3 class="postTitle">
+      <a href={{ post.url }}>{{ post.data.title }}</a>
+    </h3>
 
-		{% for post in collections.post | reverse %}
-    <article class="postArticleShort">
-		  <h3 class="postTitle"><a href={{ post.url }}>{{ post.data.title }}</a></h3>
-			
-			{# How do I add a subset of content here? #}
-			{{ post.templateContent | safe }}
-			<a class="moreContent" href={{ post.url }}>More...</a>
-				{# How do I toggle between "More.." and "Permanlink"? #}
+    {# How do I add a subset of content here? #}
+    {{ post.templateContent | safe }}
+    <a class="moreContent" href="{{ post.url }}">More...</a>
+    {# How do I toggle between "More.." and "Permanlink"? #}
 
-		  <ul class="postData">
-				{% for tag in post.data.tags %}
-				<li class="postTag"><em>#{{ tag }}</em></li>
-				{% endfor %}
-				<li class="postDate">{{ page.date.toString() }}</li>
-				<li class="postSlug">{{ post.fileSlug }}</li>
-			</ul>
-
-		</article>
-		{%- endfor -%}
-
-	</div>
+    <ul class="postDataShort postData">
+      {% for tag in post.data.tags %}
+      <li class="postTag">
+        <em>#{{ tag }}</em>
+      </li>
+      {% endfor %}
+      <li class="postDate">{{ page.date.toString() }}</li>
+      <li class="postSlug">{{ post.fileSlug }}</li>
+    </ul>
+  </article>
+	<hr>
+  {%- endfor -%}
+</div>
