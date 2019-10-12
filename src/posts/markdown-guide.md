@@ -46,18 +46,18 @@ for a line break.
 
 #### Emphasis and Strong Emphasis
 
-Use one asterisk or underscore for _emphasis_, two for **strong text**, and three for **_strong emphasis_**. See note.
+Use one asterisk or underscore for _emphasis_, two for **strong text**, and three for **_strong emphasis_**. According to the spec, you can use either an \* or an \_. My opinionated code formatter has **strong opionions** about that. These examples work with _Prettier_. Alternatively, you can tell _Prettier_ to ignore your preferred method.
 
 ```
-  _emphasis_
-  **strong**
-  **_strong emphasis_**
-  **_emphasis_ in strong text**
-  _emphasis with **strong text** inside_
-  **strong with **strong text** inside**
-  <!-- prettier-ignore-start -->
-  *Prettier* has no power here.
-  <!-- prettier-ignore-end -->
+_emphasis_
+**strong**
+**_strong emphasis_**
+**_emphasis_ in strong text**
+_emphasis with **strong text** inside_
+**strong with **strong text** inside**
+<!-- prettier-ignore-start -->
+*Prettier* has __no__ ***power*** here.
+<!-- prettier-ignore-end -->
 
 ```
 
@@ -69,10 +69,8 @@ _emphasis with **strong text** inside_
 **strong with **strong text** inside**
 
 <!-- prettier-ignore-start -->
-*Prettier* has no power here.
+*Prettier* has __no__ ***power*** here.
 <!-- prettier-ignore-end -->
-
-Note: According to the spec, you can use either an \* or an \_. My opinionated code formatter has **strong opionions** about that. These examples work with _Prettier_. Alternatively, you can tell _Prettier_ to ignore your preferred method.
 
 ---
 
@@ -84,35 +82,38 @@ Note: According to the spec, you can use either an \* or an \_. My opinionated c
 
 ~~Strikethrough~~
 
-Note: underline is **controversial** among Markdown mavens.
+Underline is right out as it is **controversial** among Markdown mavens.
 
 ---
 
 #### Blockquote
 
-A single paragraph blockquote uses ">" in this Markdown:
+A single paragraph blockquote uses this Markdown:
 
 ```
-  >I bellowed the melody, but no one cared nor commented on the spectacle. How rude.
+> You have power over your mind--not outside events. Realize this, and you will find strength.\
+>-Marcus Aurelius
 ```
 
-...resulting in this blockquote:
-
-> I bellowed the melody, but no one cared nor commented on the spectacle. How rude.
+> You have power over your mind--not outside events. Realize this, and you will find strength.\
+> -Marcus Aurelius
 
 A multiple paragragh blockquote uses this Markdown:
 
 ```
->I bellowed the melody, but no one cared nor commented on the spectacle. How rude.
+> If you find it hard to laugh at yourself, I would be happy to do it for you.
 >
->Then I woke up and had tea with crumpets. Yummy in this here tummy. Do you have any more jam?
+> I, not events, have the power to make me happy or unhappy today. I can choose which it shall be. Yesterday is dead, tomorrow hasn't arrived yet. I have just one day, today, and I'm going to be happy in it.
+>
+> -Groucho Marx
+
 ```
 
-...resulting in this blockquote:
-
-> I bellowed the melody, but no one cared nor commented on the spectacle. How rude.
+> If you find it hard to laugh at yourself, I would be happy to do it for you.
 >
-> Then I woke up and had tea with crumpets. Yummy in this here tummy. Do you have any more jam?
+> I, not events, have the power to make me happy or unhappy today. I can choose which it shall be. Yesterday is dead, tomorrow hasn't arrived yet. I have just one day, today, and I'm going to be happy in it.
+>
+> -Groucho Marx
 
 ---
 
@@ -124,7 +125,7 @@ Use "---" or "\*\*\*" for an hr as follows:
 
 #### Inline Code
 
-This is inline code `console.log(42)`, which is accomplished using backticks like this: `console.log(42)`.
+This is inline code `console.log(42)`, which is accomplished using backticks like this: \`console.log(42)\`
 
 ---
 
