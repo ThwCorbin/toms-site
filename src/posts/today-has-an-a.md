@@ -8,20 +8,30 @@ layout: layouts/post.njk
 Today includes the letter "a", and I need to blog.
 
 ```
+JavaScript
+
 const blog = () => {
 console.log("I need to blog");
 };
 
-let todayHasAnA = (today) => today.includes('a') && blog();
+let todayHasAnA = (today) => {
+  today.includes('a') && blog();
+};
 
-todayHasAnA("Thursday"); // "I need to blog"
+todayHasAnA("Thursday");
+// "I need to blog"
 
 ```
 
 Either I already blogged today (stop evaluating). Or, I need to blog.
 
 ```
-let blogToday = (blogged) => blogged || blog();
+Javascript
 
-blogToday(false); // "I need to blog"
+let blogToday = (blogged) => {
+  blogged || blog();
+};
+
+blogToday(false);
+// "I need to blog"
 ```

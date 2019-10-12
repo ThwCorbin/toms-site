@@ -7,12 +7,11 @@ updated:
 layout: layouts/post.njk
 ---
 
-This guide is based on the [CommonMark](https://commonmark.org/help/) help page and spec along with Markdown flotsam found on the web, such as [these tips](https://css-tricks.com/little-stuff-markdown-always-forget-google/).
+This guide is based on the [CommonMark](https://commonmark.org/) help page and spec along with Markdown flotsam found on the web, such as [these tips](https://css-tricks.com/little-stuff-markdown-always-forget-google/).
 
 #### Headings
 
 ```
-
   # This is an h1
   ## This is an h2
   ### This is an h3
@@ -131,92 +130,150 @@ This is inline code `console.log(42)`, which is accomplished using backticks lik
 
 #### Block Code
 
-The fence method for block code uses three backticks (```) or three tildes (~~~) above and below the block. This Markdown:
+The fence method for block code uses three backticks or three tildes above and below the block. This Markdown:
 
 ````
-\```
-$ mkdir public \
-$ touch public/markdown.md \
-$ mkdir public/markdown \
-$ mv public/markdown.md public/markdown/ \
-\```
+```
+Terminal
+
+$ mkdir public
+$ touch public/markdown.md
+$ mkdir public/markdown
+$ mv public/markdown.md public/markdown/
+```
 ````
 
 ...results in this block code:
 
 ```
+Terminal
+
 $ mkdir public
 $ touch public/markdown.md
 $ mkdir public/markdown
 $ mv public/markdown.md public/markdown/
 ```
 
-We can instead indent each line four spaces in Markdown resulting in this block code:
+We can instead indent each line four spaces in Markdown:
 
-    $ console.log("Hello World!");
-    $ console.log("This is coolio foolio.");
+```
+    JavaScript
+
+    const blog = () => {
+    console.log("I need to blog");
+    };
+
+    let todayHasAnA = (today) => {
+      today.includes('a') && blog();
+    };
+
+    todayHasAnA("Thursday");
+    // "I need to blog"
+
+```
+
+...resulting in this block code:
+
+    JavaScript
+
+    const blog = () => {
+    console.log("I need to blog");
+    };
+
+    let todayHasAnA = (today) => {
+      today.includes('a') && blog();
+    };
+
+    todayHasAnA("Thursday");
+    // "I need to blog"
 
 ---
 
 #### Links
 
-Markdown:
-\[CommonMark](https://commonmark.org) is a Markdown specification.
+Links include link text, a url, and an optional "title".
 
-Result:
-[CommonMark](https://commonmark.org) is a Markdown specification.
+```
+[CommonMark](https://commonmark.org "CommonMark website") is a Markdown specification.
+```
 
-Markdown:
-\[Nunjucks]\[1] is a templating language for JavaScript.
-\[MDN]\[2] has useful information about web technologies.
+[CommonMark](https://commonmark.org 'CommonMark website') is a Markdown specification.
 
-\[1]: https://mozilla.github.io/nunjucks/
-\[2]: https://developer.mozilla.org/en-US/
+Reference links add a link label, which is in the second set of brackets. It must be at least one non-whitespace character (matching is case-insensitive).
 
-Result:
+```
 [Nunjucks][1] is a templating language for JavaScript.
-[MDN][2] has useful information about web technologies.
+[MDN][foo] has useful information about web technologies.
 
-[1]: https://mozilla.github.io/nunjucks/
-[2]: https://developer.mozilla.org/en-US/
+[1]: https://mozilla.github.io/nunjucks/ 'Nunjucks website'
+[FOO]: https://developer.mozilla.org/en-US/ 'MDN website'
+```
+
+[Nunjucks][1] is a templating language for JavaScript.
+[MDN][foo] has useful information about web technologies.
+
+[1]: https://mozilla.github.io/nunjucks/ 'Nunjucks website'
+
+<!-- prettier-ignore-start -->
+[FOO]: https://developer.mozilla.org/en-US/ 'MDN website'
+<!-- prettier-ignore-end -->
+
+...which is this HTML:
+
+```
+HTML
+
+<a href="https://mozilla.github.io/nunjucks/" title="Nunjucks website"
+  >Nunjucks</a
+>
+<a href="https://mozilla.github.io/nunjucks/" title="Nunjucks website"
+  >Nunjucks</a
+>
+```
 
 ---
 
 #### Images
 
-Markdown:
-\!\[HappyDaddy]\(/public/images/daddyO_sqr_min.jpg) \"Happy daddy with son"
+The Markdown for images is similar to links. Add an "!" at the beginning and (instead of link text) use an image description, which will render in HTML as the `alt` attribute.
 
-Result:
-![HappyDaddy](/public/images/daddyO_sqr_min.jpg) "Happy daddy with son"
+```
+![image description](/url "title")
 
-Nested image with link Markdown:
-\[\!\[Tom's website]\(/public/images/daddyO_sqr_avatar.jpg)](http://thwcorbin.com) "Tom's website"
+![Tom's favicon is a blue circle with 'Thwc' text](/assets/images/favicon/apple-touch-icon.png "Tom's favicon")
+```
 
-Nested image with link result:
-[![Tom's Site](/public/images/daddyO_sqr_avatar.jpg)](http://thwcorbin.com) "Tom's website"
+![Tom's favicon is a blue circle with 'Thwc' text](/assets/images/favicon/apple-touch-icon.png "Tom's favicon")
+
+And here is the Markup for an image with a link:
+
+```
+[![Tom's Two-up Two-Down website](/assets/images/favicon/favicon-32x32.png)](https://www.thwcorbin.com "Tom's website")
+```
+
+[![Tom's Two-up Two-Down website](/assets/images/favicon/favicon-32x32.png)](https://www.thwcorbin.com "Tom's website")
 
 ---
 
 #### Lists
 
-Use either "\* ", "- ", or "+ " for unordered list items, and either "1. " or "1) " for ordered list items.
+Use either an "\* ", an "- ", or a "+ " for unordered list items, and either "1. " or "1) " for ordered list items.
 
-- Note the space after characters.
-- Changing between bullet characters, number style characters, or bullets and numbers, starts a new list.
+```
+- List item 1
+- List item 2
+- List item 3
+```
 
-Markdown for unordered list:  
-\- List item \
-\- List item \
-\- List item
+- List item 1
+- List item 2
+- List item 3
 
-Result:
-
-- List item
-- List item
-- List item
-
-Result with ordered list using "1":
+```
+1. One
+2. Two
+3. Three
+```
 
 1. One
 2. Two
@@ -224,27 +281,54 @@ Result with ordered list using "1":
 
 The start number of an ordered list is significant. Note the Markdown and result for a list starting with the number 42.
 
-The markdown:\
-42\. This item is the answer to...everything \
-2\. This item isn't, but note the number displays as 43 not 2 \
-78\. ...44 not 78
-
-Result:
+```
+42. This item is the answer to...everything
+2. This item isn't, but note the number displays as 43 not 2
+78. ...44 not 78
+```
 
 42. This item is the answer to...everything
 43. This item isn't, but note the number displays as 43 not 2
 44. ...44 not 78
+
+Changing between bullet characters, number style characters, or bullets and numbers starts a new list.
+
+```
+- Dog
+- Cat
+* Mouse
+* Fox
+- Doe
+- Buck
+```
+
+There are three \<ul>, each with two \<li> below.
+
+- Dog
+- Cat
+
+* Mouse
+* Fox
+
+- Doe
+- Buck
+
+---
 
 #### Nested lists, paragraphs, blockquotes, and code blocks
 
 Nested list items require four indented spaces:
 
 - list item
+
   1. nested list item
   2. nested list item
+
 - list item
+
   - nested list item
   - nested list item
+
 - list item
 
 Nested blockquotes require four idented spaces before the "> ". Code blocks require either eight indented spaces or four spaces followed by three backticks or tildes (fence method). I prefer the latter option.
@@ -275,6 +359,15 @@ $ console.log("dog's dinner")
 
 Use pipes to build columns and dashes to create the header row. The default column allignment is left; use colons in the header row to change column allignment to center ":---:" or right "---:". We can add spaces inside "cells" (Markdown ignores the spaces) to make the table easier to read in Markdown.
 
+```
+| Location | Dogs | Cats | Fishmonkeyrobots | \
+|----------|:----:|:----:|-----------------:| \
+| Home | 1| 1| 0 | \
+| Luna | 0| 0| 0 | \
+| Mars | 0| 0| 78,453,300,042 | \
+| Total | 1| 1| 78,453,300,042 |
+```
+
 | Location | Dogs | Cats | Fishmonkeyrobots |
 | -------- | :--: | :--: | ---------------: |
 | Home     |  1   |  1   |                0 |
@@ -284,11 +377,8 @@ Use pipes to build columns and dashes to create the header row. The default colu
 
 Table Markdown:
 
-\| Location | Dogs | Cats | Fishmonkeyrobots | \
-\|----------|:----:|:----:|-----------------:| \
-\| Home | 1| 1| 0 | \
-\| Luna | 0| 0| 0 | \
-\| Mars | 0| 0| 78,453,300,042 | \
-\| Total | 1| 1| 78,453,300,042 |
+---
 
-Note: We escape characters in Markdown using one backslash (e.g. "\\#", "\\\*", "\\\_", etc.).
+#### Notes
+
+We escape characters in Markdown using one backslash (e.g. "\\#", "\\\*", "\\\_", etc.).
