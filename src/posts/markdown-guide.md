@@ -223,12 +223,8 @@ Reference links add a link label, which is in the second set of brackets. It mus
 ```
 HTML
 
-<a href="https://mozilla.github.io/nunjucks/" title="Nunjucks website"
-  >Nunjucks</a
->
-<a href="https://mozilla.github.io/nunjucks/" title="Nunjucks website"
-  >Nunjucks</a
->
+<a href="https://mozilla.github.io/nunjucks/" title="Nunjucks website">Nunjucks</a>
+<a href="https://developer.mozilla.org/en-US/" title="MDN website">MDN</a>
 ```
 
 ---
@@ -260,58 +256,60 @@ And here is the Markup for an image with a link:
 Use either an "\* ", an "- ", or a "+ " for unordered list items, and either "1. " or "1) " for ordered list items.
 
 ```
-- List item 1
-- List item 2
-- List item 3
+- Dog
+- Cat
+- Monkeycatrobot
 ```
 
-- List item 1
-- List item 2
-- List item 3
+- Dog
+- Cat
+- Monkeycatrobot
 
 ```
-1. One
-2. Two
-3. Three
+1. Robot
+2. Lobster
+3. Astroid Miner
 ```
 
-1. One
-2. Two
-3. Three
+1. Robot
+2. Lobster
+3. Astroid Miner
 
-The start number of an ordered list is significant. Note the Markdown and result for a list starting with the number 42.
+\
+The start number of an ordered list is significant. Note diffences in the Markdown and the result for a list starting with the number 42.
 
 ```
 42. This item is the answer to...everything
-2. This item isn't, but note the number displays as 43 not 2
+2. This item isn't, but note it is 43 not 2
 78. ...44 not 78
 ```
 
 42. This item is the answer to...everything
-43. This item isn't, but note the number displays as 43 not 2
+43. This item isn't, but note it is 43 not 2
 44. ...44 not 78
 
+\
 Changing between bullet characters, number style characters, or bullets and numbers starts a new list.
 
 ```
 - Dog
 - Cat
-* Mouse
-* Fox
-- Doe
-- Buck
+* Monkeycatrobot
+* Robot
+1. Lobster
+2. Astroid Miner
 ```
 
-There are three \<ul>, each with two \<li> below.
+This not one \<ul>, as we might expect. Instead, there are three \<ul>, each containing two \<li>. Check in your developer's tools.
 
 - Dog
 - Cat
 
-* Mouse
-* Fox
+* Monkeycatrobot
+* Robot
 
-- Doe
-- Buck
+1. Lobster
+2. Astroid Miner
 
 ---
 

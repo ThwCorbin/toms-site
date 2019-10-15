@@ -1,8 +1,8 @@
 /* CSS Variables ****************************************************** */
 :root {
   --blue: #0060fa;
+  --blueWhite: #f4fafd;
   --blueBright: #0485fd;
-  --blueWhite: #f5fafc;
   --blueDark: #1b4183;
   --blueBlack: #091c3b;
   --green: #06b130;
@@ -78,7 +78,7 @@ p {
   max-width: 40em;
   color: var(--blueDark);
   font-size: 1em;
-  background: var(--greenWhite);
+  background: var(--blueWhite);
   padding: 0.25em 0.5em;
   margin-bottom: 1em;
 }
@@ -93,8 +93,8 @@ ul {
 
 li {
   color: var(--blue);
-  font-size: 0.9em;
   font-weight: bold;
+  font-size: 0.9em;
   padding: 0 0.25em;
 }
 
@@ -333,8 +333,20 @@ main {
   margin: 1em 0;
 }
 
+.letterboxLid {
+  display: flex;
+  justify-content: baseline;
+  align-content: baseline;
+  align-items: baseline;
+}
+
 .pageTeaser {
   margin-bottom: 0.5em;
+}
+
+.postType {
+  display: flex;
+  margin-bottom: 1em;
 }
 
 .postTitle a:link,
@@ -351,33 +363,37 @@ main {
   color: var(--pink);
 }
 
-.postLong {
+.postAll {
   background: var(--blueWhite);
 }
 
-.postLong blockquote p {
+.postAll blockquote p {
   background-color: var(--greyLight);
-  /* margin: 0.5em 1em; */
 }
 
-/* .postLong p,
-.postLong h1,
-.postLong h2,
-.postLong h3,
-.postLong h4,
-.postLong h5,
-.postLong h6 {
-  color: var(--blueDark);
-} */
-
-.postLong pre {
+.postAll pre {
   background: var(--blueBlack);
   color: var(--greenBright);
   margin: 1em 1em;
 }
 
-.postLong img {
+.postAll img {
   border: none;
+}
+
+.postAll ul {
+  list-style: disc inside;
+  margin-left: 1em;
+}
+
+.postAll ol {
+  list-style-position: inside;
+  margin-left: 1em;
+}
+
+.postAll li {
+  font-weight: normal;
+  color: var(--blueDark);
 }
 
 .resultBlock {
@@ -385,7 +401,12 @@ main {
   margin: 1em 1em;
 }
 
+.postAll .postData {
+  margin-left: 0;
+}
+
 .postData li {
+  list-style: none;
   color: var(--grey);
 }
 
@@ -400,7 +421,6 @@ main {
 }
 
 .moreContent {
-  color: var(--grey);
   font-size: 0.75em;
   background-color: none;
 }

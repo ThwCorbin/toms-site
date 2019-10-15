@@ -1,9 +1,17 @@
 {% extends "layouts/base.njk" %} {% block page_title %}{{ title }}{% endblock %}
 {% block main %}
 <main class="postMain">
-  <h2 class="pageTeaser">Letterbox</h2>
 
-  <article class="postLong">
+  <div class="letterboxLid">
+    <h2 class="pageTeaser">Letterbox</h2>
+    <ul class="postType">
+      <li class="link postArticle">Article</li>
+      <li class="link postNote">Note</li>
+      <li class="link postCard">Postcard</li>
+    </ul>
+  </div>
+
+  <article class="postAll postLong">
     <h3 class="postTitle">
       <a href={{ page.filePathStem }}>{{ title }}</a>
     </h3>
