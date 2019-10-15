@@ -313,70 +313,40 @@ This not one \<ul>, as we might expect. Instead, there are three \<ul>, each con
 
 ---
 
-#### Nested lists, paragraphs, blockquotes, and code blocks
-
-Nested list items require four indented spaces:
-
-- list item
-
-  1. nested list item
-  2. nested list item
-
-- list item
-
-  - nested list item
-  - nested list item
-
-- list item
-
-Nested blockquotes require four idented spaces before the "> ". Code blocks require either eight indented spaces or four spaces followed by three backticks or tildes (fence method). I prefer the latter option.
-
-- list item with nested blockquotes (four spaces followed by "> ")
-
-  > Do you have spam?
-
-  > Do I have spam?
-
-- list item with nested code blocks displaying both options
-
-        $ console.log("spam")
-        $ console.log("more, please")
-
-```
-
-$ console.log("dog's dinner")
-  $ console.log("lemons make lovely gins and tonic")
-
-```
-
-- list item whose only purpose is being third in a list
-
----
-
 #### Tables
 
-Use pipes to build columns and dashes to create the header row. The default column allignment is left; use colons in the header row to change column allignment to center ":---:" or right "---:". We can add spaces inside "cells" (Markdown ignores the spaces) to make the table easier to read in Markdown.
+Use pipes to build columns and dashes to create the header row. The default column allignment is left; use colons in the header row to change column allignment to center ":---:" or right "---:". Add spaces inside "cells" to make the table easier to read in the Markdown file. Column widths are based on the widest "cell" in each column; setting widths is tricky depending on how you render the Markdown. I set the column widths with CSS for this article.
 
 ```
-| Location | Dogs | Cats | Fishmonkeyrobots | \
-|----------|:----:|:----:|-----------------:| \
-| Home | 1| 1| 0 | \
-| Luna | 0| 0| 0 | \
-| Mars | 0| 0| 78,453,300,042 | \
-| Total | 1| 1| 78,453,300,042 |
+| Location | Dogs | Cats | Monkeycatrobots |
+| -------- | :--: | :--: | --------------: |
+| Home     |  1   |  1   |               0 |
+| Luna     |  0   |  0   |               0 |
+| Mars     |  0   |  0   |  78,453,300,042 |
+| Total    |  1   |  1   |  78,453,300,042 |
 ```
 
-| Location | Dogs | Cats | Fishmonkeyrobots |
-| -------- | :--: | :--: | ---------------: |
-| Home     |  1   |  1   |                0 |
-| Luna     |  0   |  0   |                0 |
-| Mars     |  0   |  0   |   78,453,300,042 |
-| Total    |  1   |  1   |   78,453,300,042 |
+```
+CSS
 
-Table Markdown:
+.postAll table th:nth-child(1),
+.postAll table th:nth-child(2),
+.postAll table th:nth-child(3) {
+  width: 20%;
+}
 
----
+.postAll table th:nth-child(4) {
+  width: 40%;
+}
+```
+
+| Location | Dogs | Cats | Monkeycatrobots |
+| -------- | :--: | :--: | --------------: |
+| Home     |  1   |  1   |               0 |
+| Luna     |  0   |  0   |               0 |
+| Mars     |  0   |  0   |  78,453,300,042 |
+| Total    |  1   |  1   |  78,453,300,042 |
 
 #### Notes
 
-We escape characters in Markdown using one backslash (e.g. "\\#", "\\\*", "\\\_", etc.).
+Escape characters in Markdown using one backslash (e.g. "\\#", "\\\*", "\\\_", etc.).

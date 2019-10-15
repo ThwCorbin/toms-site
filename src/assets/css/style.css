@@ -105,10 +105,12 @@ hr {
 
 pre {
   white-space: pre-wrap;
+  overflow-wrap: break-word;
   padding: 0.5em;
 }
 
 code {
+  font-size: 0.9em;
   font-family: monaco, Consolas, monospace;
 }
 
@@ -118,6 +120,10 @@ blockquote {
 
 @media screen and (min-width: 21em) {
   li {
+    font-size: 1em;
+  }
+
+  code {
     font-size: 1em;
   }
 }
@@ -326,13 +332,14 @@ main {
   grid-area: main;
   max-width: 50em;
   padding: 0 1em;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
 }
 
-.postMain {
-  margin: 1em 0;
+.pageTeaser {
+  margin-bottom: 1em;
 }
 
+/* Main _posts.njk & post.njk */
 .letterboxLid {
   display: flex;
   justify-content: baseline;
@@ -340,13 +347,8 @@ main {
   align-items: baseline;
 }
 
-.pageTeaser {
-  margin-bottom: 0.5em;
-}
-
 .postType {
   display: flex;
-  margin-bottom: 1em;
 }
 
 .postTitle a:link,
@@ -365,6 +367,35 @@ main {
 
 .postAll {
   background: var(--blueWhite);
+}
+
+.postAll table {
+  /* table-layout: fixed; */
+  /* width: 100%; */
+  color: var(--blueBlack);
+  font-size: 0.7em;
+  border: 0.2em solid var(--purple);
+  padding: 0.5em;
+  margin: 0.5em;
+}
+
+.postAll table th:nth-child(1),
+.postAll table th:nth-child(2),
+.postAll table th:nth-child(3) {
+  width: 20%;
+}
+
+.postAll table th:nth-child(4) {
+  width: 40%;
+}
+
+@media screen and (min-width: 25em) {
+  .postAll table {
+    font-size: 1em;
+    border-width: 0.3em;
+    padding: 0.5em;
+    margin: 0.5em;
+  }
 }
 
 .postAll blockquote p {
