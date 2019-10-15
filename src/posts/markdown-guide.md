@@ -240,10 +240,10 @@ The Markdown for images is similar to links. Add an "!" at the beginning and (in
 ```
 ![image description](/url "title")
 
-![Tom's favicon is a blue circle with 'Thwc' text](/assets/images/favicon/apple-touch-icon.png "Tom's favicon")
+![Tom's favicon is a blue circle with 'ThwC' text](/assets/images/favicon/apple-touch-icon.png "Tom's favicon")
 ```
 
-![Tom's favicon is a blue circle with 'Thwc' text](/assets/images/favicon/apple-touch-icon.png "Tom's favicon")
+![Tom's favicon is a blue circle with 'ThwC' text](/assets/images/favicon/apple-touch-icon.png "Tom's favicon")
 
 And here is the Markup for an image with a link:
 

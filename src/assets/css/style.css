@@ -1,8 +1,8 @@
 /* CSS Variables ****************************************************** */
 :root {
-  --blue: #1fadee;
+  --blue: #0060fa;
+  --blueBright: #0485fd;
   --blueWhite: #f5fafc;
-  --blueBright: #1063e9;
   --blueDark: #1b4183;
   --blueBlack: #091c3b;
   --green: #06b130;
@@ -10,7 +10,7 @@
   --greenBright: #00ff55;
   --greenDark: #0b725c;
   --pink: #f80d83;
-  --pinkWhite: #f8ecf2;
+  --pinkWhite: #fcf9fb;
   --pinkLight: #eb7cbe;
   --violet: #d135f8;
   --purple: #853399;
@@ -84,7 +84,7 @@ p {
 }
 
 img {
-  border: 0.1em solid var(--blue);
+  border: 0.1em solid var(--blueBright);
 }
 
 ul {
@@ -92,7 +92,7 @@ ul {
 }
 
 li {
-  color: var(--blueBright);
+  color: var(--blue);
   font-size: 0.9em;
   font-weight: bold;
   padding: 0 0.25em;
@@ -176,7 +176,7 @@ blockquote {
 /* lvfha */
 a:link,
 a:visited {
-  color: var(--blue);
+  color: var(--blueBright);
   text-decoration: none;
 }
 
@@ -376,6 +376,10 @@ main {
   margin: 1em 1em;
 }
 
+.postLong img {
+  border: none;
+}
+
 .resultBlock {
   background: var(--blueWhite);
   margin: 1em 1em;
@@ -456,7 +460,7 @@ footer {
 
 .footerContacts li a:link,
 .footerContacts li a:visited {
-  color: var(--blueBright);
+  color: var(--blue);
 }
 
 .footerContacts li a:focus,
@@ -492,7 +496,7 @@ footer {
   text-decoration: underline;
 }
 
-#currentPage {
+#activePage {
   background-color: var(--pinkWhite);
   border-bottom: 0.2em solid var(--pink);
 }

@@ -11,7 +11,7 @@ let anchorCollection = document.getElementsByTagName("a");
   for (let i = 0; i < anchorCollection.length; i++) {
     anchorCollection[i].attributes.href.value.toLowerCase() ==
     window.location.pathname.toLowerCase()
-      ? anchorCollection[i].parentElement.setAttribute("id", "currentPage")
+      ? anchorCollection[i].parentElement.setAttribute("id", "activePage")
       : anchorCollection[i].removeAttribute("id");
   }
 })();
