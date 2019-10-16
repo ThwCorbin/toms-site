@@ -6,10 +6,12 @@
     </h3>
 
     {# How do I add a subset of content here? #}
-    {{ post.templateContent | safe }}
-    <a class="moreContent" href="{{ post.url }}"><strong>More...</strong></a>
+    {{ post.templateContent | safe | truncate(200) | trim }}
+    {# {{ post.templateContent | safe }} #}
     {# How do I toggle between "More.." and "Permanlink"? #}
-
+    <br>
+    <a class="moreContent" href="{{ post.url }}"><strong>More</strong></a>
+    
     <ul class="postDataShort postData">
       {% for tag in post.data.tags %}
       <li class="postTag">
