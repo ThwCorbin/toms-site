@@ -90,11 +90,11 @@ Underline is right out as it is **controversial** among Markdown mavens.
 A single paragraph blockquote uses this Markdown:
 
 ```
-> You have power over your mind--not outside events. Realize this, and you will find strength.\
+> You have power over your mind--not outside events. Realise this, and you will find strength.\
 >-Marcus Aurelius
 ```
 
-> You have power over your mind--not outside events. Realize this, and you will find strength.\
+> You have power over your mind--not outside events. Realise this, and you will find strength.\
 > -Marcus Aurelius
 
 A multiple paragragh blockquote uses this Markdown:
@@ -124,7 +124,7 @@ Use "---" or "\*\*\*" for an hr as follows:
 
 #### Inline Code
 
-This is inline code `console.log(42)`, which is accomplished using backticks like this: \`console.log(42)\`
+This is inline code: `console.log(42)`, which is accomplished using backticks like this: \`console.log(42)\`
 
 ---
 
@@ -276,7 +276,7 @@ Use either an "\* ", an "- ", or a "+ " for unordered list items, and either "1.
 3. Astroid Miner
 
 \
-The start number of an ordered list is significant. Note diffences in the Markdown and the result for a list starting with the number 42.
+The start number of an ordered list is significant. Note the differences in the Markdown and the result for a list starting with the number 42.
 
 ```
 42. This item is the answer to...everything
@@ -300,7 +300,7 @@ Changing between bullet characters, number style characters, or bullets and numb
 2. Astroid Miner
 ```
 
-This not one \<ul>, as we might expect. Instead, there are three \<ul>, each containing two \<li>. Check in your developer's tools.
+We might expect to render one \<ul> with six \<li>. Instead, there are three \<ul>, each containing two \<li>. Check in your developer's tools.
 
 - Dog
 - Cat

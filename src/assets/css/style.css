@@ -327,7 +327,7 @@ aside {
   }
 }
 
-/* Main */
+/* Main all pages */
 main {
   grid-area: main;
   max-width: 50em;
@@ -339,7 +339,7 @@ main {
   margin-bottom: 1em;
 }
 
-/* Main _posts.njk & post.njk */
+/* Main post.njk above <article> */
 .letterboxLid {
   display: flex;
   justify-content: baseline;
@@ -349,6 +349,13 @@ main {
 
 .postType {
   display: flex;
+}
+
+/* Main all <article> */
+.postAll {
+  display: flex;
+  flex-direction: column;
+  background: var(--blueWhite);
 }
 
 .postTitle a:link,
@@ -365,13 +372,10 @@ main {
   color: var(--pink);
 }
 
-.postAll {
-  background: var(--blueWhite);
-}
-
 .postAll table {
   /* table-layout: fixed; */
   /* width: 100%; */
+  align-self: center;
   color: var(--blueBlack);
   font-size: 0.7em;
   border: 0.2em solid var(--purple);
