@@ -10,6 +10,12 @@
       <li class="link postNote">Note</li>
       <li class="link postCard">Postcard</li>
     </ul>
+    <select class="selectByTag">
+      <option>Post by Tag</option>
+      <option>Article</option>
+      <option>Note</option>
+      <option>Postcard</option>
+    </select>
   </div>
   <hr>
 
@@ -18,6 +24,7 @@
       <a href={{ page.filePathStem }}>{{ title }}</a>
     </h3>
 
+    {# content is Markdown #}
     {{ content | safe }}
     
     <ul class="postDataLong postData">

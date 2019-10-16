@@ -246,20 +246,16 @@ aside {
   align-items: center;
 }
 
-.aboutMe {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
 .imgDaddyO {
   max-width: 5em;
   max-height: 5em;
   border-radius: 50%;
 }
 
-.imgTwoUpDoorAsideMe {
-  display: none;
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .myName,
@@ -270,6 +266,10 @@ aside {
 
 .myName {
   color: var(--greenDark);
+}
+
+.imgTwoUpDoorAsideMe {
+  display: none;
 }
 
 .asideExtra {
@@ -339,7 +339,7 @@ main {
   margin-bottom: 1em;
 }
 
-/* Main post.njk above <article> */
+/* Main post.njk layout above <article> */
 .letterboxLid {
   display: flex;
   justify-content: baseline;
@@ -351,7 +351,7 @@ main {
   display: flex;
 }
 
-/* Main all <article> */
+/* Main all <article class="postAll"> containing a short or long post */
 .postAll {
   display: flex;
   flex-direction: column;
@@ -370,36 +370,6 @@ main {
 
 .postTitle a:active {
   color: var(--pink);
-}
-
-.postAll table {
-  /* table-layout: fixed; */
-  /* width: 100%; */
-  align-self: center;
-  color: var(--blueBlack);
-  font-size: 0.7em;
-  border: 0.2em solid var(--purple);
-  padding: 0.5em;
-  margin: 0.5em;
-}
-
-.postAll table th:nth-child(1),
-.postAll table th:nth-child(2),
-.postAll table th:nth-child(3) {
-  width: 20%;
-}
-
-.postAll table th:nth-child(4) {
-  width: 40%;
-}
-
-@media screen and (min-width: 25em) {
-  .postAll table {
-    font-size: 1em;
-    border-width: 0.3em;
-    padding: 0.5em;
-    margin: 0.5em;
-  }
 }
 
 .postAll blockquote p {
@@ -431,9 +401,34 @@ main {
   color: var(--blueDark);
 }
 
-.resultBlock {
-  background: var(--blueWhite);
-  margin: 1em 1em;
+.postAll table {
+  /* table-layout: fixed; */
+  /* width: 100%; */
+  align-self: center;
+  color: var(--blueBlack);
+  font-size: 0.7em;
+  border: 0.2em solid var(--purple);
+  padding: 0.5em;
+  margin: 0.5em;
+}
+
+.postAll table th:nth-child(1),
+.postAll table th:nth-child(2),
+.postAll table th:nth-child(3) {
+  width: 20%;
+}
+
+.postAll table th:nth-child(4) {
+  width: 40%;
+}
+
+@media screen and (min-width: 25em) {
+  .postAll table {
+    font-size: 1em;
+    border-width: 0.3em;
+    padding: 0.5em;
+    margin: 0.5em;
+  }
 }
 
 .postAll .postData {
