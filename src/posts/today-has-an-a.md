@@ -1,11 +1,22 @@
 ---
-tags: ['post', 'code', 'note']
+tags: ['post', 'note', 'code']
 title: Today Has an "a"
 date: 2019-10-10
 layout: layouts/post.njk
 ---
 
-Today includes the letter "a", and I need to blog.
+We can use the logical && and || operators to determine whether to invoke a function depending on an expression's truthy/falsy value.
+\
+\
+Here is a simple example:
+
+- if the day of the week includes the letter "a" (true), then I need to blog
+- if I have not yet blogged today (false), then I need to blog
+
+\
+And this is how that looks in JavaScript:
+
+<!-- excerpt -->
 
 ```
 JavaScript
