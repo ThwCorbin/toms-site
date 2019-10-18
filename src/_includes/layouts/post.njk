@@ -23,9 +23,9 @@
     <h3 class="postTitle">
       <a href={{ page.filePathStem }}>{{ title }}</a>
     </h3>
-   
+     {{ excerpt | safe }} 
     {# content is Markdown #}
-    {{ content | safe }}
+    {# {{ content | safe }} #}
     
     <ul class="postDataLong postData">
       <li><a href="/">Back</a></li>

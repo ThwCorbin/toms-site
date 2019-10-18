@@ -4,7 +4,7 @@
 //   ignore: [],
 // });
 
-// const { format, subDays } = require('date-fns');
+const { format, subDays } = require('date-fns');
 
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 
@@ -14,16 +14,10 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/assets/js');
   //* path is relative to root: 11ty drops "src/" when outputs to "dist/"
 
-  //# 11ty syntax highlighting
+  //> 11ty syntax highlighting
   eleventyConfig.addPlugin(syntaxHighlight);
 
-  // //* Parse exerpts from content
-  // eleventyConfig.setFrontMatterParsingOptions({
-  //   excerpt: true,
-  //   excerpt_separator: '<!-- excerpt -->',
-  // });
-
-  //# Returns configuration options (Config object)
+  //> Returns configuration options (Config object)
   return {
     dir: {
       input: 'src', //* controls top level dir/file/glob where we look for templates
@@ -32,12 +26,19 @@ module.exports = function(eleventyConfig) {
       includes: '_includes', //* layouts, include/extend files, partials, macros
       data: '_data', //* controls dir for global data template files
     },
-    //# Template engines
+    //> Template engines
     //* global data files run through this before transforming to JSON
     dataTemplateEngine: 'njk',
     //* markdown files run through this before transforming to HTML
-    markdownTemplateEngine: 'njk',
+    // markdownTemplateEngine: 'njk',
     //* HTML templates run through this before transforming to better HTML
     htmlTemplateEngine: 'njk',
   };
+
+  //> Parse exerpts from content
+  eleventyConfig.setFrontMatterParsingOptions({
+    excerpt: true,
+    excerpt_separator: '<!-- end -->',
+    excerpt_alias: 'excerpt',
+  });
 };

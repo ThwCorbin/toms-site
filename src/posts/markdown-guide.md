@@ -21,6 +21,8 @@ This guide is based on the [CommonMark](https://commonmark.org/) help page and s
 
 ```
 
+<!-- end -->
+
 # This is an h1
 
 ## This is an h2

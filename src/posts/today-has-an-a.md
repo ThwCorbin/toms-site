@@ -16,7 +16,7 @@ Here is a simple example:
 \
 And this is how that looks in JavaScript:
 
-<!-- excerpt -->
+<!-- end -->
 
 ```
 JavaScript
