@@ -1,8 +1,21 @@
-//* Babel's require hook will bind itself to node's require and automatically
-//* compile files on the fly. This will override `node_modules` ignoring...
-// require('@babel/register')({
-// 	ignore: [],
-// });
+/* eslint-disable node/no-unpublished-import */
+import { aDate } from "../../../dist/assets/js/bundle.js";
+aDate();
+
+(() => aDate())();
+
+// import { format } from "date-fns";
+
+// (() => {
+//   let date = format(new Date(), "'Today is a' iiii");
+//   console.log(`This is the ${date}`);
+// })();
+
+let pictureTest = document.querySelector(".imgDaddyO");
+let printDate = () => {
+  console.log("a Date");
+};
+pictureTest.addEventListener("click", printDate);
 
 let anchorCollection = document.getElementsByTagName("a");
 
