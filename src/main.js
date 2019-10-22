@@ -1,4 +1,4 @@
-import { theDate } from "./assets/js/script.js";
+import { theDate } from "./assets/js/script";
 
 (function() {
   console.log(theDate);
