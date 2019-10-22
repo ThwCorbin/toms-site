@@ -1,14 +1,8 @@
-//* Babel's require hook will bind itself to node's require and automatically
-//* compile files on the fly. This will override `node_modules` ignoring...
-// require('@babel/register')({
-//   ignore: [],
-// });
+// import { format, subDays } from 'date-fns';
 
-const { format, subDays } = require('date-fns');
+import syntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight';
 
-const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
-
-module.exports = function(eleventyConfig) {
+export default function(eleventyConfig) {
   eleventyConfig.setTemplateFormats('html,md,njk,css');
   eleventyConfig.addPassthroughCopy('src/assets/images');
   eleventyConfig.addPassthroughCopy('src/assets/js');
@@ -41,4 +35,4 @@ module.exports = function(eleventyConfig) {
     excerpt_separator: '<!-- end -->',
     excerpt_alias: 'excerpt',
   });
-};
+}

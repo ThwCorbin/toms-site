@@ -1,6 +1,8 @@
+/* eslint-disable node/no-unpublished-import */
 import resolve from "rollup-plugin-node-resolve";
 import commonJS from "rollup-plugin-commonjs";
 import babel from "rollup-plugin-babel";
+import json from "rollup-plugin-json";
 
 export default {
   input: "src/main.js",
@@ -14,13 +16,7 @@ export default {
     commonJS(),
     babel({
       exclude: "node_modules/**"
-    })
+    }),
+    json()
   ]
 };
-
-// commonJS({
-//   namedExports: {
-//     "date-fns": ["format"],
-//     "rollup-plugin-node-resolve": ["resolve"]
-//   }
-// })
