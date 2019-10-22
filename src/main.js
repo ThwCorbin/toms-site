@@ -1,11 +1,10 @@
-import { format } from "date-fns";
+import { theDate } from "./assets/js/script.js";
 
-let aDate = () => {
-  let date = format(new Date(), "'Today is a' iiii");
-  console.log(date);
-};
+(function() {
+  console.log(theDate);
+})();
 
-export { format, aDate };
+alert(theDate);
 
 // import blurb from "../src/assets/js/script";
 

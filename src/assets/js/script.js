@@ -1,15 +1,6 @@
-/* eslint-disable node/no-unpublished-import */
-import { aDate } from "../../../dist/assets/js/bundle.js";
-aDate();
-
-(() => aDate())();
-
-// import { format } from "date-fns";
-
-// (() => {
-//   let date = format(new Date(), "'Today is a' iiii");
-//   console.log(`This is the ${date}`);
-// })();
+import { format } from "date-fns";
+let theDate = format(new Date(), "'Today is a' iiii");
+export { theDate };
 
 let pictureTest = document.querySelector(".imgDaddyO");
 let printDate = () => {
@@ -17,9 +8,8 @@ let printDate = () => {
 };
 pictureTest.addEventListener("click", printDate);
 
-let anchorCollection = document.getElementsByTagName("a");
-
 //> Underline current page in nav bars
+let anchorCollection = document.getElementsByTagName("a");
 (() => {
   for (let i = 0; i < anchorCollection.length; i++) {
     anchorCollection[i].attributes.href.value.toLowerCase() ==
