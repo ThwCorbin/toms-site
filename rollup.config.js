@@ -7,7 +7,7 @@ import json from "rollup-plugin-json";
 export default {
   input: "src/main.js",
   output: {
-    file: "dist/assets/build/bundle.js",
+    file: "dist/bundle.js",
     format: "iife",
     name: "tomsbundle"
   },

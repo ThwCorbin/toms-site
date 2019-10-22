@@ -5,7 +5,7 @@ const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 module.exports = function(eleventyConfig) {
   eleventyConfig.setTemplateFormats('html,md,njk,css');
   eleventyConfig.addPassthroughCopy('src/assets/images');
-  eleventyConfig.addPassthroughCopy('src/assets/build');
+  eleventyConfig.addPassthroughCopy('src/assets/js');
   //* path is relative to root: 11ty drops "src/" when outputs to "dist/"
 
   //> Parse exerpts from content
