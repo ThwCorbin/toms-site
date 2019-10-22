@@ -2,7 +2,7 @@
   "name": "my-site",
   "version": "1.0.0",
   "description": "My website",
-  "main": "index.html",
+  "main": "main.js",
   "engines": {
     "node": ">=8.10.0"
   },
