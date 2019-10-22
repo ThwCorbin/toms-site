@@ -37,8 +37,6 @@ This guide is based on the [CommonMark](https://commonmark.org/) help page and s
 
 ---
 
-<!-- excerpt -->
-
 #### Paragraphs
 
 This is a paragraph. Use a backslash "\\"\

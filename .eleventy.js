@@ -5,8 +5,15 @@ const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 module.exports = function(eleventyConfig) {
   eleventyConfig.setTemplateFormats('html,md,njk,css');
   eleventyConfig.addPassthroughCopy('src/assets/images');
-  eleventyConfig.addPassthroughCopy('src/assets/js');
+  eleventyConfig.addPassthroughCopy('src/assets/bundle');
   //* path is relative to root: 11ty drops "src/" when outputs to "dist/"
+
+  //> Parse exerpts from content
+  eleventyConfig.setFrontMatterParsingOptions({
+    excerpt: true,
+    excerpt_separator: '<!-- end -->',
+    excerpt_alias: 'excerpt',
+  });
 
   //> 11ty syntax highlighting
   eleventyConfig.addPlugin(syntaxHighlight);
@@ -28,11 +35,4 @@ module.exports = function(eleventyConfig) {
     //* HTML templates run through this before transforming to better HTML
     htmlTemplateEngine: 'njk',
   };
-
-  //> Parse exerpts from content
-  eleventyConfig.setFrontMatterParsingOptions({
-    excerpt: true,
-    excerpt_separator: '<!-- end -->',
-    excerpt_alias: 'excerpt',
-  });
 };
