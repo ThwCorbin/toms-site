@@ -1,8 +1,8 @@
 // import { format, subDays } from 'date-fns';
 
-import syntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight';
+const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 
-export default function(eleventyConfig) {
+module.exports = function(eleventyConfig) {
   eleventyConfig.setTemplateFormats('html,md,njk,css');
   eleventyConfig.addPassthroughCopy('src/assets/images');
   eleventyConfig.addPassthroughCopy('src/assets/js');
@@ -35,4 +35,4 @@ export default function(eleventyConfig) {
     excerpt_separator: '<!-- end -->',
     excerpt_alias: 'excerpt',
   });
-}
+};
