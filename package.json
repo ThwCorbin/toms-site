@@ -8,7 +8,7 @@
     "type": "git",
     "url": "https://github.com/ThwCorbin/toms-site"
   },
-  "main": "index.html",
+  "main": "bundle.js",
   "engines": {
     "node": ">=8.10.0"
   },
