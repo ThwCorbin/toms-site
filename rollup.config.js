@@ -1,6 +1,6 @@
 /* eslint-disable node/no-unpublished-import */
-import resolve from "rollup-plugin-node-resolve";
 import commonJS from "rollup-plugin-commonjs";
+import resolve from "rollup-plugin-node-resolve";
 import babel from "rollup-plugin-babel";
 import json from "rollup-plugin-json";
 
@@ -12,11 +12,14 @@ export default {
     name: "tomsbundle"
   },
   plugins: [
-    resolve(),
     commonJS(),
+    resolve(),
     babel({
       exclude: "node_modules/**"
     }),
     json()
   ]
 };
+//* rollup-plugin-commonjs should go before other plugins that transform your
+//* modules — this is to prevent other plugins from making changes that break
+//* the CommonJS detection.
