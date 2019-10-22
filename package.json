@@ -1,7 +1,13 @@
 {
   "name": "my-site",
+  "description": "Tom Corbin's website",
   "version": "1.0.0",
-  "description": "My website",
+  "author": "Tom Corbin",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ThwCorbin/toms-site"
+  },
   "main": "main.js",
   "engines": {
     "node": ">=8.10.0"
@@ -27,8 +33,6 @@
     "nunjucks",
     "netlify"
   ],
-  "author": "Tom Corbin",
-  "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^0.9.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.3",
