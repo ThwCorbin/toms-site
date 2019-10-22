@@ -1,6 +1,10 @@
 import { format } from "date-fns";
+import answer from "the-answer";
+
 let theDate = format(new Date(), "'Today is a' iiii");
-export { theDate };
+let theAnswer = () => console.log(`Hiya luna. The answer is ${answer}.`);
+
+export { theDate, theAnswer };
 
 let pictureTest = document.querySelector(".imgDaddyO");
 let printDate = () => {
