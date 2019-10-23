@@ -1,4 +1,4 @@
-import { theDate, theAnswer } from "./assets/js/script";
+import { theDay, theAnswer } from "./assets/js/script";
 
-console.log(theDate);
+console.log(theDay);
 theAnswer();
