@@ -14,10 +14,8 @@
   },
   "type": "module",
   "scripts": {
-    "build": "npm run clean && npm run rollup && npm run eleventy",
-    "clean": "rimraf dist",
-    "rollup": "npx rollup -c",
-    "eleventy": "npx @11ty/eleventy --serve",
+    "start": "rimraf dist && rollup -c && npx @11ty/eleventy --serve",
+    "dev": "npx @11ty/eleventy --serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -33,6 +31,7 @@
     "11ty",
     "eleventy",
     "nunjucks",
+    "rollup",
     "netlify"
   ],
   "devDependencies": {
