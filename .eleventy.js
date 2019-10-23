@@ -3,10 +3,13 @@
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 
 module.exports = function(eleventyConfig) {
-  eleventyConfig.setTemplateFormats('html,md,njk,css');
-  eleventyConfig.addPassthroughCopy('src/assets/images');
-  eleventyConfig.addPassthroughCopy('src/assets/js');
+  //> Search input directory for all files with these extensions
+  eleventyConfig.setTemplateFormats('html,md,njk');
+
+  //> Passthrough non-template static content
   //* path is relative to root: 11ty drops "src/" when outputs to "dist/"
+  eleventyConfig.addPassthroughCopy('src/assets/css');
+  eleventyConfig.addPassthroughCopy('src/assets/images');
 
   //> Parse exerpts from content
   eleventyConfig.setFrontMatterParsingOptions({
@@ -30,8 +33,8 @@ module.exports = function(eleventyConfig) {
     //> Template engines
     //* global data files run through this before transforming to JSON
     dataTemplateEngine: 'njk',
-    //* markdown files run through this before transforming to HTML
-    // markdownTemplateEngine: 'njk',
+    // // markdown files run through this before transforming to HTML
+    // // markdownTemplateEngine: 'njk',
     //* HTML templates run through this before transforming to better HTML
     htmlTemplateEngine: 'njk',
   };
