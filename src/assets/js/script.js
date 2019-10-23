@@ -1,14 +1,16 @@
+//> The day and the answer import/export tests
 import { format } from "date-fns";
 import answer from "the-answer";
 
-let theDate = format(new Date(), "'Today is a' iiii");
-let theAnswer = () => console.log(`Hiya luna. The answer is ${answer}.`);
+let theDay = format(new Date(), "'Today is a' iiii");
+let theAnswer = () => console.log(`Hiya luna! The answer is ${answer}.`);
 
-export { theDate, theAnswer };
+export { theDay, theAnswer };
 
+//> The picture click test
 let pictureTest = document.querySelector(".imgDaddyO");
 let printDate = () => {
-  console.log("a Date");
+  console.log("Hiya luna!");
 };
 pictureTest.addEventListener("click", printDate);
 
