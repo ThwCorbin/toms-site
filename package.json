@@ -14,8 +14,9 @@
   },
   "type": "module",
   "scripts": {
-    "start": "rimraf dist && rollup -c && npx @11ty/eleventy --serve",
-    "dev": "npx @11ty/eleventy --serve",
+    "build": "rollup -c && npx @11ty/eleventy --serve",
+    "serve": "npx @11ty/eleventy --serve",
+    "clean": "rimraf dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
