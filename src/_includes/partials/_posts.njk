@@ -5,21 +5,20 @@
       <a href={{ post.url }}>{{ post.data.title }}</a>
     </h3>
 
-    {#? How do I add a subset of content here? #}
-    {{ excerpt | safe }}
-    {# {{ post.templateContent | safe | truncate(200) | trim }} #}
+    {# {{ page.excerpt }} does not work in _posts.njk, but it does in post.njk #}
+    {{ post.templateContent | safe | truncate(200) | trim }}
     <br>
     <a class="moreContent" href="{{ post.url }}"><strong>More</strong></a>
     {#? How do I toggle between "More.." and "Permanlink"? #}
     
     <ul class="postDataShort postData">
+      <li class="postDate"><time datetime="{{ post.date.toISOString() }}">{{ post.date | date_dMMMMyyyy }}</li>
+      {# <li class="postSlug">{{ post.fileSlug }}</li> #}
       {% for tag in post.data.tags %}
       <li class="postTag">
         <em>#{{ tag }}</em>
       </li>
       {% endfor %}
-      <li class="postDate">{{ page.date.toString() }}</li>
-      <li class="postSlug">{{ post.fileSlug }}</li>
     </ul>
   </article>
 	<hr>

@@ -1,5 +1,4 @@
-// import { format, subDays } from 'date-fns';
-
+const { format, subDays } = require('date-fns');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 
 module.exports = function(eleventyConfig) {
@@ -15,7 +14,12 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.setFrontMatterParsingOptions({
     excerpt: true,
     excerpt_separator: '<!-- end -->',
-    excerpt_alias: 'excerpt',
+    // excerpt_alias: 'excerpt',
+  });
+
+  //> Filters for date/time
+  eleventyConfig.addFilter('date_dMMMMyyyy', (date) => {
+    return format(date, 'd MMM yyyy');
   });
 
   //> 11ty syntax highlighting
@@ -31,11 +35,11 @@ module.exports = function(eleventyConfig) {
       data: '_data', //* controls dir for global data template files
     },
     //> Template engines
-    //* global data files run through this before transforming to JSON
-    dataTemplateEngine: 'njk',
-    // // markdown files run through this before transforming to HTML
-    // // markdownTemplateEngine: 'njk',
     //* HTML templates run through this before transforming to better HTML
     htmlTemplateEngine: 'njk',
+    //* Markdown files run through this before transforming to HTML
+    markdownTemplateEngine: 'njk',
+    //* Global data files run through this before transforming to JSON
+    dataTemplateEngine: 'njk',
   };
 };
