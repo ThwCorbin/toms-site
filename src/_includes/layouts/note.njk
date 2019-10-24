@@ -1,0 +1,31 @@
+{% extends "layouts/base.njk" %}
+{% block page_title %}{{ title }}{% endblock %}
+{% block main %}
+<main class="noteMain">
+  <div class="letterboxLid">
+    <h2 class="pageTeaser">Letterbox - Notes</h2>
+    <ul class="postType">
+    {# Add anchors and collections functionality #}
+      <li class="link postArticle">Article</li>
+      <li class="link postNote">Note</li>
+      <li class="link postCard">Postcard</li>
+    </ul>
+  </div>
+  <hr>
+  <article class="noteAll noteLong postAll postLong">
+    <h3 class="noteTitle postTitle">
+      <a href={{ page.filePathStem }}>{{ title }}</a>
+    </h3>
+    {# content is Markdown #}
+    {{ content | safe }}
+      
+    <ul class="noteDataLong noteData postDataLong postData">
+      <li class="noteDate postDate">
+        <time datetime="{{ page.date.toISOString() }}">
+          {{ page.date | date_dMMMMyyyy }}
+      </li>
+      <li class="noteBack postBack"><a href="/"><strong>Back</strong></a></li>
+    </ul>
+  </article>
+</main>
+{% endblock %}

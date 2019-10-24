@@ -1,0 +1,31 @@
+<div class="notesLetterbox">
+  {% for note in collections.note | reverse %}
+  <article class="postAll noteAll noteShort">
+    <h3 class="noteTitle postTitle">
+      <a href={{ note.url }}>{{ note.data.title }}</a>
+    </h3>
+
+    {# {{ page.excerpt }} does not work in _notes.njk, but it does in note.njk #}
+    {{ note.templateContent | clipPost | safe }}
+
+    <ul class="noteDataShort noteData postDataShort postData">
+      <li class="noteDate postDate">
+        <time datetime="{{ note.date.toISOString() }}">
+        {{ note.date | date_dMMMMyyyy }}
+      </li>
+      {# <li class="noteSlug">{{ note.fileSlug }}</li> #}
+      {% for tag in note.data.tags %}
+      <li class="noteTag postTag">
+        <em>#{{ tag }}</em>
+      </li>
+      {% endfor %}
+      <li class="noteMore postMore">
+        <a href="{{ note.url }}">
+          <strong>More</strong>
+        </a>
+      </li>
+    </ul>
+  </article>
+	<hr>
+  {%- endfor -%}
+</div>
