@@ -1,7 +1,9 @@
 ---
-tags: ['post', 'note', 'quote']
 title: Not a Mess
+description:
+tags: ['post', 'note', 'quote']
 date: 2019-10-02
+updated: 2019-10-24
 layout: layouts/post.njk
 ---
 

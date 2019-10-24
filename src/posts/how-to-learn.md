@@ -1,7 +1,9 @@
 ---
-tags: ['post', 'note']
 title: How to Learn Programming
+description:
+tags: ['post', 'note']
 date: 2019-10-01
+updated: 2019-10-24
 layout: layouts/post.njk
 ---
 

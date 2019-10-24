@@ -1,7 +1,9 @@
 ---
-tags: ['post', 'note', 'code']
 title: Today Has an "a"
+description:
+tags: ['post', 'note', 'code']
 date: 2019-10-10
+updated: 2019-10-24
 layout: layouts/post.njk
 ---
 
@@ -23,13 +25,11 @@ let todayHasAnA = (today) => {
   today.includes('a') && blog();
 };
 
-todayHasAnA('Thursday');
-// "I need to blog"
+todayHasAnA('Thursday'); // "I need to blog"
 
 let blogToday = (blogged) => {
   blogged || blog();
 };
 
-blogToday(false);
-// "I need to blog"
+blogToday(false); // "I need to blog"
 ```

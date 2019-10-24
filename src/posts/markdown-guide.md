@@ -1,9 +1,9 @@
 ---
-tags: ['post', 'code', 'article']
 title: A Markdown Guide
 description:
+tags: ['post', 'code', 'article']
 date: 2019-09-19
-updated:
+updated: 2019-10-24
 layout: layouts/post.njk
 ---
 
