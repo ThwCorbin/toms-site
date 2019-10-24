@@ -104,8 +104,12 @@ hr {
 }
 
 pre {
-  white-space: pre-wrap;
-  overflow-wrap: break-word;
+  overflow: auto;
+  white-space: normal;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
   padding: 0.5em;
 }
 

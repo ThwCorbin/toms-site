@@ -17,10 +17,10 @@ module.exports = function(eleventyConfig) {
 
   //> Filter for clipping
   eleventyConfig.addFilter('clipPost', (templateContent) => {
-    // let start = '<!-- start -->';
+    if (!templateContent) return;
+
     let clipEnd = `<!END`;
     let clipping = templateContent.slice(0, templateContent.indexOf(clipEnd));
-    console.log(clipping);
     return clipping;
   });
 
