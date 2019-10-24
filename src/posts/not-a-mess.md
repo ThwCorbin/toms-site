@@ -8,4 +8,4 @@ layout: layouts/post.njk
 > _"It's not a mess. It's informal."_  
 > **-Mary Berry**
 
-<!-- end -->
+<!END clip>

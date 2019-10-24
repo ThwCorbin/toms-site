@@ -12,6 +12,8 @@ This guide is based on the [CommonMark](https://commonmark.org/) help page and s
 #### Headings
 
 ```
+Markdown
+
   # This is an h1
   ## This is an h2
   ### This is an h3
@@ -21,7 +23,7 @@ This guide is based on the [CommonMark](https://commonmark.org/) help page and s
 
 ```
 
-<!-- end -->
+<!END clip>
 
 # This is an h1
 
@@ -243,7 +245,7 @@ The Markdown for images is similar to links. Add an "!" at the beginning and (in
 
 ![Tom's favicon is a blue circle with 'ThwC' text](/assets/images/favicon/apple-touch-icon.png "Tom's favicon")
 
-And here is the Markup for an image with a link:
+And here is the Markdown for an image with a link:
 
 ```
 [![Tom's Two-up Two-Down website](/assets/images/favicon/favicon-32x32.png)](https://www.thwcorbin.com "Tom's website")

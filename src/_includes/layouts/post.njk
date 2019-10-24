@@ -27,9 +27,11 @@
     {{ content | safe }}
     
     <ul class="postDataLong postData">
-      <li><a href="/">Back</a></li>
-      {# How do I make the date work better? #}
-      <li class="postDate"><time datetime="{{ page.date.toISOString() }}">{{ page.date | date_dMMMMyyyy }}</li>
+      <li class="postDate">
+        <time datetime="{{ page.date.toISOString() }}">
+          {{ page.date | date_dMMMMyyyy }}
+      </li>
+      <li class="postBack"><a href="/"><strong>Back</strong></a></li>
     </ul>
   </article>
 

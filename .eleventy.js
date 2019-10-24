@@ -10,16 +10,18 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/assets/css');
   eleventyConfig.addPassthroughCopy('src/assets/images');
 
-  //> Parse exerpts from content
-  eleventyConfig.setFrontMatterParsingOptions({
-    excerpt: true,
-    excerpt_separator: '<!-- end -->',
-    // excerpt_alias: 'excerpt',
-  });
-
-  //> Filters for date/time
+  //> Filter for date
   eleventyConfig.addFilter('date_dMMMMyyyy', (date) => {
     return format(date, 'd MMM yyyy');
+  });
+
+  //> Filter for clipping
+  eleventyConfig.addFilter('clipPost', (templateContent) => {
+    // let start = '<!-- start -->';
+    let clipEnd = `<!END`;
+    let clipping = templateContent.slice(0, templateContent.indexOf(clipEnd));
+    console.log(clipping);
+    return clipping;
   });
 
   //> 11ty syntax highlighting
