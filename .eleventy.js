@@ -9,6 +9,8 @@ module.exports = function(eleventyConfig) {
   //* path is relative to root: 11ty drops "src/" when outputs to "dist/"
   eleventyConfig.addPassthroughCopy('src/assets/css');
   eleventyConfig.addPassthroughCopy('src/assets/images');
+  //* workaround until fix prismjs / rollupjs issues
+  eleventyConfig.addPassthroughCopy('src/assets/js/prism.js');
 
   //> Filter for date
   eleventyConfig.addFilter('date_dMMMMyyyy', (date) => {
