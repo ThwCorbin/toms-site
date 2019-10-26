@@ -78,7 +78,7 @@ _emphasis with **strong text** inside_
 
 #### Other text options
 
-```
+```markdown
 ~~Strikethrough~~
 ```
 
@@ -134,8 +134,8 @@ This is inline code: `console.log(42)`, which is accomplished using backticks li
 
 The fence method for block code uses three backticks or three tildes above and below the block. This Markdown:
 
-````
-```
+````bash
+```bash
 $ mkdir public
 $ touch public/markdown.md
 $ mkdir public/markdown
@@ -145,7 +145,7 @@ $ mv public/markdown.md public/markdown/
 
 ...results in this block code:
 
-```
+```bash
 $ mkdir public
 $ touch public/markdown.md
 $ mkdir public/markdown
@@ -271,10 +271,10 @@ Use either an "\* ", an "- ", or a "+ " for unordered list items, and either "1.
 \
 The start number of an ordered list is significant. Note the differences in the Markdown and the result for a list starting with the number 42.
 
-```
+```markdown
 42. This item is the answer to...everything
-2. This item isn't, but note it is 43 not 2
-78. ...44 not 78
+43. This item isn't, but note it is 43 not 2
+44. ...44 not 78
 ```
 
 42. This item is the answer to...everything
