@@ -13,26 +13,26 @@ This guide is based on the [CommonMark](https://commonmark.org/) help page and s
 
 <!-- prettier-ignore-start -->
 ```markdown
-# This is an h1
-## This is an h2
-### This is an h3
-#### This is an h4
-##### This is an h5
-###### This is an h6
+# This is an `<h1>`
+## This is an `<h2>`
+### This is an `<h3>`
+#### This is an `<h4>`
+##### This is an `<h5>`
+###### This is an `<h6>`
 ```
 <!-- prettier-ignore-end -->
 
-# This is an h1
+# This is an `<h1>`
 
-## This is an h2
+## This is an `<h2>`
 
-### This is an h3
+### This is an `<h3>`
 
-#### This is an h4
+#### This is an `<h4>`
 
-##### This is an h5
+##### This is an `<h5>`
 
-###### This is an h6
+###### This is an `<h6>`
 
 <!END clip>
 
@@ -40,15 +40,25 @@ This guide is based on the [CommonMark](https://commonmark.org/) help page and s
 
 #### Paragraphs
 
-This is a paragraph. Use a backslash "\\"\
+This is a `<p>`. Use a backslash "\\"\
 or two blank spaces " "  
-for a line break.
+to insert a `<br>`.
+
+Escape characters with one backslash (e.g. "\\#", "\\\*", "\\\_", etc.).
+
+```bash
+This is a `<p>`. Use a backslash "\\"\
+or two blank spaces " "  
+to insert a `<br>`.
+
+Escape characters with one backslash (e.g. "\\#", "\\\*", "\\\_", etc.).
+```
 
 ---
 
 #### Emphasis and Strong Emphasis
 
-Use one asterisk or underscore for _emphasis_, two for **strong text**, and three for **_strong emphasis_**. According to the spec, you can use either an \* or an \_. My opinionated code formatter has **strong opionions** about that. These examples work with _Prettier_. Alternatively, you can tell _Prettier_ to ignore your preferred method.
+Use one asterisk or underscore for _emphasis_ `<em>`, two for **strong text** `<strong>`, and three for **_strong emphasis_**. According to the spec, you can use either an \* or an \_. My opinionated code formatter has **strong opionions** about that. These examples work with _Prettier_. Alternatively, you can tell _Prettier_ to ignore your preferred method.
 
 ```markdown
 _emphasis_
@@ -79,10 +89,10 @@ _emphasis with **strong text** inside_
 #### Other text options
 
 ```markdown
-~~Strikethrough~~
+~~Strikethrough~~ becomes `<s>Strikethrough</s>' in HTML.
 ```
 
-~~Strikethrough~~
+~~Strikethrough~~ becomes `<s>Strikethrough</s>` in HTML.
 
 Underline is right out as it is **controversial** among Markdown mavens.
 
@@ -90,7 +100,7 @@ Underline is right out as it is **controversial** among Markdown mavens.
 
 #### Blockquote
 
-A single paragraph blockquote uses this Markdown:
+A single paragraph `<blockquote>` uses this Markdown:
 
 ```markdown
 > You have power over your mind--not outside events. Realise this, and you will find strength.\
@@ -100,7 +110,7 @@ A single paragraph blockquote uses this Markdown:
 > You have power over your mind--not outside events. Realise this, and you will find strength.\
 > -Marcus Aurelius
 
-A multiple paragragh blockquote uses this Markdown:
+A multiple paragragh `<blockquote>` uses this Markdown:
 
 ```markdown
 > If you find it hard to laugh at yourself, I would be happy to do it for you.
@@ -120,13 +130,13 @@ A multiple paragragh blockquote uses this Markdown:
 
 #### Horizontal Rules
 
-Use "---" or "\*\*\*" for an hr as follows:
+Use "---" or "\*\*\*" for an `<hr>` as follows:
 
 ---
 
 #### Inline Code
 
-This is inline code: `console.log(42)`, which is accomplished using backticks like this: \`console.log(42)\`
+This is inline code: `console.log(42)`, which is accomplished using backticks like this: \`console.log(42)\`. I've used inline code several times already in this guide.
 
 ---
 
@@ -134,7 +144,7 @@ This is inline code: `console.log(42)`, which is accomplished using backticks li
 
 The fence method for block code uses three backticks or three tildes above and below the block. This Markdown:
 
-````bash
+````markdown
 ```bash
 $ mkdir public
 $ touch public/markdown.md
@@ -152,7 +162,9 @@ $ mkdir public/markdown
 $ mv public/markdown.md public/markdown/
 ```
 
-We can instead indent each line four spaces in Markdown:
+Note the "bash" after the top backticks. This adds a `class` to the `<pre>` and `<code>` tags: `class="language-bash"`. We can now use a syntax highlighter to style the block code. I'm using [Prism](https://prismjs.com 'Prism website'). If you inspect the html above and below in your developer tools, you will see I've also done this for "markdown", "html", "css", and "javascript" (the language must be in lowercase in the Markdown). The Prism website has a nice list of [languages](https://prismjs.com/#supported-languages 'Prism website list of supported languages') and their lowercase aliases.
+
+We can instead indent each line four spaces in Markdown, but note there is no proper way to add a `class` attribute to enable syntax highlighting.
 
 <!-- prettier-ignore-start -->
 ```javascript
@@ -164,11 +176,12 @@ We can instead indent each line four spaces in Markdown:
       today.includes('a') && blog();
     };
 
-    todayHasAnA('Thursday'); // "I need to blog"
+    todayHasAnA('Thursday');
+    // "I need to blog"
 ```
 <!-- prettier-ignore-end -->
 
-...resulting in this block code:
+...resulting in this block code with no syntax highlighting:
 
     const blog = () => {
     console.log("I need to blog");
@@ -178,13 +191,14 @@ We can instead indent each line four spaces in Markdown:
       today.includes('a') && blog();
     };
 
-    todayHasAnA("Thursday"); // "I need to blog"
+    todayHasAnA("Thursday");
+    // "I need to blog"
 
 ---
 
 #### Links
 
-Links include link text, a url, and an optional "title".
+Links include link text, a url, and an optional `title`.
 
 ```markdown
 [CommonMark](https://commonmark.org 'CommonMark website') is a Markdown specification.
@@ -192,14 +206,14 @@ Links include link text, a url, and an optional "title".
 
 [CommonMark](https://commonmark.org 'CommonMark website') is a Markdown specification.
 
-Reference links add a link label, which is in the second set of brackets. It must be at least one non-whitespace character (matching is case-insensitive).
+Reference links add a link `label`, which is in the second set of brackets. It must be at least one non-whitespace character (matching is case-insensitive).
 
 ```markdown
 [Nunjucks][1] is a templating language for JavaScript.
 [MDN][foo] has useful information about web technologies.
 
 [1]: https://mozilla.github.io/nunjucks/ 'Nunjucks website'
-[foo]: https://developer.mozilla.org/en-US/ 'MDN website'
+[FOO]: https://developer.mozilla.org/en-US/ 'MDN website'
 ```
 
 [Nunjucks][1] is a templating language for JavaScript.
@@ -272,13 +286,13 @@ Use either an "\* ", an "- ", or a "+ " for unordered list items, and either "1.
 The start number of an ordered list is significant. Note the differences in the Markdown and the result for a list starting with the number 42.
 
 ```markdown
-42. This item is the answer to...everything
-43. This item isn't, but note it is 43 not 2
-44. ...44 not 78
+42. This `<li>` is the answer to...everything
+2. This `<li>` isn't, but note it renders as 43 not 2
+78. ...44 not 78
 ```
 
-42. This item is the answer to...everything
-43. This item isn't, but note it is 43 not 2
+42. This `<li>` is the answer to...everything
+43. This `<li>` isn't, but note it is 43 not 2
 44. ...44 not 78
 
 \
@@ -295,7 +309,7 @@ Changing between bullet characters, number style characters, or bullets and numb
 2. Astroid Miner
 ```
 
-We might expect to render one \<ul> with six \<li>. Instead, there are three \<ul>, each containing two \<li>. Check in your developer's tools.
+This results in two `<ul>` and one `<ol>`, each containing two `<li>`. Check in your developer's tools.
 
 - Dog
 - Cat
@@ -339,7 +353,3 @@ Use pipes to build columns and dashes to create the header row. The default colu
 | Luna     |  0   |  0   |               0 |
 | Mars     |  0   |  0   |  78,453,300,042 |
 | Total    |  1   |  1   |  78,453,300,042 |
-
-#### Notes
-
-Escape characters in Markdown using one backslash (e.g. "\\#", "\\\*", "\\\_", etc.).
