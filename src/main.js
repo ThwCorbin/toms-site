@@ -1,7 +1,4 @@
-import { theDay, theAnswer } from "./assets/js/script";
-import Prism from "prismjs";
+import { theDay, theAnswer } from './assets/js/script';
 
 console.log(theDay);
 theAnswer();
-
-Prism.highlightAll();

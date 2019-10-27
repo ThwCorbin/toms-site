@@ -1,6 +1,8 @@
+//> Ignore erros from Prism script
 /* eslint-disable no-undef */
 /* eslint-disable no-useless-escape */
 /* eslint-disable no-prototype-builtins */
+
 //> The day and the answer import/export tests
 import { format } from "date-fns";
 import answer from "the-answer";

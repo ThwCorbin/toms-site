@@ -285,11 +285,13 @@ Use either an "\* ", an "- ", or a "+ " for unordered list items, and either "1.
 \
 The start number of an ordered list is significant. Note the differences in the Markdown and the result for a list starting with the number 42.
 
+<!-- prettier-ignore-start -->
 ```markdown
 42. This `<li>` is the answer to...everything
-43. This `<li>` isn't, but note it renders as 43 not 2
-44. ...44 not 78
+2. This `<li>` isn't, but note it renders as 43 not 2
+78. ...44 not 78
 ```
+<!-- prettier-ignore-end -->
 
 42. This `<li>` is the answer to...everything
 43. This `<li>` isn't, but note it is 43 not 2
