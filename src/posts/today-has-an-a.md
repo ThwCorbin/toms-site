@@ -25,11 +25,13 @@ let todayHasAnA = (today) => {
   today.includes('a') && blog();
 };
 
-todayHasAnA('Thursday'); // "I need to blog"
+todayHasAnA('Thursday');
+// "I need to blog"
 
 let blogToday = (blogged) => {
   blogged || blog();
 };
 
-blogToday(false); // "I need to blog"
+blogToday(false);
+// "I need to blog";
 ```

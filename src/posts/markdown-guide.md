@@ -44,11 +44,11 @@ This is a `<p>`. Use a backslash "\\"\
 or two blank spaces " "  
 to insert a `<br>`.
 
-Escape characters with one backslash (e.g. "\\#", "\\*", "\\_", etc.).
+Escape characters with one backslash (e.g. "\\#", "\\\*", "\\\_", etc.).
 
 ```bash
 This is a `<p>`. Use a backslash "\\"\
-or two blank spaces " "  
+or two blank spaces " "
 to insert a `<br>`.
 
 Escape characters with one backslash (e.g. "\\#", "\\*", "\\_", etc.).
@@ -213,7 +213,7 @@ Reference links add a link `label`, which is in the second set of brackets. It m
 [MDN][foo] has useful information about web technologies.
 
 [1]: https://mozilla.github.io/nunjucks/ 'Nunjucks website'
-[FOO]: https://developer.mozilla.org/en-US/ 'MDN website'
+[foo]: https://developer.mozilla.org/en-US/ 'MDN website'
 ```
 
 [Nunjucks][1] is a templating language for JavaScript.
@@ -287,8 +287,8 @@ The start number of an ordered list is significant. Note the differences in the 
 
 ```markdown
 42. This `<li>` is the answer to...everything
-2. This `<li>` isn't, but note it renders as 43 not 2
-78. ...44 not 78
+43. This `<li>` isn't, but note it renders as 43 not 2
+44. ...44 not 78
 ```
 
 42. This `<li>` is the answer to...everything
