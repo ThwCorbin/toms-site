@@ -10,7 +10,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/assets/css');
   eleventyConfig.addPassthroughCopy('src/assets/images');
   //* workaround until fix prismjs / rollupjs issues
-  eleventyConfig.addPassthroughCopy('src/assets/js/prism.js');
+  // eleventyConfig.addPassthroughCopy('src/assets/js/prism.js');
 
   //> Filter for date
   eleventyConfig.addFilter('date_dMMMMyyyy', (date) => {
