@@ -3,7 +3,7 @@ title: A Markdown Guide
 description:
 tags: ['post', 'code', 'article']
 date: 2019-09-19
-updated: 2019-10-24
+updated: 2019-10-27
 layout: layouts/post.njk
 ---
 
@@ -44,14 +44,14 @@ This is a `<p>`. Use a backslash "\\"\
 or two blank spaces " "  
 to insert a `<br>`.
 
-Escape characters with one backslash (e.g. "\\#", "\\\*", "\\\_", etc.).
+Escape characters with one backslash (e.g. "\\#", "\\*", "\\_", etc.).
 
 ```bash
 This is a `<p>`. Use a backslash "\\"\
 or two blank spaces " "  
 to insert a `<br>`.
 
-Escape characters with one backslash (e.g. "\\#", "\\\*", "\\\_", etc.).
+Escape characters with one backslash (e.g. "\\#", "\\*", "\\_", etc.).
 ```
 
 ---
@@ -162,7 +162,7 @@ $ mkdir public/markdown
 $ mv public/markdown.md public/markdown/
 ```
 
-Note the "bash" after the top backticks. This adds a `class` to the `<pre>` and `<code>` tags: `class="language-bash"`. We can now use a syntax highlighter to style the block code. I'm using [Prism](https://prismjs.com 'Prism website'). If you inspect the html above and below in your developer tools, you will see I've also done this for "markdown", "html", "css", and "javascript" (the language must be in lowercase in the Markdown). The Prism website has a nice list of [languages](https://prismjs.com/#supported-languages 'Prism website list of supported languages') and their lowercase aliases.
+Note the "bash" after the top backticks. This adds a `class` to the `<pre>` and `<code>` tags: `class="language-bash"`. We can now use a syntax highlighter to style the block code. I'm using [Prism](https://prismjs.com 'Prism website'). If you inspect the HTML above and below in your developer tools, you will see I've also done this for "markdown", "html", "css", and "javascript" (the language must be in lowercase in the Markdown). The Prism website has a nice list of [languages](https://prismjs.com/#supported-languages 'Prism website list of supported languages') and their lowercase aliases.
 
 We can instead indent each line four spaces in Markdown, but note there is no proper way to add a `class` attribute to enable syntax highlighting.
 
@@ -206,7 +206,7 @@ Links include link text, a url, and an optional `title`.
 
 [CommonMark](https://commonmark.org 'CommonMark website') is a Markdown specification.
 
-Reference links add a link `label`, which is in the second set of brackets. It must be at least one non-whitespace character (matching is case-insensitive).
+Reference links add a link `label`, which is in the second set of brackets. It must be at least one non-whitespace character (matching is **case-insensitive**).
 
 ```markdown
 [Nunjucks][1] is a templating language for JavaScript.
@@ -309,7 +309,7 @@ Changing between bullet characters, number style characters, or bullets and numb
 2. Astroid Miner
 ```
 
-This results in two `<ul>` and one `<ol>`, each containing two `<li>`. Check in your developer's tools.
+This results in two `<ul>`s and one `<ol>`, each containing two `<li>`s. Check in your developer's tools.
 
 - Dog
 - Cat
