@@ -1,9 +1,9 @@
 ---
-title: How to Learn Programming
-description:
-tags: ['post', 'note']
+title: How to Learn Web Development
+description: A thought about learning to build websites
+tags: ['post', 'card', 'thought']
 date: 2019-10-01
-updated: 2019-10-24
+updated: 2019-10-28
 layout: layouts/post.njk
 ---
 

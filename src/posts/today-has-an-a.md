@@ -1,9 +1,9 @@
 ---
 title: Today Has an "a"
-description:
+description: Code example using the logical and/or operators
 tags: ['post', 'note', 'code']
 date: 2019-10-10
-updated: 2019-10-27
+updated: 2019-10-28
 layout: layouts/post.njk
 ---
 

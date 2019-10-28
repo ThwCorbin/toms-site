@@ -1,13 +1,13 @@
 ---
 title: A Markdown Guide
-description:
-tags: ['post', 'code', 'article']
+description: Article providing tips on using Markdown
+tags: ['post', 'article', 'code']
 date: 2019-09-19
-updated: 2019-10-27
+updated: 2019-10-28
 layout: layouts/post.njk
 ---
 
-This guide is based on the [CommonMark](https://commonmark.org/) help page and spec along with Markdown flotsam found on the web, such as [these tips](https://css-tricks.com/little-stuff-markdown-always-forget-google/).
+This guide is based on the [CommonMark](https://commonmark.org/ 'CommonMark website') help page and spec along with Markdown flotsam found on the web, such as [these tips](https://css-tricks.com/little-stuff-markdown-always-forget-google/ 'Article about Markdown on CSS-Tricks').
 
 #### Headings
 

@@ -1,9 +1,9 @@
 ---
 title: Not a Mess
-description:
-tags: ['post', 'note', 'quote']
+description: Quote from Mary Berry
+tags: ['post', 'card', 'quote']
 date: 2019-10-02
-updated: 2019-10-24
+updated: 2019-10-28
 layout: layouts/post.njk
 ---
 
