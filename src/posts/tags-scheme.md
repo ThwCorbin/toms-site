@@ -7,9 +7,9 @@ updated: 2019-10-28
 layout: layouts/post.njk
 ---
 
-Scheme: Organise tags for blog posts on my website.
+Scheme: Organise `tags` for blog posts on my website.
 
-Details: I use 11ty's collections' `tags` to organise my blog content. In each blog post's front matter, I assign values for the `tags` key. All blog entries have a `tags` key of #post. Then I break out posts into three different main tags: #article, #note, and #card.
+Details: I use [11ty's collections](https://www.11ty.io/docs/collections/ 'Eleventy static site generator documentation for collections') `tags` to organise my blog content. In each blog post's front matter, I assign values for the `tags` key. All blog entries have a `tags` key of #post. Then I break out posts into three different main tags: #article, #note, and #card.
 
 <!END clip>
 
