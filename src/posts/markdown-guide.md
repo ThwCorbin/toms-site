@@ -213,7 +213,10 @@ Reference links add a link `label`, which is in the second set of brackets. It m
 [MDN][foo] has useful information about web technologies.
 
 [1]: https://mozilla.github.io/nunjucks/ 'Nunjucks website'
-[foo]: https://developer.mozilla.org/en-US/ 'MDN website'
+
+<!-- prettier-ignore-start -->
+[FOO]: https://developer.mozilla.org/en-US/ 'MDN website'
+<!-- prettier-ignore-end -->
 ```
 
 [Nunjucks][1] is a templating language for JavaScript.
@@ -228,9 +231,9 @@ Reference links add a link `label`, which is in the second set of brackets. It m
 ...which is this HTML:
 
 ```html
-<a href="https://mozilla.github.io/nunjucks/" title="Nunjucks website"
-  >Nunjucks</a
->
+<a href="https://mozilla.github.io/nunjucks/" title="Nunjucks website">
+  Nunjucks
+</a>
 <a href="https://developer.mozilla.org/en-US/" title="MDN website">MDN</a>
 ```
 
@@ -288,28 +291,32 @@ The start number of an ordered list is significant. Note the differences in the 
 <!-- prettier-ignore-start -->
 ```markdown
 42. This `<li>` is the answer to...everything
-2. This `<li>` isn't, but note it renders as 43 not 2
-78. ...44 not 78
+2. This `<li>` isn't, but note that it renders as 43 not 2
+78. ...renders as 44 not 78
 ```
 <!-- prettier-ignore-end -->
 
+<!-- prettier-ignore-start -->
+
 42. This `<li>` is the answer to...everything
-43. This `<li>` isn't, but note it is 43 not 2
-44. ...44 not 78
+2. This `<li>` isn't, but note that it renders as 43 not 2
+78. ...renders as 44 not 78
+
+<!-- prettier-ignore-end -->
 
 \
 Changing between bullet characters, number style characters, or bullets and numbers starts a new list.
 
+<!-- prettier-ignore-start -->
 ```markdown
 - Dog
 - Cat
-
 * Monkeycatrobot
 * Robot
-
 1. Lobster
 2. Astroid Miner
 ```
+<!-- prettier-ignore-end -->
 
 This results in two `<ul>`s and one `<ol>`, each containing two `<li>`s. Check in your developer's tools.
 
