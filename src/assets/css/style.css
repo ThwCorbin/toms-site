@@ -354,6 +354,11 @@ main {
   color: var(--pink);
 }
 
+.postAll p {
+  /** Zero margin to work better with prism.css  */
+  margin: 0;
+}
+
 .postAll blockquote p {
   background-color: var(--greyLight);
 }
