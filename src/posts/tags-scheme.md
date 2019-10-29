@@ -50,12 +50,12 @@ I then clip each post with an 11ty filter (see below). The clip goes on my Front
 - page.fileSlug
 - page.outputPath
 - page.url
-- page.date (overrides default)
+- page.date
 - content (not page.templateContent)
 
 There is no page.data. Instead, we only use the data key from the front matter. For example, I can use the keys: title, description, or tags.
 
-11ty provides a way to [parse excerpts](https://www.11ty.io/docs/data-frontmatter/#advanced%3A-customize-front-matter-parsing 'How to parse excerpts from content') from _page content_, but this does not work for an _item's templateContent_. I wrote a filter for my .eleventy.js config file to create a clip from a post. In my post Markdown files, I add "<!END clip>" where I want my clip to end. Then I use `post.templateContent | clipPost | safe` in my template where I want my clip to display.
+11ty provides a way to [parse excerpts](https://www.11ty.io/docs/data-frontmatter/#advanced%3A-customize-front-matter-parsing 'How to parse excerpts from content') from _page content_, but this does not work for an _item's templateContent_. I wrote a filter for my .eleventy.js config file to create a clip from a post. In my post Markdown files, I add `<!END clip>` where I want my clip to end. Then I use `post.templateContent | clipPost | safe` in my template where I want my clip to display.
 
 ```javascript
 module.exports = function(eleventyConfig) {
@@ -70,6 +70,8 @@ module.exports = function(eleventyConfig) {
 ```
 
 ```markdown
+I break out posts into three different main `tags`: #article, #note, and #card.
+
 <!END clip>
 
 - articles are letters to the world that I either write or to which I link
