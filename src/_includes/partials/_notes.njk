@@ -5,7 +5,8 @@
       <a href={{ note.url }}>{{ note.data.title }}</a>
     </h3>
 
-    {# {{ page.excerpt }} does not work in _notes.njk, but it does in note.njk #}
+    {# Render content as templateContent from Markdown file #}
+    {# clipPost filter because there is no item.excerpt (only page.excerpt) #}
     {{ note.templateContent | clipPost | safe }}
 
     <ul class="noteDataShort noteData postDataShort postData">
@@ -13,11 +14,12 @@
         <time datetime="{{ note.date.toISOString() }}">
         {{ note.date | date_dMMMMyyyy }}
       </li>
-      {# <li class="noteSlug">{{ note.fileSlug }}</li> #}
-      {% for tag in note.data.tags %}
-      <li class="noteTag postTag">
-        <em>#{{ tag }}</em>
-      </li>
+      {# Return a new array without note.data.tags["#post"] #}
+      {% set noFirstTag = note.data.tags.slice(1) %}
+      {% for tag in noFirstTag %}
+        <li class="noteTag postTag">
+          <em>#{{ tag }}</em>
+        </li>
       {% endfor %}
       <li class="noteMore postMore">
         <a href="{{ note.url }}">

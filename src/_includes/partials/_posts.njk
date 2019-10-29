@@ -5,7 +5,8 @@
       <a href={{ post.url }}>{{ post.data.title }}</a>
     </h3>
 
-    {# {{ page.excerpt }} does not work in _posts.njk, but it does in post.njk #}
+    {# Render content as templateContent from Markdown file #}
+    {# clipPost filter because there is no item.excerpt (only page.excerpt) #}
     {{ post.templateContent | clipPost | safe }}
 
     <ul class="postDataShort postData">
@@ -13,11 +14,12 @@
         <time datetime="{{ post.date.toISOString() }}">
         {{ post.date | date_dMMMMyyyy }}
       </li>
-      {# <li class="postSlug">{{ post.fileSlug }}</li> #}
-      {% for tag in post.data.tags %}
-      <li class="postTag">
-        <em>#{{ tag }}</em>
-      </li>
+      {# Return a new array without post.data.tags["#post"] #}
+      {% set noFirstTag = post.data.tags.slice(1) %}
+      {% for tag in noFirstTag %}
+        <li class="postTag">
+          <em>#{{ tag }}</em>
+        </li>
       {% endfor %}
       <li class="postMore">
         <a href="{{ post.url }}">

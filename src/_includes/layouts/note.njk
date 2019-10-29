@@ -5,7 +5,6 @@
   <div class="letterboxLid">
     <h2 class="pageTeaser">Letterbox - Notes</h2>
     <ul class="postType">
-    {# Add anchors and collections functionality #}
       <li class="link postArticle">Article</li>
       <li class="link postNote">Note</li>
       <li class="link postCard">Postcard</li>
@@ -16,14 +15,21 @@
     <h3 class="noteTitle postTitle">
       <a href={{ page.filePathStem }}>{{ title }}</a>
     </h3>
-    {# content is Markdown #}
+
+    {# Render content from Markdown file #}
     {{ content | safe }}
-      
+
     <ul class="noteDataLong noteData postDataLong postData">
       <li class="noteDate postDate">
         <time datetime="{{ page.date.toISOString() }}">
           {{ page.date | date_dMMMMyyyy }}
       </li>
+      {% set noFirstTag = tags.slice(1) %}
+      {% for tag in noFirstTag %}
+        <li class="noteTag postTag">
+          <em>#{{ tag }}</em>
+        </li>
+      {% endfor %}
       <li class="noteBack postBack"><a href="/"><strong>Back</strong></a></li>
     </ul>
   </article>

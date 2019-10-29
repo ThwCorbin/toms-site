@@ -1,7 +1,7 @@
-{% extends "layouts/base.njk" %} {% block page_title %}{{ title }}{% endblock %}
+{% extends "layouts/base.njk" %}
+{% block page_title %}{{ title }}{% endblock %}
 {% block main %}
 <main class="postMain">
-
   <div class="letterboxLid">
     <h2 class="pageTeaser">Letterbox</h2>
     <ul class="postType">
@@ -9,37 +9,29 @@
       <li class="link postNote"><a href="/letterbox">Note</a></li>
       <li class="link postCard"><a href="/letterbox">Postcard</a></li>
     </ul>
-    {# <select class="selectByTag">
-      <option>Post by Tag</option>
-      <option>Article</option>
-      <option>Note</option>
-      <option>Postcard</option>
-    </select> #}
   </div>
   <hr>
-
   <article class="postAll postLong">
     <h3 class="postTitle">
       <a href={{ page.filePathStem }}>{{ title }}</a>
     </h3>
-    {# content is Markdown #}
+
+    {# Render content from Markdown file #}
     {{ content | safe }}
-    
+
     <ul class="postDataLong postData">
       <li class="postDate">
         <time datetime="{{ page.date.toISOString() }}">
           {{ page.date | date_dMMMMyyyy }}
       </li>
+      {% set noFirstTag = tags.slice(1) %}
+      {% for tag in noFirstTag %}
+        <li class="noteTag postTag">
+          <em>#{{ tag }}</em>
+        </li>
+      {% endfor %}
       <li class="postBack"><a href="/"><strong>Back</strong></a></li>
     </ul>
   </article>
-
-  {#
-  <li>{{ page.url }}</li>
-  #} {#
-  <li>{{ page.fileSlug }}</li>
-  #} {#
-  <li>{{ page.inputPath }}</li>
-  #}
 </main>
 {% endblock %}
