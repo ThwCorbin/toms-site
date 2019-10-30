@@ -3,7 +3,7 @@ title: A Markdown Guide
 description: Article providing tips on using Markdown
 tags: ['post', 'article', 'code']
 date: 2019-09-19
-updated: 2019-10-28
+updated: 2019-10-30
 layout: layouts/post.njk
 ---
 
@@ -44,14 +44,14 @@ This is a `<p>`. Use a backslash "\\"\
 or two blank spaces " "  
 to insert a `<br>`.
 
-Escape characters with one backslash (e.g. "\\#", "\\\*", "\\\_", etc.).
+Escape characters with one backslash (e.g. "\\#," "\\\*," "\\\_," etc.).
 
 ```bash
 This is a `<p>`. Use a backslash "\\"\
 or two blank spaces " "
 to insert a `<br>`.
 
-Escape characters with one backslash (e.g. "\\#", "\\*", "\\_", etc.).
+Escape characters with one backslash (e.g. "\\#," "\\*," "\\_," etc.).
 ```
 
 ---
@@ -162,7 +162,7 @@ $ mkdir public/markdown
 $ mv public/markdown.md public/markdown/
 ```
 
-Note the "bash" after the top backticks. This adds a `class` to the `<pre>` and `<code>` tags: `class="language-bash"`. We can now use a syntax highlighter to style the block code. I'm using [Prism](https://prismjs.com 'Prism website'). If you inspect the HTML above and below in your developer tools, you will see I've also done this for "markdown", "html", "css", and "javascript" (the language must be in lowercase in the Markdown). The Prism website has a nice list of [languages](https://prismjs.com/#supported-languages 'Prism website list of supported languages') and their lowercase aliases.
+Note the "bash" after the top backticks. This adds a `class` to the `<pre>` and `<code>` tags: `class="language-bash"`. We can now use a syntax highlighter to style the block code. I'm using [Prism](https://prismjs.com 'Prism website'). If you inspect the HTML above and below in your developer tools, you will see I've also done this for "markdown," "html," "css," and "javascript" (the language must be in lowercase in the Markdown). The Prism website has a nice list of [languages](https://prismjs.com/#supported-languages 'Prism website list of supported languages') and their lowercase aliases.
 
 We can instead indent each line four spaces in Markdown, but note there is no proper way to add a `class` attribute to enable syntax highlighting.
 
@@ -263,7 +263,7 @@ And here is the Markdown for an image with a link:
 
 #### Lists
 
-Use either an "\* ", an "- ", or a "+ " for unordered list items, and either "1. " or "1) " for ordered list items.
+Use either an "\* ," an "- ," or a "+ " for unordered list items, and either "1. " or "1) " for ordered list items.
 
 ```markdown
 - Dog

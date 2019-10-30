@@ -3,11 +3,11 @@ title: 11ty Collections Tags Scheme
 description: Scheme for organising my blog posts using Eleventy's collections tags
 tags: ['post', 'note', 'code']
 date: 2019-10-28
-updated: 2019-10-29
+updated: 2019-10-30
 layout: layouts/post.njk
 ---
 
-I use [11ty's collections](https://www.11ty.io/docs/collections/ 'Eleventy static site generator documentation for collections') `tags` to organise my blog content. In each blog post's front matter, I assign values for the `tags` key. All blog entries have a `tags` key of #post, and I break out posts into three different letterbox `tags`: #article, #note, and #card.
+I use [11ty's collections](https://www.11ty.io/docs/collections/ 'Eleventy static site generator documentation for collections') `tags` to organise my blog content. In each blog post's front matter, I assign values for the `tags` key. All blog entries have a `tags` key of "post," and I break out posts into three different letterbox `tags`: article, note, and card.
 
 <!END clip>
 
@@ -17,9 +17,9 @@ I use [11ty's collections](https://www.11ty.io/docs/collections/ 'Eleventy stati
 
 The letterbox `tags` have sub-`tags` that I use to manage similar content.
 
-- articles: #code, #life
-- notes: #code, #report
-- postcards: #idea, #image, #quote, #thought
+- articles: code, life
+- notes: code, report
+- postcards: idea, image, quote, thought
 
 Here is the front matter of the Markdown file for this blog post showing its `tags` values:
 
@@ -71,7 +71,7 @@ module.exports = function(eleventyConfig) {
 ```
 
 ```markdown
-I break out posts into three different letterbox `tags`: #article, #note, and #card.
+I break out posts into three different letterbox `tags`: article, note, and card.
 
 <!END clip>
 
