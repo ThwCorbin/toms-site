@@ -7,18 +7,19 @@ updated: 2019-10-29
 layout: layouts/post.njk
 ---
 
-I use [11ty's collections](https://www.11ty.io/docs/collections/ 'Eleventy static site generator documentation for collections') `tags` to organise my blog content. In each blog post's front matter, I assign values for the `tags` key. All blog entries have a `tags` key of #post, and I break out posts into three different main `tags`: #article, #note, and #card.
+I use [11ty's collections](https://www.11ty.io/docs/collections/ 'Eleventy static site generator documentation for collections') `tags` to organise my blog content. In each blog post's front matter, I assign values for the `tags` key. All blog entries have a `tags` key of #post, and I break out posts into three different letterbox `tags`: #article, #note, and #card.
 
 <!END clip>
 
-- articles are letters to the world that I either write or to which I link
-- notes are progress reports on my projects, code tips/tricks/snippets that are worth noting, and other correspondence that are shorter than a letter but longer than a postcard
+- articles are letters to the world about code or the ultimate question of life
+- notes are code tips/tricks/snippets that are worth noting, progress reports on my projects, and other correspondence that are shorter than a letter but longer than a postcard
 - postcards provide [titbits](https://chambers.co.uk/search/?query=titbit&title=thes 'Definition of titbits') of content, such as quotes, thoughts, ideas, and images
 
-The main `tags` #note and #card have sub-`tags` that I use to manage similar content.
+The letterbox `tags` have sub-`tags` that I use to manage similar content.
 
-- #report, #code
-- #quote, #thought, #idea, #image
+- articles: #code, #life
+- notes: #code, #report
+- postcards: #idea, #image, #quote, #thought
 
 Here is the front matter of the Markdown file for this blog post showing its `tags` values:
 
@@ -70,11 +71,11 @@ module.exports = function(eleventyConfig) {
 ```
 
 ```markdown
-I break out posts into three different main `tags`: #article, #note, and #card.
+I break out posts into three different letterbox `tags`: #article, #note, and #card.
 
 <!END clip>
 
-- articles are letters to the world that I either write or to which I link
+- articles are letters to the world about code or the ultimate question of life
 ```
 
 There is more information about collection item data structure in the 11ty [documentation](https://www.11ty.io/docs/collections/#collection-item-data-structure 'Eleventy documentation'). And here is the Nunjucks documentation describing a [`for` block](https://mozilla.github.io/nunjucks/templating.html#for 'Nunjucks documentation').

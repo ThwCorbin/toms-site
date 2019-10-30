@@ -1,18 +1,20 @@
-{% extends "layouts/base.njk" %} {% block page_title %} Letterbox {% endblock%}
+{% extends "layouts/base.njk" %}
+{% block page_title %} Letterbox {% endblock%}
 {% block main %}
 <main class="mainLetterbox">
   <div class="letterboxLid">
 
   <h2 class="pageTeaser">Letterbox</h2>
-    <ul class="postType">
+    <ul class="postTypes">
     {# Add anchors and collections functionality #}
-      <li class="link postArticle"><a href="/letterbox">Article</a></li>
-      <li class="link postNote"><a href="/letterbox">Note</a></li>
-      <li class="link postCard"><a href="/letterbox">Postcard</a></li>
+      <li class="link postType postArticle"><a class="aPostType" href="/letterbox">Article</a></li>
+      <li class="link postType postNote"><a class="aPostType" href="/letterbox">Note</a></li>
+      <li class="link postType postCard"><a class="aPostType" href="/letterbox">Postcard</a></li>
     </ul>
   </div>
   <hr>
 
   {% include "partials/_notes.njk" %}
 </main>
+
 {% endblock %}

@@ -21,8 +21,28 @@ let printDate = () => {
 };
 pictureTest.addEventListener("click", printDate);
 
-//> Underline current page in nav bars
+//> Underline active page in nav bars
 let anchorCollection = document.getElementsByTagName("a");
+(() => {
+  for (let i = 0; i < anchorCollection.length; i++) {
+    anchorCollection[i].attributes.href.value.toLowerCase() ==
+    window.location.pathname.toLowerCase()
+      ? anchorCollection[i].parentElement.setAttribute("id", "activePage")
+      : anchorCollection[i].removeAttribute("id");
+  }
+})();
+
+//> Underline active collection in letterbox
+let aPostType = document.querySelectorAll(".aPostType");
+let setActivePostType = e => {
+  for (let i = 0; i < aPostType.length; i++) {
+    aPostType[i] === e.target
+      ? aPostType[i].parentElement.setAttribute("id", "activePostType")
+      : aPostType[i].removeAttribute("id");
+  }
+};
+aPostType.forEach(type => type.addEventListener("click", setActivePostType));
+
 (() => {
   for (let i = 0; i < anchorCollection.length; i++) {
     anchorCollection[i].attributes.href.value.toLowerCase() ==

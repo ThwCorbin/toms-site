@@ -329,7 +329,7 @@ main {
   align-items: baseline;
 }
 
-.postType {
+.postTypes {
   display: flex;
 }
 
@@ -529,7 +529,8 @@ footer {
   text-decoration: underline;
 }
 
-#activePage {
+#activePage,
+#activePostType {
   background-color: var(--pinkWhite);
   border-bottom: 0.2em solid var(--pink);
 }
