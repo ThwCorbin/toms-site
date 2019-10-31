@@ -7,7 +7,7 @@ updated: 2019-10-30
 layout: layouts/post.njk
 ---
 
-I use [11ty's collections](https://www.11ty.io/docs/collections/ 'Eleventy static site generator documentation for collections') `tags` to organise my blog content. In each blog post's front matter, I assign values for the `tags` key. All blog entries have a `tags` key of "post," and I break out posts into three different letterbox `tags`: article, note, and card.
+I use [11ty's collections](https://www.11ty.io/docs/collections/ 'Eleventy static site generator documentation for collections') `tags` to organise my blog content. In each blog post's front matter, I assign values to the `tags` key. All blog entries have a `tags` key of "post," and I break out posts into three different letterbox `tags`: article, note, and card.
 
 <!END clip>
 
