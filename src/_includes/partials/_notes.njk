@@ -1,35 +1,6 @@
 <div class="notesLetterbox">
   {% for post in collections.note | reverse %}
-    {% include "partials/_articles.njk" %}
+    {% include "partials/_postShort.njk" %}
   <hr>
   {%- endfor -%}
 </div>
-
-  {# <article class="postAll noteAll noteShort"> #}
-    {# <h3 class="noteTitle postTitle"> #}
-      {# <a href={{ note.url }}>{{ note.data.title }}</a> #}
-    {# </h3> #}
-
-    {# Render content as templateContent from Markdown file #}
-    {# clipPost filter because there is no item.excerpt (only page.excerpt) #}
-    {# {{ note.templateContent | clipPost | safe }} #}
-
-    {# <ul class="noteDataShort noteData postDataShort postData"> #}
-      {# <li class="noteDate postDate"> #}
-        {# <time datetime="{{ note.date.toISOString() }}"> #}
-        {# {{ note.date | date_dMMMMyyyy }} #}
-      {# </li> #}
-      {# Return a new array without note.data.tags["#post"] #}
-      {# {% set noFirstTag = note.data.tags.slice(1) %} #}
-      {# {% for tag in noFirstTag %} #}
-        {# <li class="noteTag postTag"> #}
-          {# <em>#{{ tag }}</em> #}
-        {# </li> #}
-      {# {% endfor %} #}
-      {# <li class="noteMore postMore"> #}
-        {# <a href="{{ note.url }}"> #}
-          {# <strong>More</strong> #}
-        {# </a> #}
-      {# </li> #}
-    {# </ul> #}
-  {# </article> #}
