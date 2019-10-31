@@ -1,33 +1,6 @@
 <div class="postsFrontRoom">
   {% for post in collections.post | reverse %}
-  <article class="postAll postShort">
-    <h3 class="postTitle">
-      <a href={{ post.url }}>{{ post.data.title }}</a>
-    </h3>
-
-    {# Render content as templateContent from Markdown file #}
-    {# clipPost filter because there is no item.excerpt (only page.excerpt) #}
-    {{ post.templateContent | clipPost | safe }}
-
-    <ul class="postDataShort postData">
-      <li class="postDate">
-        <time datetime="{{ post.date.toISOString() }}">
-        {{ post.date | date_dMMMMyyyy }}
-      </li>
-      {# Return a new array without post.data.tags["#post"] #}
-      {% set noFirstTag = post.data.tags.slice(1) %}
-      {% for tag in noFirstTag %}
-        <li class="postTag">
-          <em>#{{ tag }}</em>
-        </li>
-      {% endfor %}
-      <li class="postMore">
-        <a href="{{ post.url }}">
-          <strong>More</strong>
-        </a>
-      </li>
-    </ul>
-  </article>
-	<hr>
+    {% include "partials/_articles.njk" %}
+  <hr>
   {%- endfor -%}
 </div>
