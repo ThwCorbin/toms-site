@@ -1,0 +1,9 @@
+{% extends "layouts/base.njk" %}
+{% block page_title %} Letterbox {% endblock%}
+{% block main %}
+<main class="mainLetterbox">
+  {% include "partials/_letterboxTop.njk" %}
+
+  {% include "partials/_articles.njk" %}
+</main>
+{% endblock %}
