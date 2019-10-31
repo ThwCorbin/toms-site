@@ -19,7 +19,7 @@
       {% set noFirstTag = tags.slice(1) %}
       {% for tag in noFirstTag %}
         <li class="noteTag postTag">
-          <em>#{{ tag }}</em>
+          <a href="/letterbox-{{ tag }}s"><em>#{{ tag }}</em></a>
         </li>
       {% endfor %}
       <li class="postBack"><a href="/"><strong>Back</strong></a></li>

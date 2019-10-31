@@ -16,7 +16,7 @@
     {% set noFirstTag = post.data.tags.slice(1) %}
     {% for tag in noFirstTag %}
       <li class="postTag">
-        <em>#{{ tag }}</em>
+        <a href="/letterbox-{{ tag }}s"><em>#{{ tag }}</em></a>
       </li>
     {% endfor %}
     <li class="postMore">
