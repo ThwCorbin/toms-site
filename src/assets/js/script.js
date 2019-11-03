@@ -15,7 +15,7 @@ let theAnswer = () => console.log(`Hiya luna! The answer is ${answer}.`);
 export { theDay, theAnswer };
 
 //> The picture click test
-let myFace = document.querySelector(".imgDaddyO");g
+let myFace = document.querySelector(".imgDaddyO");
 let pictureTest = () => {
   console.log("Hiya luna!");
 };
