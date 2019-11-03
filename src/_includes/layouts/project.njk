@@ -1,0 +1,29 @@
+{% extends "layouts/base.njk" %}
+{% block page_title %}{{ title }}{% endblock %}
+{% block main %}
+<main class="projectMain">
+  {# {% include "partials/_letterboxTop.njk" %}
+  <article class="postAll postLong">
+    <h3 class="postTitle">
+      <a href={{ page.filePathStem }}>{{ title }}</a>
+    </h3> #}
+
+
+    {# {{ content | safe }}
+
+    <ul class="postDataLong postData">
+      <li class="postDate">
+        <time datetime="{{ page.date.toISOString() }}">
+          {{ page.date | date_dMMMMyyyy }}
+      </li>
+      {% set noFirstTag = tags.slice(1) %}
+      {% for tag in noFirstTag %}
+        <li class="noteTag postTag">
+          <a href="/letterbox-{{ tag }}s"><em>#{{ tag }}</em></a>
+        </li>
+      {% endfor %}
+      <li class="postBack"><a href="/"><strong>Back</strong></a></li>
+    </ul>
+  </article>
+</main> #}
+{% endblock %}
