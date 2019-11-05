@@ -11,14 +11,14 @@ I use [11ty's collections](https://www.11ty.io/docs/collections/ 'Eleventy stati
 
 <!END clip>
 
-- articles are letters to the world about code or the ultimate question of life
+- articles are letters to the world about code, work, or the ultimate question of life
 - notes are code tips/tricks/snippets that are worth noting, progress reports on my projects, and other correspondence that are shorter than a letter but longer than a postcard
 - postcards provide [titbits](https://chambers.co.uk/search/?query=titbit&title=thes 'Definition of titbits') of content, such as quotes, thoughts, ideas, and images
 
 The letterbox `tags` have sub-`tags` that I use to manage similar content.
 
-- articles: code, life
-- notes: code, report
+- articles: code, life, work
+- notes: code, life, report, work
 - postcards: idea, image, quote, thought
 
 Here is the front matter of the Markdown file for this blog post showing its `tags` values:

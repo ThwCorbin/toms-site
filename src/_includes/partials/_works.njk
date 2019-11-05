@@ -1,0 +1,6 @@
+<div class="worksLetterbox letterbox">
+  {% for post in collections.work | reverse %}
+    {% include "partials/_postShort.njk" %}
+  <hr>
+  {%- endfor -%}
+</div>

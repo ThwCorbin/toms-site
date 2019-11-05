@@ -24,6 +24,14 @@ module.exports = function(eleventyConfig) {
     return clipping;
   });
 
+  //> Add collection for projects
+  // eleventyConfig.addCollection('projects', (collection) => {
+  //   return collection.getFilteredByGlob('projects/*.md');
+  // });
+  eleventyConfig.addCollection('projects', function(collection) {
+    return collection.getFilteredByGlob('projects/*.md');
+  });
+
   //> 11ty syntax highlighting
   eleventyConfig.addPlugin(syntaxHighlight);
 

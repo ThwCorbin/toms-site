@@ -1,15 +1,26 @@
+{# ---
+pagination:
+  data: collections.projects
+  size: 2
+
+--- #}
+
 {% extends "layouts/base.njk" %}
 {% block page_title %} Attic {% endblock %}
 {% block main %}
 <main class="mainAttic">
-
 	<h2 class="pageTeaser">Mind the cobwebs</h2>
-
 	<p>
 		The attic stores my old projects. Every so often, I sit up 
 		here in my pyjamas digging through memories.
 	</p>
 	<hr>
-
+	<div class="projectsAttic">
+		<h2> Content below </h2>
+		{% for project in collections.projects | reverse %}
+			<li>{{ project.data.title }}</li>
+			<hr>
+		{%- endfor -%}
+	</div>
 </main>
 {% endblock %}
