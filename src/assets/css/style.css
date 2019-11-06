@@ -81,7 +81,6 @@ p {
   font-size: 1em;
   background: var(--blueWhite);
   padding: 0.25em 0.5em;
-  margin-bottom: 1em;
 }
 
 img {
@@ -319,6 +318,10 @@ main {
 
 .pageTeaser {
   margin-bottom: 1em;
+}
+
+.pageIntro {
+  background: var(--blueWhite);
 }
 
 /*> Main post.njk layout above <article> */
