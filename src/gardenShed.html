@@ -3,12 +3,18 @@
 {% block main %}
 <main class="mainShed">
 
-	<h2 class="pageTeaser">Mind the mess</h2>
-	<div class="pageIntro">
-		<p>The garden shed is where I tinker on projects. 
-		If you have thoughts, contact me at the links below.</p>
-	</div>
-	<hr>
-	
+  <h2 class="pageTeaser">Mind the mess</h2>
+  <div class="pageIntro">
+    <p>The garden shed is where I tinker on projects. 
+    If you have thoughts, contact me at the links below.</p>
+  </div>
+  <hr>
+
+  {# All projects have a tags value of either 1stfloor, shed, or attic #}
+  {% for project in collections.shed | reverse %}
+    {# _partial works by using "project in" instead of using "shed in" #}
+    {% include "partials/_projects.njk" %}
+  {%- endfor -%}
+
 </main>
 {% endblock %}

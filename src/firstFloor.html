@@ -3,12 +3,18 @@
 {% block main %}
 <main class="mainFirstFloor">
 
-	<h2 class="pageTeaser">Apples and pears lead here</h2>
-	<div class="pageIntro">
-		<p>The bedrooms on the first floor will display my new projects. 
-		If you would like to see my old projects, I store them in the attic.</p>
-	</div>
-	<hr>
+  <h2 class="pageTeaser">Apples and pears lead here</h2>
+  <div class="pageIntro">
+    <p>The bedrooms on the first floor will display my new projects. 
+    If you would like to see my old projects, I store them in the attic.</p>
+  </div>
+  <hr>
+
+  {# All projects have a tags value of either 1stfloor, shed, or attic #}
+  {% for project in collections.1stFloor | reverse %}
+    {# _partial works by using "project in" instead of using "1stFloor in" #}
+    {% include "partials/_projects.njk" %}
+  {%- endfor -%}
 
 </main>
 {% endblock %}

@@ -1,14 +1,16 @@
-{# ---
-pagination:
-  data: collections.projects
-  size: 2
-  alias: projects
-permalink: projects/{{ projects.slug }}
---- #}
-
-{# <div class="projectsAttic">
-  {% for project in collections.projects | reverse %}
-    <li><a href="{{ projects }}">
-  <hr>
-  {%- endfor -%}
-</div> #}
+<article class="projectAllRooms">
+  <h2 class="projectTitle">
+    <a href="{{ project.data.link }}">{{ project.data.title }}</a>
+  </h2>
+  <div class="projectInfo">
+    <a class="projectScreenshot" href="{{ project.data.link }}">
+      <img
+        class="imgProject"
+        src="{{ project.data.image }}"
+        alt="A project screenshot for {{ project.data.title }}"
+      />
+    </a>
+    {{ project.templateContent | safe }}
+  </div>
+</article>
+<hr />

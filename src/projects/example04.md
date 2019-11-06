@@ -1,10 +1,9 @@
 ---
 title: Example Project 04
 description: This is an example project
-tags: ['project', 'attic']
+tags: ['project', 'shed']
 date: 2019-11-04
 updated: 2019-11-04
-# layout: layouts/project.njk
 ---
 
 This is the example 04 project clip.

@@ -465,10 +465,6 @@ main {
   background: var(--blueWhite);
 }
 
-/* .projectScreenshot {
-  align-self: center;
-} */
-
 .imgProject {
   max-width: 5em;
   max-height: 5em;
