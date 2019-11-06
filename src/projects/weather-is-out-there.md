@@ -1,12 +1,10 @@
 ---
-# Remove next line
-eleventyExcludeFromCollections: true
 title: The Weather is Out There
 description: A local weather application with an option to improve your forecast
 tags: ['project', 'attic']
 link: https://codepen.io/nicedrop/full/YEopYX/
 image: /assets/images/theweatherisoutthere_sq.png
-date: 2019-11-03
+date: 2019-11-06
 updated: 2019-11-06
 ---
 

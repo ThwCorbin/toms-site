@@ -431,11 +431,60 @@ main {
   margin-bottom: 1em;
 }
 
-.postMore,
-.postBack {
+.postMore {
   font-size: 1em;
   background-color: none;
   margin: 0 1em 0 auto;
+}
+
+/*> Projects on the 1st Floor, in the Shed, and in the Attic */
+/* .projectAll {
+  display: grid;
+} */
+
+.projectTitle a:link,
+.projectTitle a:visited {
+  color: var(--greyDark);
+}
+
+.projectTitle a:focus,
+.projectTitle a:hover {
+  color: var(--grey);
+}
+
+.projectTitle a:active {
+  color: var(--pink);
+}
+
+.projectInfo {
+  /* display: flex;
+  flex-direction: column; */
+  background: var(--blueWhite);
+}
+
+/* .projectScreenshot {
+  align-self: center;
+} */
+
+.imgProject {
+  max-width: 5em;
+  max-height: 5em;
+  border-radius: 3%;
+  margin: 0.5em 2em;
+}
+
+@media screen and (min-width: 40em) {
+  .imgProject {
+    max-width: 7em;
+    max-height: 7em;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .imgProject {
+    max-width: 10em;
+    max-height: 10em;
+  }
 }
 
 /*> Footer */

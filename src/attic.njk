@@ -2,17 +2,32 @@
 {% block page_title %} Attic {% endblock %}
 {% block main %}
 <main class="mainAttic">
-	<h2 class="pageTeaser">Mind the cobwebs</h2>
-	<p>
-		The attic stores my old projects. Every so often, I sit up 
-		here in my pyjamas digging through memories.
-	</p>
-	<hr>
-	<div class="projectsAttic">
-		{% for project in collections.attic | reverse %}
-			<li><a href="{{ project.url }}">{{ project.data.title }}</a></li>
-			<hr>
-		{%- endfor -%}
-	</div>
+  <h2 class="pageTeaser">Mind the cobwebs</h2>
+  <p>
+    The attic stores my old projects. Every so often, I sit up here in my
+    pyjamas digging through memories.
+  </p>
+  <hr />
+
+  {# All projects have a tags value of either 1stfloor, shed, or attic, but we
+  use "project in" instead of using the perfectly accetable "attic in" #}
+  {% for project in collections.attic | reverse %}
+  <article class="projectAttic projectAll">
+    <h2 class="projectTitle">
+      <a href="{{ project.data.link }}">{{ project.data.title }}</a>
+    </h2>
+    <div class="projectInfo">
+      <a class="projectScreenshot" href="{{ project.data.link }}">
+        <img
+          class="imgProject"
+          src="{{ project.data.image }}"
+          alt="A project screenshot for {{ project.data.title }}"
+        />
+      </a>
+      {{ project.templateContent | safe }}
+    </div>
+  </article>
+  <hr />
+  {%- endfor -%}
 </main>
 {% endblock %}
