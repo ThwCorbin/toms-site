@@ -33,6 +33,7 @@ html {
   font-size: 16px;
   font-family: Helvetica, Arial, sans-serif;
   margin: 0.25em;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -280,6 +281,9 @@ aside {
   .asideMe {
     flex-direction: column;
     justify-content: flex-start;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
   }
 
   .imgDaddyO {
@@ -314,6 +318,9 @@ main {
   max-width: 50em;
   padding: 0 1em;
   margin-bottom: 1em;
+  /* height: 100vh;
+  overflow: auto;
+  scroll-snap-type: y mandatory; */
 }
 
 .pageTeaser {
@@ -336,7 +343,20 @@ main {
   display: flex;
 }
 
+.articlesAll {
+  height: 100vh;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+}
+
+/*> Main <article> */
+article {
+  scroll-snap-align: start;
+  /* scroll-margin-top: 0.5em; */
+}
+
 /*> Main all <article class="postAll"> containing a short or long post */
+
 .postAll {
   display: flex;
   flex-direction: column;
@@ -386,8 +406,6 @@ main {
 }
 
 .postAll table {
-  /* table-layout: fixed; */
-  /* width: 100%; */
   align-self: center;
   color: var(--blueBlack);
   font-size: 0.7em;
@@ -440,11 +458,7 @@ main {
   margin: 0 1em 0 auto;
 }
 
-/*> Projects on the 1st Floor, in the Shed, and in the Attic */
-/* .projectAll {
-  display: grid;
-} */
-
+/*> Main all projects in rooms <article class="projectAllRooms"> */
 .projectTitle a:link,
 .projectTitle a:visited {
   color: var(--greyDark);

@@ -9,12 +9,12 @@
     Every so often, I sit up here in my pyjamas digging through memories.</p>
   </div>
   <hr>
-
-  {# All projects have a tags value of either 1stfloor, shed, or attic #}
-  {% for project in collections.attic | reverse %}
-    {# _partial works by using "project in" instead of using "attic in" #}
-    {% include "partials/_projects.njk" %}
-  {%- endfor -%}
-
+  <div class="projectsAttic articlesAll">
+    {# All projects have a tags value of either 1stfloor, shed, or attic #}
+    {% for project in collections.attic | reverse %}
+      {# _partial works by using "project in" instead of using "attic in" #}
+      {% include "partials/_projects.njk" %}
+    {%- endfor -%}
+  </div>
 </main>
 {% endblock %}

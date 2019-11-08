@@ -9,12 +9,12 @@
     If you would like to see my old projects, I store them in the attic.</p>
   </div>
   <hr>
-
-  {# All projects have a tags value of either 1stfloor, shed, or attic #}
-  {% for project in collections.1stFloor | reverse %}
-    {# _partial works by using "project in" instead of using "1stFloor in" #}
-    {% include "partials/_projects.njk" %}
-  {%- endfor -%}
-
+  <div class="projects1stFloor articlesAll">
+    {# All projects have a tags value of either 1stfloor, shed, or attic #}
+    {% for project in collections.1stFloor | reverse %}
+      {# _partial works by using "project in" instead of using "1stFloor in" #}
+      {% include "partials/_projects.njk" %}
+    {%- endfor -%}
+  </div>
 </main>
 {% endblock %}
