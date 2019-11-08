@@ -5,7 +5,7 @@ tags: ['project', 'attic']
 link: https://codepen.io/nicedrop/full/BYBVer
 gitlink:
 image: /assets/images/twitchers_sq.png
-date: 2019-11-07
+date: 2019-11-07 18:45:00.00
 updated: 2019-11-07
 ---
 

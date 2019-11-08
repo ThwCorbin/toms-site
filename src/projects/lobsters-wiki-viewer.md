@@ -1,11 +1,11 @@
 ---
-title: Lobsters - Wikipedia Viewer
+title: Lobsters - A Wikipedia Viewer
 description: Search Wikipedia and view results in your browser
 tags: ['project', 'attic']
 link: https://codepen.io/nicedrop/full/YEopYX
 gitlink:
 image: /assets/images/lobsterswikiviewer_sq.png
-date: 2019-11-07
+date: 2019-11-07 18:15:00.00
 updated: 2019-11-07
 ---
 

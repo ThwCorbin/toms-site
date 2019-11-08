@@ -1,4 +1,4 @@
-const { format, subDays } = require('date-fns');
+const { format } = require('date-fns');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 
 module.exports = function(eleventyConfig) {
