@@ -13,7 +13,7 @@ updated: 2019-11-07
 
 Project:
 
-Details:
+Brief:
 
 Background: [freeCodeCamp](https://www.freecodecamp.org 'freeCodeCamp website').
 

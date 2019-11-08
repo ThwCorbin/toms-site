@@ -9,7 +9,7 @@ layout: layouts/post.njk
 
 Project idea: User makes a character that is 1/3 monkey, 1/3 cat, and 1/3 robot. User sends their monkeyCatRobot to friends via email, twitter, and sundry media platforms.
 
-Details: User pulls the handle on a [one-armed bandit](https://chambers.co.uk/search/?query=one-armed+bandit&title=21st 'Definition of a one-armed bandit'). Instead of random fruit, the program returns a monkeyCatRobot that the user sends to friends. (Optional) User can incorporate lobster, dog, and astroid miner body part 1/3s to build a mutant monkeyCatRobot. (Optional) User can select the beast's different 1/3s by swiping to create a custom monkeyCatRobot.
+Brief: User pulls the handle on a [one-armed bandit](https://chambers.co.uk/search/?query=one-armed+bandit&title=21st 'Definition of a one-armed bandit'). Instead of random fruit, the program returns a monkeyCatRobot that the user sends to friends. (Optional) User can incorporate lobster, dog, and astroid miner body part 1/3s to build a mutant monkeyCatRobot. (Optional) User can select the beast's different 1/3s by swiping to create a custom monkeyCatRobot.
 
 <!END clip>
 
