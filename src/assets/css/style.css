@@ -343,10 +343,12 @@ main {
   display: flex;
 }
 
-.articlesAll {
-  height: 100vh;
-  overflow: auto;
-  scroll-snap-type: y mandatory;
+@media screen and (min-width: 60em) {
+  .articlesAll {
+    height: 100vh;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+  }
 }
 
 /*> Main <article> */
