@@ -17,7 +17,7 @@ export { theDay, theAnswer };
 //> The picture click test
 let myFace = document.querySelector(".imgDaddyO");
 let pictureTest = () => {
-  console.log("Hiya luna!");
+  console.log("Hiya luna! You can call me Wye.");
 };
 myFace.addEventListener("click", pictureTest);
 
