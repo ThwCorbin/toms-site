@@ -341,18 +341,18 @@ main {
 }
 
 /* @media screen and (min-width: 60em) { */
-.articlesAll {
-  /* height: 100vh; */
-  /* overflow: auto; */
-  scroll-snap-type: y proximity;
-}
+/* .articlesAll { */
+/* height: 100vh; */
+/* overflow: auto; */
+/* scroll-snap-type: y proximity; */
+/* } */
 /* } */
 
 /*> Main <article> */
-article {
-  scroll-snap-align: start;
-  scroll-margin-top: 0.5em;
-}
+/* article { */
+/* scroll-snap-align: start; */
+/* scroll-margin-top: 0.5em; */
+/* } */
 
 /*> Main all <article class="postAll"> containing a short or long post */
 
