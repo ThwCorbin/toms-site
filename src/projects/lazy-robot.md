@@ -1,6 +1,6 @@
 ---
 title: Lazy Robot and Humans
-description: A lazy robot plays noughts and crosses if bot can be bothered to do so
+description: A lazy robot plays noughts and crosses
 tags: ['project', 'attic']
 link: https://codepen.io/nicedrop/full/Yawqzb
 gitlink:
