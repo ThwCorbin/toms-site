@@ -1,7 +1,7 @@
 ---
 title: Tom's Website
 description:
-tags: ['project', 'shed', '1stfloor']
+tags: ['project', 'shed', '1stFloor']
 link:
 gitlink: https://github.com/ThwCorbin/toms-site
 image: https://www.thwcorbin.com/
