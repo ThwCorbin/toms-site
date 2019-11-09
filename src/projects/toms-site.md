@@ -13,6 +13,6 @@ Project: My personal website
 
 Brief: User can read my **blog** in the front room. User can read **about** me and what I'm currently working on in the kitchen. User can interact with my **projects** on the first floor. User can dig into the projects I'm currently working on in the shed. User can see my **archived** projects in the attic. User can **contact** me via links at the bottom of each page.
 
-Background: [freeCodeCamp](https://www.freecodecamp.org 'freeCodeCamp website').
+Background: I wanted to JAMstack my website with a blog, updated projects, and a new theme.
 
-Status:
+Status: Working project.
