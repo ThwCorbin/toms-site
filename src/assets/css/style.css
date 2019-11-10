@@ -463,12 +463,20 @@ main {
   color: var(--greyDark);
 }
 
-.projectTitle a:focus,
-.projectTitle a:hover {
+.projectGitLink a:link,
+.projectGitLink a:visited {
   color: var(--grey);
 }
 
-.projectTitle a:active {
+.projectTitle a:focus,
+.projectGitLink a:focus,
+.projectTitle a:hover,
+.projectGitLink a:hover {
+  color: var(--grey);
+}
+
+.projectTitle a:active,
+.projectGitLink a:active {
   color: var(--pink);
 }
 
@@ -476,6 +484,10 @@ main {
   /* display: flex;
   flex-direction: column; */
   background: var(--blueWhite);
+}
+
+.projectGitLink {
+  font-size: 0.75em;
 }
 
 .imgProject {

@@ -1,10 +1,16 @@
 <article class="projectAllRooms">
   <h3
    class="projectTitle">
-    <a href="{{ project.data.link }}">{{ project.data.title }}</a>
+    <a href="{{ project.data.link }}" title="{{ project.data.link }}">{{ project.data.title }}</a>
+    {% if project.data.gitlink %}
+    <span class="projectGitLink">
+      <a href="{{ project.data.gitlink }}" title="{{ project.data.gitlink }}">(GitHub)</a>
+    </span>
+    {% endif %}
   </h3>
+
   <div class="projectInfo">
-    <a class="projectScreenshot" href="{{ project.data.link }}">
+    <a class="projectScreenshot" href="{{ project.data.link }}" title="{{ project.data.link }}">
       <img
         class="imgProject"
         src="{{ project.data.image }}"
