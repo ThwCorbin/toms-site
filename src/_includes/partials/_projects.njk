@@ -4,12 +4,13 @@
     <a href="{{ project.data.link }}" title="{{ project.data.link }}">{{ project.data.title }}</a>
     {% if project.data.gitlink %}
     <span class="projectGitLink">
-      <a href="{{ project.data.gitlink }}" title="{{ project.data.gitlink }}">(GitHub)</a>
+      <a href="{{ project.data.gitlink }}" title="{{ project.data.gitlink }}">(repo)</a>
     </span>
     {% endif %}
   </h3>
 
   <div class="projectInfo">
+    {% if project.data.image %}
     <a class="projectScreenshot" href="{{ project.data.link }}" title="{{ project.data.link }}">
       <img
         class="imgProject"
@@ -17,6 +18,7 @@
         alt="A project screenshot for {{ project.data.title }}"
       />
     </a>
+    {% endif %}
     {{ project.templateContent | safe }}
   </div>
 </article>
