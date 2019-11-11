@@ -11,8 +11,8 @@ updated: 2019-11-10
 
 Project: A play area to try out code.
 
-Brief: Move along. Nothing to see here.
+Brief: User can move along. Nothing to see here.
 
-Background: I needed a play area in our back garden to try out code.
+Background: I needed a play area to try out code using a JAMstack.
 
-Status: Neither here nor there.
+Status: In the factory canteen.
