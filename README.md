@@ -2,7 +2,7 @@
 
 ## Project
 
-A personal website that breathes like a house. /
+A personal website that breathes like a house.  
 
 Website: https://www.thwcorbin.com
 
