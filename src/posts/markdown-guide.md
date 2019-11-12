@@ -1,13 +1,13 @@
 ---
 title: A Markdown Guide
 description: Article providing tips on using Markdown
-tags: ['post', 'article', 'code']
+tags: ["post", "article", "code"]
 date: 2019-09-19
 updated: 2019-10-30
 layout: layouts/post.njk
 ---
 
-This guide is based on the [CommonMark](https://commonmark.org/ 'CommonMark website') help page and spec along with Markdown flotsam found on the web, such as [these tips](https://css-tricks.com/little-stuff-markdown-always-forget-google/ 'Article about Markdown on CSS-Tricks').
+This guide is based on the [CommonMark](https://commonmark.org/ "CommonMark website") help page and spec along with Markdown flotsam found on the web, such as [these tips](https://css-tricks.com/little-stuff-markdown-always-forget-google/ "Article about Markdown on CSS-Tricks").
 
 #### Headings
 
@@ -162,7 +162,7 @@ $ mkdir public/markdown
 $ mv public/markdown.md public/markdown/
 ```
 
-Note the "bash" after the top backticks. This adds a `class` to the `<pre>` and `<code>` tags: `class="language-bash"`. We can now use a syntax highlighter to style the block code. I'm using [Prism](https://prismjs.com 'Prism website'). If you inspect the HTML above and below in your developer tools, you will see I've also done this for "markdown," "html," "css," and "javascript" (the language must be in lowercase in the Markdown). The Prism website has a nice list of [languages](https://prismjs.com/#supported-languages 'Prism website list of supported languages') and their lowercase aliases.
+Note the "bash" after the top backticks. This adds a `class` to the `<pre>` and `<code>` tags: `class="language-bash"`. We can now use a syntax highlighter to style the block code. I'm using [Prism](https://prismjs.com "Prism website"). If you inspect the HTML above and below in your developer tools, you will see I've also done this for "markdown," "html," "css," and "javascript" (the language must be in lowercase in the Markdown). The Prism website has a nice list of [languages](https://prismjs.com/#supported-languages "Prism website list of supported languages") and their lowercase aliases.
 
 We can instead indent each line four spaces in Markdown, but note there is no proper way to add a `class` attribute to enable syntax highlighting.
 
@@ -201,10 +201,10 @@ We can instead indent each line four spaces in Markdown, but note there is no pr
 Links include link text, a url, and an optional `title`.
 
 ```markdown
-[CommonMark](https://commonmark.org 'CommonMark website') is a Markdown specification.
+[CommonMark](https://commonmark.org "CommonMark website") is a Markdown specification.
 ```
 
-[CommonMark](https://commonmark.org 'CommonMark website') is a Markdown specification.
+[CommonMark](https://commonmark.org "CommonMark website") is a Markdown specification.
 
 Reference links add a link `label`, which is in the second set of brackets. It must be at least one non-whitespace character (matching is **case-insensitive**).
 
@@ -212,7 +212,7 @@ Reference links add a link `label`, which is in the second set of brackets. It m
 [Nunjucks][1] is a templating language for JavaScript.
 [MDN][foo] has useful information about web technologies.
 
-[1]: https://mozilla.github.io/nunjucks/ 'Nunjucks website'
+[1]: https://mozilla.github.io/nunjucks/ "Nunjucks website"
 
 <!-- prettier-ignore-start -->
 [FOO]: https://developer.mozilla.org/en-US/ 'MDN website'
@@ -222,7 +222,7 @@ Reference links add a link `label`, which is in the second set of brackets. It m
 [Nunjucks][1] is a templating language for JavaScript.
 [MDN][foo] has useful information about web technologies.
 
-[1]: https://mozilla.github.io/nunjucks/ 'Nunjucks website'
+[1]: https://mozilla.github.io/nunjucks/ "Nunjucks website"
 
 <!-- prettier-ignore-start -->
 [FOO]: https://developer.mozilla.org/en-US/ 'MDN website'
@@ -244,7 +244,7 @@ Reference links add a link `label`, which is in the second set of brackets. It m
 The Markdown for images is similar to links. Add an "!" at the beginning and (instead of link text) use an image description, which will render in HTML as the `alt` attribute.
 
 ```markdown
-![image description](/url 'title')
+![image description](/url "title")
 
 ![Tom's favicon is a blue circle with 'ThwC' text](/assets/images/favicon/apple-touch-icon.png "Tom's favicon")
 ```
@@ -254,10 +254,10 @@ The Markdown for images is similar to links. Add an "!" at the beginning and (in
 And here is the Markdown for an image with a link:
 
 ```markdown
-[![Tom's Two-up Two-Down website](/assets/images/favicon/favicon-32x32.png)](https://www.thwcorbin.com "Tom's website")
+[![Tom's Two-up Two-down website](/assets/images/favicon/favicon-32x32.png)](https://www.thwcorbin.com "Tom's Two-up Two-down website")
 ```
 
-[![Tom's Two-up Two-Down website](/assets/images/favicon/favicon-32x32.png)](https://www.thwcorbin.com "Tom's website")
+[![Tom's Two-up Two-down website](/assets/images/favicon/favicon-32x32.png)](https://www.thwcorbin.com "Tom's Two-up Two-down website")
 
 ---
 
