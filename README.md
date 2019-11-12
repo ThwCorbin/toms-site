@@ -3,7 +3,9 @@
 ## Project
 
 A personal website that breathes like a house.
-[![Tom's Two-up Two-down website](src/assets/images/toms-site-min.png)](https://www.thwcorbin.com "Tom's Two-up Two-down website")
+Website: https://www.thwcorbin.com
+
+<!-- [![Tom's Two-up Two-down website](src/assets/images/toms-site-min.png?raw=true)](https://www.thwcorbin.com "Tom's Two-up Two-down website") -->
 
 ## Brief
 
