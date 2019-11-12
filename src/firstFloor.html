@@ -1,20 +1,28 @@
 {% extends "layouts/base.njk" %}
-{% block page_title %} First Floor {% endblock%}
+{% block page_title %} First Floor {% endblock %}
 {% block main %}
 <main class="mainFirstFloor">
-
   <h2 class="pageTeaser">Apples and pears lead here</h2>
   <div class="pageIntro">
-    <p>The bedrooms on the first floor will display my new projects. 
-    If you would like to see my old projects, I store them in the attic.</p>
+    <p>
+      The bedrooms on the first floor display my new projects. There is plenty
+      of space for the moment, but the rooms will fill up as I complete
+      projects. In the meantime, you can see the projects I'm working on in
+      <a
+        href="../gardenshed"
+        title="The garden shed is where I
+    tinker on projects"
+        >the garden shed</a
+      >, and my old projects are stored in the
+      <a href="../attic" title="The attic stores my old projects">the attic</a>.
+    </p>
   </div>
-  <hr>
+  <hr />
   <div class="projects1stFloor articlesAll">
-    {# All projects have a tags value of either 1stfloor, shed, or attic #}
-    {% for project in collections.1stFloor | reverse %}
-      {# _partial works by using "project in" instead of using "1stFloor in" #}
-      {% include "partials/_projects.njk" %}
-    {%- endfor -%}
+    {# All projects have a tags value of either 1stfloor, shed, or attic #} {%
+    for project in collections.1stFloor | reverse %} {# _partial works by using
+    "project in" instead of using "1stFloor in" #} {% include
+    "partials/_projects.njk" %} {%- endfor -%}
   </div>
 </main>
 {% endblock %}

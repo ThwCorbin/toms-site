@@ -2,19 +2,20 @@
 {% block page_title %} Attic {% endblock %}
 {% block main %}
 <main class="mainAttic">
-
   <h2 class="pageTeaser">Mind the cobwebs</h2>
   <div class="pageIntro">
-    <p>The attic stores my old projects. They are a bit dusty as I do not maintain them. 
-    Every so often, I sit up here in my pyjamas digging through memories.</p>
+    <p>
+      The attic stores my old projects. They are a bit dusty as I do not
+      maintain them. Every so often, I sit up here in my pyjamas digging through
+      memories.
+    </p>
   </div>
-  <hr>
+  <hr />
   <div class="projectsAttic articlesAll">
-    {# All projects have a tags value of either 1stfloor, shed, or attic #}
-    {% for project in collections.attic | reverse %}
-      {# _partial works by using "project in" instead of using "attic in" #}
-      {% include "partials/_projects.njk" %}
-    {%- endfor -%}
+    {# All projects have a tags value of either 1stfloor, shed, or attic #} {%
+    for project in collections.attic | reverse %} {# _partial works by using
+    "project in" instead of using "attic in" #} {% include
+    "partials/_projects.njk" %} {%- endfor -%}
   </div>
 </main>
 {% endblock %}
