@@ -9,7 +9,7 @@ layout: layouts/post.njk
 
 I forgot to update the [Netlify](https://docs.netlify.com/configure-builds/get-started/#basic-build-settings "Netlify docs for build settings") build command on my latest project, [monkeyCatRobot](https://www.monkeycatrobot.com/ "A first-class delivery solution to send a monkeyCatRobot to friends"). I installed and configured [Rollup](https://rollupjs.org/guide/en/ "A module bundler for JavaScript") to bundle my code, and everything worked fine locally. But there was an error when I deployed to Netlify's CDN (content delivery network). I spent a good bit of time rummaging around the interweb with no luck, and I drafted a question, which I almost posted to Stack Overflow. Then I remembered I had made the **same mistake** on my last project. _Fool meself once..._ The correct build command: rollup -c && eleventy. [Nil points](https://english.stackexchange.com/questions/300015/are-there-any-fake-french-words-used-in-english/300156#300156 "Discussion of nil points").
 
-Here is the question I nearly posted to stackoverflow:
+Here is the question I nearly posted to Stack Overflow:
 
 <!END clip>
 
