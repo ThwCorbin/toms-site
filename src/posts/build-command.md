@@ -3,15 +3,17 @@ title: Build Command - Nil Points!
 description: Note about remembering to update your build command
 tags: ["post", "note", "code"]
 date: 2019-11-16 13:15:00.00
-updated: 2019-11-16 13:15:00.00
+updated: 2019-11-17 14:27:00.00
 layout: layouts/post.njk
 ---
 
-I forgot to update the [Netlify](https://docs.netlify.com/configure-builds/get-started/#basic-build-settings "Netlify docs for build settings") build command on my latest project, [monkeyCatRobot](https://www.monkeycatrobot.com/ "A first-class delivery solution to send a monkeyCatRobot to friends"). I installed and configured [Rollup](https://rollupjs.org/guide/en/ "A module bundler for JavaScript") to bundle my code, and everything worked fine locally. But there was an error when I deployed to Netlify's CDN (content delivery network). I spent a good bit of time rummaging around the interweb with no luck, and I drafted a question, which I almost posted to Stack Overflow. Then I remembered I had made the **same mistake** on my last project. _Fool meself once..._ The correct build command: rollup -c && eleventy. [Nil points](https://english.stackexchange.com/questions/300015/are-there-any-fake-french-words-used-in-english/300156#300156 "Discussion of nil points").
+I forgot to update the [Netlify](https://docs.netlify.com/configure-builds/get-started/#basic-build-settings "Netlify docs for build settings") build command on my latest project, [monkeyCatRobot](https://www.monkeycatrobot.com/ "A first-class delivery solution to send a monkeyCatRobot to friends"). I installed and configured [Rollup](https://rollupjs.org/guide/en/ "A module bundler for JavaScript") to bundle my code, and everything worked fine locally. But there was an error when I deployed to Netlify's [CDN](https://en.wikipedia.org/wiki/Content_delivery_network "Wikipedia entry for content delivery network"). I spent a good bit of time rummaging around the interweb with no luck, and I drafted a question, which I almost posted to [Stack Overflow](https://stackoverflow.com "Stack Overflow website"). Then I remembered I had made the **same mistake** on my last project. _Fool meself once..._ The correct build command: rollup -c && eleventy. [Nil points](https://english.stackexchange.com/questions/300015/are-there-any-fake-french-words-used-in-english/300156#300156 "Discussion of nil points").
 
 Here is the question I nearly posted to Stack Overflow:
 
 <!END clip>
+
+---
 
 #### Title
 
@@ -36,3 +38,11 @@ Reading through similar questions on this forum, I see no answers that apply. My
 [2]: https://github.com/ThwCorbin/monkeycatrobot
 [3]: https://www.thwcorbin.com/
 [4]: https://github.com/ThwCorbin/toms-site
+
+---
+
+But I did not post the question.
+
+The end.
+
+PS: "Fool meself once" is a good project name.
