@@ -24,7 +24,7 @@
 * {
   padding: 0;
   margin: 0;
-  line-height: 1.3;
+  line-height: 1.4;
 }
 
 /*> Elements */
@@ -191,9 +191,9 @@ a:active {
     grid-template-rows: 100px 1fr 100px;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-areas:
-      'header header header'
-      'asideMe main asideExtra'
-      'footer footer footer';
+      "header header header"
+      "asideMe main asideExtra"
+      "footer footer footer";
   }
 }
 

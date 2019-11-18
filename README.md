@@ -2,7 +2,7 @@
 
 ## Project
 
-A personal website that breathes like a house.  
+A personal website that breathes like a house.
 
 Website: https://www.thwcorbin.com
 
@@ -19,3 +19,17 @@ We own a terraced house in Cambridge, England. It's a [two-up two-down](https://
 ## Status
 
 Living.
+
+## Usage
+
+You need to clone the repo and install dependencies before running the build script. Here is the process with npm:
+
+```markdown
+$ git clone https://github.com/ThwCorbin/toms-site
+$ cd toms-site
+$ npm install
+$ npm run build
+
+// Access local URL: http://localhost:8080
+// [Browsersync] Serving files from: dist
+```
