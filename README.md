@@ -8,7 +8,7 @@ Website: https://www.thwcorbin.com
 
 ## Brief
 
-User can read my **blog** in the front room. User can read **about** me and what I'm currently working on in the kitchen. User can interact with my **projects** on the first floor. User can potter about the projects I'm currently **working** on in the garden shed. User can see my **archived** projects in the attic. User can **contact** me via links at the bottom of each page.
+User can read my **blog** in the front room. User can read **about** me and what I'm currently working on in the kitchen. User can view my **portfolio** on the first floor. User can potter about the projects I'm currently **working** on in the garden shed. User can see my projects **archive** in the attic. User can **contact** me via links at the bottom of each page.
 
 ## Background
 
