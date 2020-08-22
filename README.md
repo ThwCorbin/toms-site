@@ -33,7 +33,7 @@ Living.
 ## Installation
 
 - Clone the repo: https://github.com/ThwCorbin/toms-site
-- `cd` to the vibing directory
+- `cd` to the toms-site directory
 - run `npm i` in the terminal
 
 ## License
