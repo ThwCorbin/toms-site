@@ -15,4 +15,4 @@ Brief: Users select a turtle from the top of a stack. Users select the tower bas
 
 Background: A game of [Tower of Hanoi](https://en.wikipedia.org/wiki/Tower_of_Hanoi, "Wikipedia entry for Tower of Hanoi") but with turtles. This game is my fourth project for [General Assembly's](https://generalassemb.ly/ "General Assembly homepage") Software Engineering Immersive program.
 
-Status: Turtles are trying to break out of their egg block shells.
+Status: Turtles all the way down.
