@@ -4,7 +4,7 @@ description: A game of War in a web browser console.
 tags: ["project", "1stFloor"]
 link: https://thwcorbin.github.io/war-game/
 gitlink: https://github.com/ThwCorbin/war-game
-image: /assets/images/war-screenshot.png
+image: /assets/images/war.png
 date: 2020-06-23 21:50:00.00
 updated: 2020-08-22
 ---
