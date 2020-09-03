@@ -602,6 +602,14 @@ footer {
   text-decoration: underline;
 }
 
+/* * Kitchen/about my tech skills */
+.kitchen-skills > li {
+  color: var(--blueBlack);
+  font-weight: 400;
+  font-size: 1em;
+  padding: 0 1em;
+}
+
 #activePage,
 #activePostType {
   background-color: var(--pinkWhite);
