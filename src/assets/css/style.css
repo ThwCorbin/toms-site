@@ -603,11 +603,15 @@ footer {
 }
 
 /* * Kitchen/about my tech skills */
+.kitchen-skills {
+  padding: 0.25em 0.5em;
+}
+
 .kitchen-skills > li {
-  color: var(--blueBlack);
+  color: var(--blueDark);
   font-weight: 400;
   font-size: 1em;
-  padding: 0 1em;
+  padding: 0;
 }
 
 #activePage,
