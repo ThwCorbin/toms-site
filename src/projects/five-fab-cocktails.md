@@ -17,4 +17,4 @@ Background: I needed a random cocktail, so I built an app that could serve my ne
 
 Technologies: React, JavaScript, HTML, CSS
 
-Status: Turtles all the way down.
+Status: [Chin-chin!](https://www.collinsdictionary.com/dictionary/english/chin-chin "Collins Dictionary definition of chin-chin")
