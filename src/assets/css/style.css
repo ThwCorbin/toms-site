@@ -108,6 +108,18 @@ blockquote {
   margin: 0.5em 1em;
 }
 
+/* * Kitchen/about my tech skills */
+.kitchen-skills {
+  padding: 0.25em 0.5em;
+}
+
+.kitchen-skills > li {
+  color: var(--blueDark);
+  font-weight: 400;
+  font-size: 1em;
+  padding: 0;
+}
+
 @media screen and (min-width: 21em) {
   li {
     font-size: 1em;
@@ -132,6 +144,10 @@ blockquote {
   p {
     font-size: 1.25em;
   }
+
+  .kitchen-skills > li {
+    font-size: 1.25em;
+  }
 }
 
 @media screen and (min-width: 45em) {
@@ -152,6 +168,10 @@ blockquote {
   h3,
   .postLong h4,
   p {
+    font-size: 1.5em;
+  }
+
+  .kitchen-skills > li {
     font-size: 1.5em;
   }
 
@@ -600,18 +620,6 @@ footer {
 .advert a:active {
   color: var(--pink);
   text-decoration: underline;
-}
-
-/* * Kitchen/about my tech skills */
-.kitchen-skills {
-  padding: 0.25em 0.5em;
-}
-
-.kitchen-skills > li {
-  color: var(--blueDark);
-  font-weight: 400;
-  font-size: 1em;
-  padding: 0;
 }
 
 #activePage,
