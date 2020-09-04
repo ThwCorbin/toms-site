@@ -99,6 +99,11 @@ li {
   padding: 0 0.25em;
 }
 
+.link > span {
+  color: var(--grey);
+  font-size: 0.5em;
+}
+
 hr {
   border: 0.1em solid var(--pink);
   margin: 1em;
