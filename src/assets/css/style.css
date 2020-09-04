@@ -578,6 +578,11 @@ footer {
   .imgTwoUpDoorFooter {
     display: none;
   }
+
+  .pageTeaser {
+    margin-top: 0.25em;
+    margin-bottom: 0.5em;
+  }
 }
 
 .footerLinks {
