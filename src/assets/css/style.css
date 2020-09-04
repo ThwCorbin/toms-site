@@ -343,6 +343,7 @@ main {
   grid-area: main;
   max-width: 50em;
   padding: 0 1em;
+  margin-top: 1em;
   margin-bottom: 1em;
 }
 
