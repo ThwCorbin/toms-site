@@ -348,8 +348,8 @@ main {
 }
 
 .pageTeaser {
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 0.25em;
+  margin-bottom: 0.5em;
 }
 
 .pageIntro {
@@ -580,8 +580,8 @@ footer {
   }
 
   .pageTeaser {
-    margin-top: 0.25em;
-    margin-bottom: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
 }
 
