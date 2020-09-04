@@ -99,7 +99,7 @@ li {
   padding: 0 0.25em;
 }
 
-.link > span {
+.link > a > span {
   color: var(--grey);
   font-size: 0.5em;
 }
