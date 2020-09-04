@@ -44,6 +44,7 @@ h1 {
   color: var(--greenDark);
   font-size: 1.5em;
   padding: 0 0.25em;
+  margin-top: 1em;
 }
 
 h2 {
@@ -102,7 +103,6 @@ li {
 .link > a > span {
   color: var(--grey);
   font-size: 0.5em;
-  line-height: 0.75;
 }
 
 hr {
