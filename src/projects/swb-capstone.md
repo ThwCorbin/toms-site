@@ -13,7 +13,7 @@ Project: Modernized non-profit website.
 
 Brief: Modernize a non-profit's website with a React front end and a Django back end.
 
-Background: Our 12-person software engineering team built Statistics Without Borders (SWB) a new website with modern technologies over eight days. SWB is a volunteer Outreach Group of the American Statistical Association that provides pro bono services in statistics and data science for public benefit that support goals that are nonreligious, non-partisan, and non-personal, with a focus on developing countries. This is my tenth and final project, and the capstone group project, for [General Assembly's](https://generalassemb.ly/ "General Assembly homepage") Software Engineering Immersive (SEI) program.
+Background: Our 12-person software engineering team built Statistics Without Borders (SWB) a new website with modern technologies over eight days. SWB is a volunteer Outreach Group of the American Statistical Association that provides pro bono services in statistics and data science for public benefit with a focus on developing countries. This is my tenth and final project, and the capstone group project, for [General Assembly's](https://generalassemb.ly/ "General Assembly homepage") Software Engineering Immersive (SEI) program.
 
 Technologies: I focused on the front end along with most of the team using React, Jest, Enzyme, and Storybook. Other teammates focused on the back end using Django and PostgreSQL.
 
