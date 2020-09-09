@@ -14,7 +14,7 @@ Users can read my **blog** in the front room. Users can read **about** me and wh
 
 ## Background
 
-We own a terraced house in Cambridge, England. It's a [two-up two-down](https://dictionary.cambridge.org/dictionary/english/two-up-two-down "Definition of two-up two-down") with a kitchen extension and an attic conversion. We call it the Red Door. I was thinking about our house when I started JAMstacking my website with a blog, updated projects, and a new theme. My website breathes like a house. Sometimes you can feel a draught, but the radiators keep it cozy.
+We own a terraced house in Cambridge, England. It's a [two-up two-down](https://dictionary.cambridge.org/dictionary/english/two-up-two-down "Definition of a two-up two-down") with a kitchen extension, an attic conversion, and a small garden with a shed. We call it the 'Red Door House.' I was thinking about our house when I started JAMstacking my website with a blog, updated projects, and a new theme. My website breathes like a house. Sometimes you feel a draught, but the radiators keep it cozy.
 
 ## Status
 
