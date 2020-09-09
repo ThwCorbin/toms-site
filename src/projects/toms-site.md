@@ -4,7 +4,7 @@ description: A personal website that breathes like a house.
 tags: ["project", "shed", "1stFloor"]
 link: https://www.thwcorbin.com/
 gitlink: https://github.com/ThwCorbin/toms-site
-image: /assets/images/toms-site-min.png
+image: /assets/images/toms-site.png
 date: 2019-11-09 18:10:00.00
 updated: 2020-09-09
 ---

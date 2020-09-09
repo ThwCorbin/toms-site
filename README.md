@@ -10,7 +10,7 @@ Website: https://www.thwcorbin.com
 
 Users can read my **blog** in the front room. Users can read **about** me and what I'm currently working on in the kitchen. Users can view my **portfolio** on the first floor. Users can potter about the projects I'm currently **working** on in the garden shed. Users can see my projects **archive** in the attic. Users can **contact** me via links at the bottom of each page.
 
-![Tom's Two-up Two-down screenshot](./toms-site-screenshot.png "Tom's personal website")
+![Tom's Two-up Two-down screenshot](./toms-site.png "Tom's personal website")
 
 ## Background
 
