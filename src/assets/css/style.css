@@ -146,10 +146,6 @@ blockquote {
   p {
     font-size: 1.25em;
   }
-
-  /* .kitchen-skills > li {
-    font-size: 1em;
-  } */
 }
 
 @media screen and (min-width: 45em) {
@@ -363,22 +359,6 @@ main {
   display: flex;
 }
 
-/* @media screen and (min-width: 60em) { */
-/* .articlesAll { */
-/* height: 100vh; */
-/* overflow: auto; */
-/* scroll-snap-type: y proximity; */
-/* } */
-/* } */
-
-/*> Main <article> */
-/* article { */
-/* scroll-snap-align: start; */
-/* scroll-margin-top: 0.5em; */
-/* } */
-
-/*> Main all <article class="postAll"> containing a short or long post */
-
 .postAll {
   display: flex;
   flex-direction: column;
@@ -521,6 +501,11 @@ main {
 }
 
 @media screen and (min-width: 40em) {
+  .pageTeaser {
+    margin-top: 1em;
+    margin-bottom: 0.75em;
+  }
+
   .imgProject {
     max-width: 7em;
     max-height: 7em;
@@ -572,11 +557,6 @@ footer {
 
   .imgTwoUpDoorFooter {
     display: none;
-  }
-
-  .pageTeaser {
-    margin-top: 1em;
-    margin-bottom: 1em;
   }
 }
 
