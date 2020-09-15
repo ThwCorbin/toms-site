@@ -172,8 +172,7 @@ blockquote {
   }
 
   h3,
-  .postLong h4,
-  p {
+  .postLong h4 {
     font-size: 1.5em;
   }
 
