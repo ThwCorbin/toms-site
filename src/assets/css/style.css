@@ -147,9 +147,9 @@ blockquote {
     font-size: 1.25em;
   }
 
-  .kitchen-skills > li {
-    font-size: 1.25em;
-  }
+  /* .kitchen-skills > li {
+    font-size: 1em;
+  } */
 }
 
 @media screen and (min-width: 45em) {
@@ -160,20 +160,20 @@ blockquote {
 
 @media screen and (min-width: 60em) {
   h1 {
-    font-size: 2.25em;
+    font-size: 2em;
   }
 
   h2 {
-    font-size: 1.75em;
+    font-size: 1.6em;
   }
 
   h3,
   .postLong h4 {
-    font-size: 1.5em;
+    font-size: 1.35em;
   }
 
   .kitchen-skills > li {
-    font-size: 1.5em;
+    font-size: 1.35em;
   }
 
   h4,
