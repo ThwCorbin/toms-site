@@ -24,7 +24,7 @@
 * {
   padding: 0;
   margin: 0;
-  line-height: 1.4;
+  line-height: 1.2;
 }
 
 /*> Elements */
@@ -133,10 +133,6 @@ blockquote {
 }
 
 @media screen and (min-width: 40em) {
-  * {
-    line-height: 1.4;
-  }
-
   h1 {
     font-size: 1.6em;
   }
