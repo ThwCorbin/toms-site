@@ -20,14 +20,14 @@
   --white: #fff;
 }
 
-/*> Reset */
+/** Reset ********************************************** */
 * {
   padding: 0;
   margin: 0;
   line-height: 1.2;
 }
 
-/*> Elements */
+/** Elements ********************************************** */
 
 html {
   font-size: 16px;
@@ -114,18 +114,6 @@ blockquote {
   margin: 0.5em 1em;
 }
 
-/* * Kitchen/about my tech skills */
-.kitchen-skills {
-  padding: 0.25em 0.5em;
-}
-
-.kitchen-skills > li {
-  color: var(--blueDark);
-  font-weight: 400;
-  font-size: 1em;
-  padding: 0;
-}
-
 @media screen and (min-width: 21em) {
   li {
     font-size: 1em;
@@ -143,8 +131,7 @@ blockquote {
 
   h3,
   .postLong h4,
-  p,
-  .kitchen-skills > li {
+  p {
     font-size: 1.25em;
   }
 }
@@ -175,25 +162,25 @@ blockquote {
   }
 }
 
-/*> lvfha */
-a:link,
-a:visited {
-  color: var(--blueBright);
-  text-decoration: none;
+/* * Kitchen/about ********************************************** */
+.kitchen-skills {
+  padding: 0.25em 0.5em;
 }
 
-a:focus,
-a:hover {
-  color: var(--green);
-  text-decoration: underline;
+.kitchen-skills > li {
+  color: var(--blueDark);
+  font-weight: 400;
+  font-size: 1em;
+  padding: 0;
 }
 
-a:active {
-  color: var(--pink);
-  text-decoration: underline;
+@media screen and (min-width: 40em) {
+  .kitchen-skills > li {
+    font-size: 1.25em;
+  }
 }
 
-/*> Layout */
+/** Layout ********************************************** */
 #layout {
   display: flex;
   flex-direction: column;
@@ -211,7 +198,7 @@ a:active {
   }
 }
 
-/*> Header */
+/** Header **********************************************  */
 header {
   grid-row: 1 / 2;
   grid-column: 2 / 3;
@@ -229,7 +216,7 @@ header {
   padding-left: 0.5em;
 }
 
-/*> Asides */
+/** Asides ********************************************** */
 aside {
   margin-bottom: 0.5em;
 }
@@ -326,7 +313,7 @@ aside {
   }
 }
 
-/*> Main all pages */
+/** Main ********************************************** */
 main {
   grid-area: main;
   max-width: 50em;
@@ -335,6 +322,7 @@ main {
   margin-bottom: 1em;
 }
 
+/* Main all room pages */
 .pageTeaser {
   margin-top: 0.25em;
   margin-bottom: 0.5em;
@@ -344,7 +332,7 @@ main {
   background: var(--blueWhite);
 }
 
-/*> Main post.njk layout above <article> */
+/* Main Letterbox Article Note Postcard pages */
 .letterboxLid {
   display: flex;
   justify-content: baseline;
@@ -352,6 +340,7 @@ main {
   align-items: baseline;
 }
 
+/* Main posts */
 .postTypes {
   display: flex;
 }
@@ -423,15 +412,6 @@ main {
   width: 40%;
 }
 
-@media screen and (min-width: 25em) {
-  .postAll table {
-    font-size: 1em;
-    border-width: 0.3em;
-    padding: 0.5em;
-    margin: 0.5em;
-  }
-}
-
 .postAll .postData {
   margin-left: 0;
 }
@@ -457,7 +437,23 @@ main {
   margin: 0 1em 0 auto;
 }
 
-/*> Main all projects in rooms <article class="projectAllRooms"> */
+@media screen and (min-width: 25em) {
+  .postAll table {
+    font-size: 1em;
+    border-width: 0.3em;
+    padding: 0.5em;
+    margin: 0.5em;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .pageTeaser {
+    margin-top: 1em;
+    margin-bottom: 0.75em;
+  }
+}
+
+/* Main all projects in rooms <article class="projectAllRooms"> */
 .projectTitle a:link,
 .projectTitle a:visited {
   color: var(--greyDark);
@@ -481,8 +477,6 @@ main {
 }
 
 .projectInfo {
-  /* display: flex;
-  flex-direction: column; */
   background: var(--blueWhite);
 }
 
@@ -498,11 +492,6 @@ main {
 }
 
 @media screen and (min-width: 40em) {
-  .pageTeaser {
-    margin-top: 1em;
-    margin-bottom: 0.75em;
-  }
-
   .imgProject {
     max-width: 7em;
     max-height: 7em;
@@ -516,7 +505,7 @@ main {
   }
 }
 
-/*> Footer */
+/** Footer ********************************************** */
 footer {
   margin-bottom: 1em;
 }
@@ -613,7 +602,24 @@ footer {
   border-bottom: 0.2em solid var(--pink);
 }
 
-/*> Label: Better Comments Key (Add > style to VS Code settings.json) */
+/** lvfha ********************************************** */
+a:link,
+a:visited {
+  color: var(--blueBright);
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: var(--green);
+  text-decoration: underline;
+}
+
+a:active {
+  color: var(--pink);
+  text-decoration: underline;
+}
+
 /*! Warning: A Palantir is a dangerous tool, Saruman. */
 /*? Question: Why? Why should we fear to use it? */
 /** Highlight: They are not all accounted for, the lost Seeing Stones. */
