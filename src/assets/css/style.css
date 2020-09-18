@@ -162,24 +162,6 @@ blockquote {
   }
 }
 
-/* * Kitchen/about ********************************************** */
-.kitchen-skills {
-  padding: 0.25em 0.5em;
-}
-
-.kitchen-skills > li {
-  color: var(--blueDark);
-  font-weight: 400;
-  font-size: 1em;
-  padding: 0;
-}
-
-@media screen and (min-width: 40em) {
-  .kitchen-skills > li {
-    font-size: 1.25em;
-  }
-}
-
 /** Layout ********************************************** */
 #layout {
   display: flex;
@@ -214,6 +196,18 @@ header {
   justify-content: flex-start;
   align-items: baseline;
   padding-left: 0.5em;
+}
+
+@media screen and (min-width: 25em) {
+  .headerLinks > li {
+    margin-left: 0.5em;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .headerLinks > li {
+    margin-left: 1em;
+  }
 }
 
 /** Asides ********************************************** */
@@ -502,6 +496,24 @@ main {
   .imgProject {
     max-width: 10em;
     max-height: 10em;
+  }
+}
+
+/* * Kitchen/about ********************************************** */
+.kitchen-skills {
+  padding: 0.25em 0.5em;
+}
+
+.kitchen-skills > li {
+  color: var(--blueDark);
+  font-weight: 400;
+  font-size: 1em;
+  padding: 0;
+}
+
+@media screen and (min-width: 40em) {
+  .kitchen-skills > li {
+    font-size: 1.25em;
   }
 }
 
