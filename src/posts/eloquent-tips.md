@@ -1,9 +1,9 @@
 ---
 title: Eloquent Tips
 description: Tips from Eloquent JavaScript
-tags: ["post", "card", "idea"]
+tags: ["post", "note", "code"]
 date: 2020-10-13 09:25:00.00
-updated: 2020-10-13 09:25:00.00
+updated: 2020-10-13 10:05:00.00
 layout: layouts/post.njk
 ---
 
