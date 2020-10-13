@@ -11,13 +11,13 @@ I was cleaning out a notebook, and I noticed several tips I'd written down about
 
 `NaN` is the only value in JavaScript that is not equal to itself
 
-```shell-session
+```bash
 > NaN == NaN // false
 ```
 
 Accidental type conversions often return `NaN`, which is worth remembering when debugging.
 
-```shell-session
+```bash
 > let five // undefined
 > five + 2 // NaN
 > five = 5
@@ -31,7 +31,7 @@ Accidental type conversions often return `NaN`, which is worth remembering when 
 
 `null` and `undefined` "denote absence of meaningful value." We can test whether a value is real (not `null` or `undefined`) by comparing it to `null`.
 
-```shell-session
+```bash
 > null == undefined // true
 > null == 0 // false
 > let a = "a" // undefined
