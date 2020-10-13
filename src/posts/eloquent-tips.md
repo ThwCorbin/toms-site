@@ -7,7 +7,7 @@ updated: 2020-10-13 10:05:00.00
 layout: layouts/post.njk
 ---
 
-I was cleaning out a notebook, and I noticed several tips I'd written down about `NaN`, `null`, and `undefined` while reading [Eloquent Javascript](https://eloquentjavascript.net/, "Eloquent JavaScriptn online edition by Marijn Haverbeke").
+I was cleaning out a notebook, and I noticed several tips I'd written down about `NaN`, `null`, and `undefined` while reading [Eloquent Javascript](https://eloquentjavascript.net/ "Eloquent JavaScriptn online edition by Marijn Haverbeke").
 
 `NaN` is the only value in JavaScript that is not equal to itself
 
