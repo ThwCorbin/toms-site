@@ -17,7 +17,7 @@ I was cleaning out a notebook, and I noticed several tips I'd written down about
 
 Accidental type conversions often return `NaN`, which is worth remembering when debugging.
 
-```console
+```bash
 > let five // undefined
 > five + 2 // NaN
 > five = 5
@@ -31,7 +31,7 @@ Accidental type conversions often return `NaN`, which is worth remembering when 
 
 `null` and `undefined` "denote absence of meaningful value." We can test whether a value is real (not `null` or `undefined`) by comparing it to `null`.
 
-```console
+```bash
 > null == undefined // true
 > null == 0 // false
 > let a = "a" // undefined
