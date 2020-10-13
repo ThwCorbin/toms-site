@@ -11,7 +11,7 @@ I was cleaning out a notebook, and I noticed several tips I'd written down about
 
 `NaN` is the only value in JavaScript that is not equal to itself
 
-```console
+```bash
 > NaN == NaN // false
 ```
 
