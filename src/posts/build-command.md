@@ -1,5 +1,4 @@
 ---
-eleventyExcludeFromCollections: true
 title: Build Command - Nil Points!
 description: Note about remembering to update your build command
 tags: ["post", "note", "code"]

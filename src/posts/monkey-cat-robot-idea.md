@@ -1,5 +1,4 @@
 ---
-eleventyExcludeFromCollections: true
 title: monkeyCatRobot
 description: Project idea for a monkeyCatRobot to send to friends
 tags: ["post", "card", "idea"]
