@@ -60,7 +60,7 @@
   "dependencies": {
     "date-fns": "^2.16.1",
     "nunjucks": "^3.2.2",
-    "prismjs": "^1.22.0",
+    "prismjs": "^1.23.0",
     "the-answer": "^1.0.0"
   }
 }
