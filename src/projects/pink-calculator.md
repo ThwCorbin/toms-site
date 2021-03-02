@@ -2,10 +2,10 @@
 title: Pink Calculator
 description: A pink calculator built with React.
 tags: ["project", "shed"]
-link: tbd
+link: https://github.com/ThwCorbin/pink-calculator
 gitlink: https://github.com/ThwCorbin/pink-calculator
 image:
-date: 2021-03-01 19:19:00.00
+date: 2021-03-01 19:47:00.00
 updated: 2021-03-01
 ---
 

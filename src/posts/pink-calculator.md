@@ -7,7 +7,7 @@ updated: 2021-03-01
 layout: layouts/post.njk
 ---
 
-**Project idea:** Build a pink calculator built with React.
+**Project idea:** Build a pink calculator with React.
 
 **Brief:** Calculate with a pink calculator. You can change the color if you prefer another color. You will calculate better with your favorite color of calculator!
 
