@@ -1,7 +1,7 @@
 ---
 title: Travel Cents
 description: A website to help people save their cents to travel.
-tags: ["post", "note", "code"]
+tags: ["post", "note"]
 date: 2021-04-26 11:34:00.00
 updated: 2021-04-26
 layout: layouts/post.njk
