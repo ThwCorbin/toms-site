@@ -4,7 +4,7 @@ description: A website to help people save their cents to travel.
 tags: ["project", "shed"]
 link: https://github.com/ThwCorbin/travel-cents
 gitlink: https://github.com/ThwCorbin/travel-cents
-image:
+image: /assets/images/travel-cents.png
 date: 2021-04-26 10:48:00.00
 updated: 2021-04-26
 ---
